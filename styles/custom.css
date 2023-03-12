@@ -102,7 +102,7 @@ section {
 
 .row span {
 	text-align: center;
-	font-size: 0.8rem;
+	font-size: 0.98rem;
 	color: #030033;
 	font-family: Raleway, Roboto, sans-serif;
 }
@@ -285,14 +285,13 @@ button:active {
 
 #skills span {
 	text-align: center;
-	font-size: 0.8rem;
+	font-size: 0.98rem;
 	font-family: Raleway, Roboto, sans-serif;
 	color: #030033;
 }
 
 .commentSkill {
 	color: #030033;
-	font-size: 2.4rem;
 	font-family: Sacramento, Sofia, sans-serif;
 	text-align: center;
 	text-transform: capitalize;
