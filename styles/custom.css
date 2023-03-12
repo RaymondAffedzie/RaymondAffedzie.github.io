@@ -212,15 +212,14 @@ label {
 }
 
 input {
-	margin: 3px 0 0 0;
-	padding: 5px 10px;
+	padding: 5px 5px;
+	margin-bottom: 0.2rem;
 	width: 100%;
 	color: #030033;
-	letter-spacing: 1.2;
 	font-weight: 400;
 	font-family: Raleway, Roboto, sans-serif;
-	border: 1.7px solid #070161;
-	border-radius: 0 !important;
+	border: 0.06rem solid #070161;
+	border-radius: 0.5rem;
 }
 
 textarea {
