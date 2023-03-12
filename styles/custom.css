@@ -95,7 +95,7 @@ section {
 
 .quote p {
 	text-align: center;
-	font-size: 2rem;
+	font-size: 0.9rem;
 	font-family: Raleway, Roboto, sans-serif;
 	color: #ffffff;
 }
@@ -119,7 +119,7 @@ em {
 
 .comment {
 	color: #030033;
-	font-family: Sofia, sans-serif;
+	font-family: Sacramento, Sofia, sans-serif;
 	text-align: center;
 	text-transform: capitalize;
 }
@@ -134,7 +134,7 @@ em {
 }
 
 #about h2{
-	color: 0be0ed;
+	color: #0be0ed;
 	font-family: Raleway, Roboto, sans-serif;
 }
 /* end of about */
@@ -169,7 +169,7 @@ em {
 }
 
 .socials i {
-	font-size: 4rem;
+	font-size: 3rem;
 	color: #030033;
 }
 
@@ -178,35 +178,11 @@ em {
 	cursor: pointer;
 }
 
-/* socials a:hover{
-
-} */
-
-/* .linkedin:hover{
-	color: #0072b1;
-}
-
-.github:hover{
-	color: #171515;
-}
-
-.twitter:hover{
-	color: #00acee;
-}
-
-.telegram:hover{
-	color: #0088cc;
-}
-
-.instagram:hover{
-	color: #f09433; 
-} */
 /* end of socials */
 
 
 /* beginning of contact */
 #contact {
-    /* margin-top: 50px; */
 	padding-top: 25px;
     background-color: #ffffff;
 }
@@ -423,7 +399,7 @@ button:active {
 }
 
 .mentor img{
-	/* width: 14rem; */
+	width: 14rem;
 	height: 14rem;
 	border: 0.5rem solid rgba(0, 0, 0, 0.1);
 	border-radius: 50%;
