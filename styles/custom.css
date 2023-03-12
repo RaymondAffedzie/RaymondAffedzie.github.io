@@ -150,11 +150,11 @@ em {
 
 .meet {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	flex-direction: row;
 	flex-wrap: wrap;
-	padding: 15px;
+	padding: 5px;
 }
 
 .socials {
@@ -168,8 +168,13 @@ em {
 	transition: 0.5s ease-in-out;
 }
 
+.socials a {
+	text-decoration: none;
+}
+	
+
 .socials i {
-	font-size: 3rem;
+	font-size: 2rem;
 	color: #030033;
 }
 
