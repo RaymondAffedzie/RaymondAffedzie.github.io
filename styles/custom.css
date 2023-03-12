@@ -187,10 +187,10 @@ em {
     background-color: #ffffff;
 }
 
-fieldset {
-	border: none;
-	padding: 2rem 0;
+.contact{
+	max-height: 300px;
 }
+
 
 label {
 	display: block;
@@ -382,7 +382,7 @@ button:active {
 .influencors {
 	text-transform: uppercase;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	flex-direction: row;
 	flex-wrap: wrap;
