@@ -193,6 +193,7 @@ em {
 }
 
 .contact{
+	width: 50%;
 	max-height: 250px;
 	display: flex;
 	flex-wrap: wrap;
