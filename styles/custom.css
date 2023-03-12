@@ -380,18 +380,17 @@ button:active {
 }
 
 .influencors {
-	text-transform: uppercase;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	flex-direction: row;
 	flex-wrap: wrap;
+	text-transform: uppercase;
 	font-family: Raleway, Roboto, sans-serif;
 	color: #030033;
 }
 
 .mentor{
-	margin-bottom: 3rem;
 	text-align: center;
 	display: flex;
 	justify-content: center;
