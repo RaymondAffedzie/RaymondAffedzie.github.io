@@ -102,7 +102,7 @@ section {
 
 .row span {
 	text-align: center;
-	font-size: 1.5rem;
+	font-size: 0.8rem;
 	color: #030033;
 	font-family: Raleway, Roboto, sans-serif;
 }
@@ -312,8 +312,8 @@ button:active {
 
 #skills span {
 	text-align: center;
-	font-size: 1.5rem;
-	font-family: Sacramento, Roboto, sans-serif;
+	font-size: 0.8rem;
+	font-family: Raleway, Roboto, sans-serif;
 	color: #ffffff;
 }
 
@@ -377,13 +377,6 @@ button:active {
 	background-color: #ffffff;
 	margin-top: 50px;
 	padding-top: 25px;
-}
-
-#services span {
-	font-size: 1.5rem;
-	font-family: Sacramento, Roboto, sans-serif;
-	color: #030033;
-	text-align: center;
 }
 
 .services {
