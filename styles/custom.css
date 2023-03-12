@@ -427,6 +427,7 @@ button:active {
 	align-items: center;
 	flex-direction: row;
 	flex-wrap: wrap;
+	font-family: Raleway, Roboto, sans-serif;
 	color: #030033;
 }
 
