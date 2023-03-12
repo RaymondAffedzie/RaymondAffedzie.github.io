@@ -1,479 +1,621 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial">
-        <title>irbba</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial" />
+		<title>irbba</title>
 
-        <!-- googel font -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href='https://fonts.googleapis.com/css?family=Sofia|Raleway|Tangerine|Acme|Alex Brush|Alike|Anaheim|Amita|Pacifico|Seaweed Script|Sacramento|Roboto|Open+Sans Swash Caps' rel='stylesheet'>
+		<!-- googel font -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Sofia|Raleway|Tangerine|Acme|Alex Brush|Alike|Anaheim|Amita|Pacifico|Seaweed Script|Sacramento|Roboto|Open+Sans Swash Caps"
+			rel="stylesheet"
+		/>
 
-        <!-- font awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/css/all.min.css">
-        <script src="https://kit.fontawesome.com/c493b6cb9b.js" crossorigin="anonymous"></script>
+		<!-- font awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/css/all.min.css"
+		/>
+		<script
+			src="https://kit.fontawesome.com/c493b6cb9b.js"
+			crossorigin="anonymous"
+		></script>
 
-        <!-- css styles -->
-        <link rel="stylesheet" href="./styles/bootstrap.min.css">
-        <link rel="stylesheet" href="./styles/custom.css">
+		<!-- css styles -->
+		<link rel="stylesheet" href="./styles/bootstrap.min.css" />
+		<link rel="stylesheet" href="./styles/custom.css" />
 
-        <!-- favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-        <link rel="manifest" href="favicon_io/site.webmanifest">
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-md navbar-light">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarType" aria-controls="navbarType" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-md-center" id="navbarType">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                    <a class="nav-link" href="index.html">Profile</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#about">About me</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#socials">Social media</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#testimonials">Testimonials</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-                </div>
-            </div>
-        </nav>
+		<!-- favicon -->
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="favicon_io/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="favicon_io/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="favicon_io/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="favicon_io/site.webmanifest" />
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-md navbar-light">
+			<div class="container">
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarType"
+					aria-controls="navbarType"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div
+					class="collapse navbar-collapse justify-content-md-center"
+					id="navbarType"
+				>
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Profile</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#about">About me</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#socials">Social media</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#testimonials">
+								Testimonials
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#skills">Skills</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#services">Services</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
-        <main>
-            <!-- landing -->
-            <div class="container-fluid" id="landing">
-                <div class="row">
-                    <div class="col-md-12 text-center quote slide-in from-bottom">
-                        <h1>irbba devs</h1>
-                        <p>
-                            Turn your ideas into quick, dependable, safe, expert, and reasonably priced website.
-                        </p>
-                        <em>~Ray Berth</em>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- about -->
-            <div class="container-fluid" id="about">
-                <div class="row">
-                    <h2 class="comment">About irbba</h2>
-                    <span>
-                        Work with irbba, and also learn about irbba. 
-                    </span>
-                    
-                    <h2>Will be available soon</h2>
-                </div>
-            </div>
+		<main>
+			<!-- landing -->
+			<div class="container-fluid" id="landing">
+				<div class="row">
+					<div
+						class="col-md-12 text-center quote slide-in from-bottom"
+					>
+						<h1>irbba devs</h1>
+						<p>
+							Turn your ideas into quick, dependable, safe,
+							expert, and reasonably priced website.
+						</p>
+						<em>~Ray Berth</em>
+					</div>
+				</div>
+			</div>
 
-            <!-- social -->
-            <div class="container-fluid" id="socials">
-                <div class="row">
-                    <!-- <h2 class="comment">Connect with me</h2> -->
-                    <span>
-                        Get in touch with the best 
-                    </span>
-                    <div class="col-md-12 meet">
-                        <div class="socials fade-in linkedin">
-                            <a href="https://www.linkedin.com/in/raymond-affedzie-5111091b1/" target="_blank">
-                                <i class='fab fa-linkedin'></i>
-                            </a>
-                        </div>
-                        <div class="socials fade-in github">
-                            <a href="https://github.com/RaymondAffedzie" target="_blank">
-                                <i class='fab fa-github'></i>
-                            </a>
-                        </div>
-                        <div class="socials fade-in twitter">
-                            <a href="https://twitter.com/berth_ray" target="_blank">
-                                <i class='fab fa-twitter'></i>
-                            </a>
-                        </div>
-                        <div class="socials fade-in instagram">
-                            <a href="https://www.instagram.com/_irbba/" target="_blank">
-                                <i class='fab fa-instagram'></i>
-                            </a>
-                        </div>
-                        <div class="socials fade-in telegram">
-                            <a href="https://www.iRBbA@t.me" target="_blank">
-                                <i class="fa-brands fa-telegram"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+			<!-- about -->
+			<div class="container-fluid" id="about">
+				<div class="row">
+					<h2 class="comment">About irbba</h2>
+					<span>Work with irbba, and also learn about irbba.</span>
 
-            <!-- testimonials -->
-            <div class="container-fluid" id="testimonials">
-                <div class="row">
-                    <h2 class="comment">this is what the people say</h2>
-                    <span>
-                        I collaborate with clients from a variety of fields and industries to improve user experiences through web development. 
-                    </span>
-                    <div class="cover">
-                        <div class="wrapper">
-                            <div class="gallery fade-in">
-                                <img src="images/yuki.jpeg" alt="Yuki's picture">
-                                <div class="info">
-                                    <h1>Anastasia Yuki Nelson</h1>
-                                    <p>
-                                        Ray’s a very lovely person you wouldn’t want to miss being around. 
-                                        He gives advices and is always ready to help everyone. 
-                                        I’m so glad I have a friend like him 🥰
-                                    </p>
-                                </div>
-                            </div>
-                    
-                            <div class="gallery fade-in">
-                                <img src="images/george3.jpg" alt="George's picture">
-                                <div class="info">
-                                    <h1>George Ntsiful</h1>
-                                    <p>
-                                        Raymond's desire to know more about IT at a very young age was interesting. 
-                                        His work, even then, was far beyond what I had come to expect from a young teenager,
-                                        his knowledge of coding and programming seems truly limitless, 
-                                        and he’s likely the last person you’ll ever need for anything on the web. 
-                                        Congratulations on your success, Raymond. Long may it continue (I’m sure it will!).
-                                    </p>
-                                </div>
-                            </div>
-                    
-                            <div class="gallery fade-in">
-                                <img src="images/stephen.jpeg" alt="Stephen's picture">
-                                <div class="info">
-                                    <h1>Stephen Mensah</h1>
-                                    <p>
-                                        Raymond is very passionate about everything he does. He is free and loves to learn 
-                                        and teach what he learns with everyone who needs help. Raymond is my mentor and my motivator.
-                                    </p>
-                                </div>
-                            </div>
-                    
-                            <div class="gallery fade-in">
-                                <img src="images/hasia.jpeg" alt="Hasia's picture">
-                                <div class="info">
-                                    <h1>Hasia Mumuni</h1>
-                                    <p>
-                                        What i really like about you is that, you're very caring and respectful as well. 
-                                        You're very nice and also very vigilant. You always embrace people and 
-                                        am always happy when am around you. You always help me 
-                                        in terms of financial issues 😩🙏I'm very grateful 🙏 
-                                        for you being part of my life.
-                                    </p>
-                                </div>
-                            </div>
-                    
-                            <div class="gallery fade-in">
-                                <img src="images/janesberg.jpg" alt="Janesberg's picture">
-                                <div class="info">
-                                    <h1>Janesberg Phebe Mensah</h1>
-                                    <p>
-                                        You're cute, humble, kind, generous and respectful.
-                                        Your future lady will be very proud to have you. You're always
-                                        ready to help.
-                                    </p>
-                                </div>
-                            </div>
+					<h2>Will be available soon</h2>
+				</div>
+			</div>
 
-                            <div class="gallery fade-in">
-                                <img src="images/esme 1.jpg" alt="Esme's picture">
-                                <div class="info">
-                                    <h1>Esme Ayeyie Conduah</h1>
-                                    <p>
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus voluptatem voluptas molestias natus labore quas unde nisi repudiandae! Voluptas assumenda, perspiciatis labore ad recusandae ipsa saepe quis iure omnis. Voluptatem!
-                                    </p>
-                                </div>
-                            </div>
+			<!-- social -->
+			<div class="container-fluid" id="socials">
+				<div class="row">
+					<!-- <h2 class="comment">Connect with me</h2> -->
+					<span>Get in touch with the best</span>
+					<div class="col-md-12 meet">
+						<div class="socials fade-in linkedin">
+							<a
+								href="https://www.linkedin.com/in/raymond-affedzie-5111091b1/"
+								target="_blank"
+							>
+								<i class="fab fa-linkedin"></i>
+							</a>
+						</div>
+						<div class="socials fade-in github">
+							<a
+								href="https://github.com/RaymondAffedzie"
+								target="_blank"
+							>
+								<i class="fab fa-github"></i>
+							</a>
+						</div>
+						<div class="socials fade-in twitter">
+							<a
+								href="https://twitter.com/berth_ray"
+								target="_blank"
+							>
+								<i class="fab fa-twitter"></i>
+							</a>
+						</div>
+						<div class="socials fade-in instagram">
+							<a
+								href="https://www.instagram.com/_irbba/"
+								target="_blank"
+							>
+								<i class="fab fa-instagram"></i>
+							</a>
+						</div>
+						<div class="socials fade-in telegram">
+							<a href="https://www.iRBbA@t.me" target="_blank">
+								<i class="fa-brands fa-telegram"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
 
-                            <div class="gallery fade-in">
-                                <img src="images/joe.jpg" alt="Joe's picture">
-                                <div class="info">
-                                    <h1>Winfred Mensah</h1>
-                                    <p>
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit ea vel cupiditate dolore alias dolores, repellat libero. Dolore quos a, vero nisi excepturi eaque quas quis, delectus, iste quidem cumque?
-                                    </p>
-                                </div>
-                            </div>
-                            
-                            <div class="gallery fade-in">
-                                <img src="images/seth.jpg" alt="Seth's picture">
-                                <div class="info">
-                                    <h1>Seth Kwadwo Ackaah</h1>
-                                    <p>
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit ea vel cupiditate dolore alias dolores, repellat libero. Dolore quos a, vero nisi excepturi eaque quas quis, delectus, iste quidem cumque?
-                                    </p>
-                                </div>
-                            </div>
-                            
-                            <div class="gallery fade-in">
-                                <img src="images/dorcas.jpg" alt="Dorcas's picture">
-                                <div class="info">
-                                    <h1>Dorcas Sagoe</h1>
-                                    <p>
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit ea vel cupiditate dolore alias dolores, repellat libero. Dolore quos a, vero nisi excepturi eaque quas quis, delectus, iste quidem cumque?
-                                    </p>
-                                </div>
-                            </div>
+			<!-- testimonials -->
+			<div class="container-fluid" id="testimonials">
+				<div class="row">
+					<h2 class="comment">this is what the people say</h2>
+					<span>
+						I collaborate with clients from a variety of fields and
+						industries to improve user experiences through web
+						development.
+					</span>
+					<div class="cover">
+						<div class="wrapper">
+							<div class="gallery fade-in">
+								<img
+									src="images/yuki.jpeg"
+									alt="Yuki's picture"
+								/>
+								<div class="info">
+									<h1>Anastasia Yuki Nelson</h1>
+									<p>
+										Ray’s a very lovely person you wouldn’t
+										want to miss being around. He gives
+										advices and is always ready to help
+										everyone. I’m so glad I have a friend
+										like him 🥰
+									</p>
+								</div>
+							</div>
 
-                            <div class="gallery fade-in">
-                                <img src="images/emma.jpg" alt="Emma's picture">
-                                <div class="info">
-                                    <h1>Emmanuel Adu Gyamfi</h1>
-                                    <p>
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit ea vel cupiditate dolore alias dolores, repellat libero. Dolore quos a, vero nisi excepturi eaque quas quis, delectus, iste quidem cumque?
-                                    </p>
-                                </div>
-                            </div>
+							<div class="gallery fade-in">
+								<img
+									src="images/george3.jpg"
+									alt="George's picture"
+								/>
+								<div class="info">
+									<h1>George Ntsiful</h1>
+									<p>
+										Raymond's desire to know more about IT
+										at a very young age was interesting. His
+										work, even then, was far beyond what I
+										had come to expect from a young
+										teenager, his knowledge of coding and
+										programming seems truly limitless, and
+										he’s likely the last person you’ll ever
+										need for anything on the web.
+										Congratulations on your success,
+										Raymond. Long may it continue (I’m sure
+										it will!).
+									</p>
+								</div>
+							</div>
 
-                            <div class="gallery fade-in">
-                                <img src="images/richard.jpg" alt="Richard's picture">
-                                <div class="info">
-                                    <h1>Richard Amponsah Morrison</h1>
-                                    <p>
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit ea vel cupiditate dolore alias dolores, repellat libero. Dolore quos a, vero nisi excepturi eaque quas quis, delectus, iste quidem cumque?
-                                    </p>
-                                </div>
-                            </div>
+							<div class="gallery fade-in">
+								<img
+									src="images/stephen.jpeg"
+									alt="Stephen's picture"
+								/>
+								<div class="info">
+									<h1>Stephen Mensah</h1>
+									<p>
+										Raymond is very passionate about
+										everything he does. He is free and loves
+										to learn and teach what he learns with
+										everyone who needs help. Raymond is my
+										mentor and my motivator.
+									</p>
+								</div>
+							</div>
 
-                            <div class="gallery fade-in">
-                                <img src="images/paul.jpg" alt="Paul's picture">
-                                <div class="info">
-                                    <h1>Paul Amissah</h1>
-                                    <p>
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit ea vel cupiditate dolore alias dolores, repellat libero. Dolore quos a, vero nisi excepturi eaque quas quis, delectus, iste quidem cumque?
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
+							<div class="gallery fade-in">
+								<img
+									src="images/hasia.jpeg"
+									alt="Hasia's picture"
+								/>
+								<div class="info">
+									<h1>Hasia Mumuni</h1>
+									<p>
+										What i really like about you is that,
+										you're very caring and respectful as
+										well. You're very nice and also very
+										vigilant. You always embrace people and
+										am always happy when am around you. You
+										always help me in terms of financial
+										issues 😩🙏I'm very grateful 🙏 for you
+										being part of my life.
+									</p>
+								</div>
+							</div>
 
-        <section>
-            <!-- skills -->
-            <div class="container-fluid" id="skills">
-                <div class="row">
-                    <h2 class="commentSkill">my toolkit</h2>
-                    <span>
-                        What I must use and who I must work with are determined by the project.
-                        In essence, I constantly go above and beyond. 
-                    </span>
-                    <div class="col-sm-12 skills">
-                        <div class="brands fade-in">
-                            <i class="fa-brands fa-square-js"></i>
-                            <p>javascript</p>
-                        </div>
-                        <div class="brands fade-in">
-                            <i class="fa-brands fa-php"></i>
-                            <p>php</p>
-                        </div>
-                        <div class="brands fade-in">
-                            <i class="fa-brands fa-html5"></i>
-                            <p>html</p>
-                        </div>
-                        <div class="brands fade-in">
-                            <i class="fa-brands fa-css3-alt"></i>
-                            <p>css</p>
-                        </div>
-                        <div class="brands fade-in">
-                            <i class="fa-brands fa-bootstrap"></i>
-                            <p>bootstrap</p>
-                        </div>
-                        <div class="brands fade-in">
-                            <i class="fa-solid fa-code"></i>
-                            <p>asp.net</p>
-                        </div>
-                        <div class="brands fade-in">
-                            <i class="fa-brands fa-java"></i>
-                            <p>java</p>
-                        </div>
-                        <div class="brands fade-in">
-                            <i class="fa-solid fa-code"></i>
-                            <p>c sharp</p>
-                        </div>
-                        <div class="brands fade-in">
-                            <i class="fa-solid fa-code"></i>
-                            <p>visual basic</p>
-                        </div>
-                        <div class="brands fade-in">
-                            <i class="fa-solid fa-database"></i>
-                            <p>sql</p>
-                        </div>
-                        <div class="brands fade-in">
-                            <i class="fa-brands fa-github"></i>
-                            <p>github</p>
-                        </div>
-                        <div class="brands fade-in">
-                            <i class="fa-solid fa-server"></i>
-                            <p>apache server</p>
-                        </div>
-                        <div class="brands fade-in">
-                            <i class="fa-brands fa-searchengin"></i>
-                            <p>seo</p>
-                        </div>
-                        <div class="brands fade-">
-                            <i class="fa-brands fa-windows"></i>
-                            <p>windows</p>
-                        </div>
-                        <div class="brands fade-in">
-                            <i class="fa-brands fa-linux"></i>
-                            <p>linux</p>
-                        </div>
-                        <div class="brands fade-in">
-                            <i class="fa-brands fa-ubuntu"></i>
-                            <p>ubuntu</p>
-                        </div>
-                        <div class="brands fade-in">
-                            <i class="fa-solid fa-network-wired"></i>
-                            <p>networks</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+							<div class="gallery fade-in">
+								<img
+									src="images/janesberg.jpg"
+									alt="Janesberg's picture"
+								/>
+								<div class="info">
+									<h1>Janesberg Phebe Mensah</h1>
+									<p>
+										You're cute, humble, kind, generous and
+										respectful. Your future lady will be
+										very proud to have you. You're always
+										ready to help.
+									</p>
+								</div>
+							</div>
 
-            <!-- services -->
-            <div class="container-fluid" id="services">
-                <div class="row">
-                    <h2 class="comment">How I can assist you</h2>
-                    <span>
-                        Let's put your ideas into action
-                    </span>
-                
-                    <div class="col-md-5">
-                        <div class="services slide-in from-left">
-                            <h3>Business Website</h3>
-                            <p>
-                                Customers can access information about your company's goods, services, 
-                                culture, and personnel as well as get in touch with you directly.
-                            </p>
-                        </div>
-                        <div class="services slide-in from-left">
-                            <h3>eCommerce Website</h3>
-                            <p>
-                                Develop your company and consider selling your stuff online.
-                                Get clients and generate revenue. 
-                            </p>
-                        </div>
-                        <div class="services slide-in from-left">
-                            <h3>Personal Website</h3>
-                            <p>
-                                A quick method to increase your online presence.
-                                A website that is simply created to showcase your personality.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="services slide-in from-right">
-                            <h3>Portfolio</h3>
-                            <p>
-                                With the aim of gaining clients, highlight your professional abilities and accomplishments.
-                            </p>
-                        </div>
-                        <div class="services slide-in from-right">
-                            <h3>Blog Site</h3>
-                            <p>
-                                Post what you are passionate about.
-                                Whether you want to inform the world of your knowledge, experiences, or the most recent news. 
-                            </p>
-                        </div>
-                        <div class="services slide-in from-right">
-                            <h3>Informational Website</h3>
-                            <p>
-                                A platform for sharing knowledge and acting as a resource for both new and existing members.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+							<div class="gallery fade-in">
+								<img
+									src="images/esme 1.jpg"
+									alt="Esme's picture"
+								/>
+								<div class="info">
+									<h1>Esme Ayeyie Conduah</h1>
+									<p>
+										Lorem ipsum dolor, sit amet consectetur
+										adipisicing elit. Temporibus voluptatem
+										voluptas molestias natus labore quas
+										unde nisi repudiandae! Voluptas
+										assumenda, perspiciatis labore ad
+										recusandae ipsa saepe quis iure omnis.
+										Voluptatem!
+									</p>
+								</div>
+							</div>
 
-            <!-- mentors and influencors -->
-            <div class="container-fluid" id="mentors">
-                <div class="row">
-                    <h2 class="comment">Mentors</h2>
-                    <span>
-                        They taught, modeled, made me who I am now.
-                    </span>
-                    <div class="col-lg-10 influencors">
-                        <div class="mentor">
-                            <img src="images/esme 3.jpeg" alt="">
-                            <h4>Mentors Name</h4>
-                        </div>
-                    
-                        <div class="mentor">
-                            <img src="images/esme 2.jpeg" alt="">
-                            <h4>Mentors Name</h4>
-                        </div>
+							<div class="gallery fade-in">
+								<img src="images/joe.jpg" alt="Joe's picture" />
+								<div class="info">
+									<h1>Winfred Mensah</h1>
+									<p>
+										Lorem ipsum dolor sit, amet consectetur
+										adipisicing elit. Reprehenderit ea vel
+										cupiditate dolore alias dolores,
+										repellat libero. Dolore quos a, vero
+										nisi excepturi eaque quas quis,
+										delectus, iste quidem cumque?
+									</p>
+								</div>
+							</div>
 
-                        <div class="mentor">
-                            <img src="images/esme 1.jpg" alt="">
-                            <h4>Mentors Name</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
+							<div class="gallery fade-in">
+								<img
+									src="images/seth.jpg"
+									alt="Seth's picture"
+								/>
+								<div class="info">
+									<h1>Seth Kwadwo Ackaah</h1>
+									<p>
+										Lorem ipsum dolor sit, amet consectetur
+										adipisicing elit. Reprehenderit ea vel
+										cupiditate dolore alias dolores,
+										repellat libero. Dolore quos a, vero
+										nisi excepturi eaque quas quis,
+										delectus, iste quidem cumque?
+									</p>
+								</div>
+							</div>
 
-            <!-- contact me -->
-            <div class="container-fluid" id="contact">
-                <div class="row slide-in from-bottom">
-                    <h2 class="comment">Hello, it's your turn to say hello. </h2>
-                    <span>
-                        Together, we can achieve amazing things. 
-                    </span>
-                    <div class="col-sm-5 contact">
-                        <form action="" method="post">
-                            <label for="fName">First name
-                                <input type="text" name="fName" required/>
-                            </label>
-                            <label for="lName">Surname
-                                <input type="text" name="lName" required/>
-                            </label>
-                            <label for="email">Email
-                                <input type="email" name="email" required/>
-                            </label>
-                    </div>
-                    <div class="col-sm-5 contact">
-                            <label for="comment">Comment</label>
-                            <textarea name="comment" class="" id="comment" required></textarea>
-                    </div>
-                            <button>
-                                <span style="color: #ffffff;">Get In Touch</span>
-                            </button>
+							<div class="gallery fade-in">
+								<img
+									src="images/dorcas.jpg"
+									alt="Dorcas's picture"
+								/>
+								<div class="info">
+									<h1>Dorcas Sagoe</h1>
+									<p>
+										Lorem ipsum dolor sit, amet consectetur
+										adipisicing elit. Reprehenderit ea vel
+										cupiditate dolore alias dolores,
+										repellat libero. Dolore quos a, vero
+										nisi excepturi eaque quas quis,
+										delectus, iste quidem cumque?
+									</p>
+								</div>
+							</div>
+
+							<div class="gallery fade-in">
+								<img
+									src="images/emma.jpg"
+									alt="Emma's picture"
+								/>
+								<div class="info">
+									<h1>Emmanuel Adu Gyamfi</h1>
+									<p>
+										Lorem ipsum dolor sit, amet consectetur
+										adipisicing elit. Reprehenderit ea vel
+										cupiditate dolore alias dolores,
+										repellat libero. Dolore quos a, vero
+										nisi excepturi eaque quas quis,
+										delectus, iste quidem cumque?
+									</p>
+								</div>
+							</div>
+
+							<div class="gallery fade-in">
+								<img
+									src="images/richard.jpg"
+									alt="Richard's picture"
+								/>
+								<div class="info">
+									<h1>Richard Amponsah Morrison</h1>
+									<p>
+										Lorem ipsum dolor sit, amet consectetur
+										adipisicing elit. Reprehenderit ea vel
+										cupiditate dolore alias dolores,
+										repellat libero. Dolore quos a, vero
+										nisi excepturi eaque quas quis,
+										delectus, iste quidem cumque?
+									</p>
+								</div>
+							</div>
+
+							<div class="gallery fade-in">
+								<img
+									src="images/paul.jpg"
+									alt="Paul's picture"
+								/>
+								<div class="info">
+									<h1>Paul Amissah</h1>
+									<p>
+										Lorem ipsum dolor sit, amet consectetur
+										adipisicing elit. Reprehenderit ea vel
+										cupiditate dolore alias dolores,
+										repellat libero. Dolore quos a, vero
+										nisi excepturi eaque quas quis,
+										delectus, iste quidem cumque?
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<section>
+			<!-- skills -->
+			<div class="container-fluid" id="skills">
+				<div class="row">
+					<h2 class="commentSkill">my toolkit</h2>
+					<span>
+						What I must use and who I must work with are determined
+						by the project. In essence, I constantly go above and
+						beyond.
+					</span>
+					<div class="col-sm-12 skills">
+						<div class="brands fade-in">
+							<i class="fa-brands fa-square-js"></i>
+							<p>javascript</p>
+						</div>
+						<div class="brands fade-in">
+							<i class="fa-brands fa-php"></i>
+							<p>php</p>
+						</div>
+						<div class="brands fade-in">
+							<i class="fa-brands fa-html5"></i>
+							<p>html</p>
+						</div>
+						<div class="brands fade-in">
+							<i class="fa-brands fa-css3-alt"></i>
+							<p>css</p>
+						</div>
+						<div class="brands fade-in">
+							<i class="fa-brands fa-bootstrap"></i>
+							<p>bootstrap</p>
+						</div>
+						<div class="brands fade-in">
+							<i class="fa-solid fa-code"></i>
+							<p>asp.net</p>
+						</div>
+						<div class="brands fade-in">
+							<i class="fa-brands fa-java"></i>
+							<p>java</p>
+						</div>
+						<div class="brands fade-in">
+							<i class="fa-solid fa-code"></i>
+							<p>c sharp</p>
+						</div>
+						<div class="brands fade-in">
+							<i class="fa-solid fa-code"></i>
+							<p>visual basic</p>
+						</div>
+						<div class="brands fade-in">
+							<i class="fa-solid fa-database"></i>
+							<p>sql</p>
+						</div>
+						<div class="brands fade-in">
+							<i class="fa-brands fa-github"></i>
+							<p>github</p>
+						</div>
+						<div class="brands fade-in">
+							<i class="fa-solid fa-server"></i>
+							<p>apache server</p>
+						</div>
+						<div class="brands fade-in">
+							<i class="fa-brands fa-searchengin"></i>
+							<p>seo</p>
+						</div>
+						<div class="brands fade-">
+							<i class="fa-brands fa-windows"></i>
+							<p>windows</p>
+						</div>
+						<div class="brands fade-in">
+							<i class="fa-brands fa-linux"></i>
+							<p>linux</p>
+						</div>
+						<div class="brands fade-in">
+							<i class="fa-brands fa-ubuntu"></i>
+							<p>ubuntu</p>
+						</div>
+						<div class="brands fade-in">
+							<i class="fa-solid fa-network-wired"></i>
+							<p>networks</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- services -->
+			<div class="container-fluid" id="services">
+				<div class="row">
+					<h2 class="comment">How I can assist you</h2>
+					<span>Let's put your ideas into action</span>
+
+					<div class="col-md-5">
+						<div class="services slide-in from-left">
+							<h3>Business Website</h3>
+							<p>
+								Customers can access information about your
+								company's goods, services, culture, and
+								personnel as well as get in touch with you
+								directly.
+							</p>
+						</div>
+						<div class="services slide-in from-left">
+							<h3>eCommerce Website</h3>
+							<p>
+								Develop your company and consider selling your
+								stuff online. Get clients and generate revenue.
+							</p>
+						</div>
+						<div class="services slide-in from-left">
+							<h3>Personal Website</h3>
+							<p>
+								A quick method to increase your online presence.
+								A website that is simply created to showcase
+								your personality.
+							</p>
+						</div>
+					</div>
+					<div class="col-md-5">
+						<div class="services slide-in from-right">
+							<h3>Portfolio</h3>
+							<p>
+								With the aim of gaining clients, highlight your
+								professional abilities and accomplishments.
+							</p>
+						</div>
+						<div class="services slide-in from-right">
+							<h3>Blog Site</h3>
+							<p>
+								Post what you are passionate about. Whether you
+								want to inform the world of your knowledge,
+								experiences, or the most recent news.
+							</p>
+						</div>
+						<div class="services slide-in from-right">
+							<h3>Informational Website</h3>
+							<p>
+								A platform for sharing knowledge and acting as a
+								resource for both new and existing members.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- mentors and influencors -->
+			<div class="container-fluid" id="mentors">
+				<div class="row">
+					<h2 class="comment">Mentors</h2>
+					<span>They taught, modeled, made me who I am now.</span>
+					<div class="col-lg-10 influencors">
+						<div class="mentor">
+							<img src="images/esme 3.jpeg" alt="" />
+							<h4>Mentors Name</h4>
+						</div>
+
+						<div class="mentor">
+							<img src="images/esme 2.jpeg" alt="" />
+							<h4>Mentors Name</h4>
+						</div>
+
+						<div class="mentor">
+							<img src="images/esme 1.jpg" alt="" />
+							<h4>Mentors Name</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- contact me -->
+			<div class="container-fluid" id="contact">
+				<div class="row slide-in from-bottom">
+					<h2 class="comment">Hello, it's your turn to say hello.</h2>
+					<span>Together, we can achieve amazing things.</span>
+                    <div class="row">
+					    <form action="" method="post">
+							<div class="col-sm-5 contact">
+								<label for="fName">
+									First name
+									<input type="text" name="fName" required />
+								</label>
+								<label for="lName">
+									Surname
+									<input type="text" name="lName" required />
+								</label>
+								<label for="email">
+									Email
+									<input type="email" name="email" required />
+								</label>
+							</div>
+							<div class="col-sm-5 contact">
+								<label for="comment">Comment</label>
+								<textarea name="comment" class="" id="comment" required></textarea>
+							</div>
+							<button>
+								<span style="color: #ffffff">Get In Touch</span>
+							</button>
                         </form>
-                </div>
-            </div>
-        </section>
+                    </div>
+				</div>
+			</div>
+		</section>
 
-        <!-- footer -->
-        <div class="container-fluid">
-            <footer>
-                <div class="col-md-5 d-flex flex-wrap justify-content-center align-items-center">
-                    <a href="index.html" class="text-decoration-none">
-                        iRBbA © 2023 iRBbA Devs, Inc
-                    </a>
-                </div>
-            </footer>
-        </div>
-        <script src="./script/bootstrap.min.js"></script>
-        <script src="./script/observers.js"></script>
-    </body>
+		<!-- footer -->
+		<div class="container-fluid">
+			<footer>
+				<div
+					class="col-md-5 d-flex flex-wrap justify-content-center align-items-center"
+				>
+					<a href="index.html" class="text-decoration-none">
+						iRBbA © 2023 iRBbA Devs, Inc
+					</a>
+				</div>
+			</footer>
+		</div>
+		<script src="./script/bootstrap.min.js"></script>
+		<script src="./script/observers.js"></script>
+	</body>
 </html>
-
