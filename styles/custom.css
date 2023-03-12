@@ -437,7 +437,7 @@ button:active {
 
 .mentor img{
 	width: 14rem;
-	height: 14rem;
+	height: auto;
 	border: 0.5rem solid rgba(0, 0, 0, 0.1);
 	border-radius: 50%;
 	margin: auto;
