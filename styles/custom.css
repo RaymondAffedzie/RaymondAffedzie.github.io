@@ -287,13 +287,13 @@ button:active {
 	text-align: center;
 	font-size: 0.8rem;
 	font-family: Raleway, Roboto, sans-serif;
-	color: #ffffff;
+	color: #030033;
 }
 
 .commentSkill {
-	color: #ffffff;
+	color: #030033;
 	font-size: 2.4rem;
-	font-family: Sofia, sans-serif;
+	font-family: Sacramento, Sofia, sans-serif;
 	text-align: center;
 	text-transform: capitalize;
 	padding-top: 15px;
