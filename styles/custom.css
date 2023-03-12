@@ -192,22 +192,17 @@ em {
     background-color: #ffffff;
 }
 
-/* .forms{
+.forms{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
 	flex-direction: row;
-} */
+}
 
 .contact{
 	width: 45%;
 	max-height: 250px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	flex-direction: row;
 }
 
 
