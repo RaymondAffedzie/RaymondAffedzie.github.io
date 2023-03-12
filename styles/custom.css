@@ -393,7 +393,7 @@ button:active {
 .mentor{
 	text-align: center;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	padding: 1.5rem 0;
