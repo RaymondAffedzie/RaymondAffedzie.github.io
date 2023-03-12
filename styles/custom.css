@@ -220,7 +220,7 @@ input {
 
 textarea {
 	width: 100%;
-	height: fit-content;
+	height: 240px;
 	padding-left: 15px;
 	padding-top: 7px;
 	color: #030033;
