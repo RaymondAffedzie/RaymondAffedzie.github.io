@@ -207,9 +207,6 @@ em {
 	display: flex;
 	align-content: space-between;
 	flex-direction: column;
-  }
-
-  .forms:last-child{
 	margin-top: 0.6rem;
   }
 
