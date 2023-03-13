@@ -189,7 +189,6 @@ em {
 /* beginning of contact */
 #contact {
 	padding-top: 25px;
-	max-width: 720px;
     background-color: #ffffff;
 }
 
@@ -202,22 +201,11 @@ em {
 }
 
 .contact{
-	width: 100%;
 	max-width: 360px;
 	max-height: 250px;
 	display: flex;
 	align-content: space-between;
 }
-
-
-/* label {
-	display: block;
-	margin-bottom: 0.2rem;
-	font-family: Raleway, Roboto, sans-serif;
-	font-weight: 300;
-	color: #030033;
-	font-size: 0.98rem;
-} */
 
 input {
 	padding: 15px 10px;
