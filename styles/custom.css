@@ -198,8 +198,7 @@ em {
 	align-items: center;
 	flex-wrap: wrap;
 	flex-direction: row;
-	min-width: 720px;
-	max-width: 100%;
+	max-width: 720px;
   }
 
   .contact {
