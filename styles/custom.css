@@ -196,8 +196,8 @@ em {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-wrap: wrap;
 	flex-direction: row;
+	flex-wrap: wrap;
 	max-width: 720px;
   }
 
