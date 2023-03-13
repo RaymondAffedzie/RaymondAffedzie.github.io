@@ -189,6 +189,7 @@ em {
 /* beginning of contact */
 #contact {
 	padding-top: 25px;
+	max-width: 720px;
     background-color: #ffffff;
 }
 
@@ -201,7 +202,8 @@ em {
 }
 
 .contact{
-	width: 45%;
+	width: 100%;
+	max-width: 360px;
 	max-height: 250px;
 }
 
