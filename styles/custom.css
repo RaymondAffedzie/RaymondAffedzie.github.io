@@ -219,7 +219,7 @@ em {
 
 input {
 	padding: 15px 5px;
-	margin-bottom: 0.2rem;
+	margin-bottom: 0.5rem;
 	width: 100%;
 	font-weight: 800;
 	font-family: Raleway, Roboto, sans-serif;
@@ -228,7 +228,7 @@ input {
 	outline: none;
 	background-color: #030033;
 	font-size: 1.2rem;
-	color: #0be0ed;
+	color: #ffffff;
 }
 
 textarea {
