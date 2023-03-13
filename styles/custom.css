@@ -192,20 +192,23 @@ em {
     background-color: #ffffff;
 }
 
-.forms{
+.forms {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
 	flex-direction: row;
-}
+	min-width: 720px;
+	max-width: 100%;
+  }
 
-.contact{
+  .contact {
 	max-width: 360px;
 	max-height: 250px;
 	display: flex;
 	align-content: space-between;
-}
+	flex-direction: column;
+  }
 
 input {
 	padding: 15px 10px;
