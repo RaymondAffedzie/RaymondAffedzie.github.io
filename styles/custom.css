@@ -209,6 +209,10 @@ em {
 	flex-direction: column;
   }
 
+  .contact:last-child{
+	margin-top: 0.6rem;
+  }
+
 input {
 	padding: 15px 10px;
 	margin-bottom: 0.5rem;
