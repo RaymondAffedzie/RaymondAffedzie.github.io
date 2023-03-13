@@ -208,14 +208,14 @@ em {
 }
 
 
-label {
+/* label {
 	display: block;
 	margin-bottom: 0.2rem;
 	font-family: Raleway, Roboto, sans-serif;
 	font-weight: 300;
 	color: #030033;
 	font-size: 0.98rem;
-}
+} */
 
 input {
 	padding: 15px 5px;
