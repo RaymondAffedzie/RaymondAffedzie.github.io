@@ -201,8 +201,8 @@ em {
   }
 
   .contact {
-	max-width: 360px;
-	max-height: 250px;
+	width: 360px;
+	height: 250px;
 	display: flex;
 	align-content: space-between;
 	flex-direction: column;
