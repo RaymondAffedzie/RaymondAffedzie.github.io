@@ -17,13 +17,37 @@ body {
 	overflow-x: hidden;
 }
 
-.navbar-toggler {
-	font-size: 0.8rem !important;
+/* beginning of navbar */
+.navbar {
+	position: fixed;
+	background-color: #070161;
+	color: #0be0ed !important;
+	font-size: 1.1rem;
+	padding: 0 20px;
+	font-family: Raleway, Roboto, sans-serif;
+}
+
+.navbar-brand {
+	font-family: Sacramento;
+	font-size: 2rem;
+	font-weight: 800;
+	color: #0be0ed;
+	transition: 0.5s ease-in;
+}
+
+.navbar-brand:hover {
+	color: #ffffff;
+	transform: scale(0.9);
+	/* transform: translateY(5px); */
+}
+
+.navbar-toggler i {
+	font-size: 1.5rem !important;
 	line-height: 1;
 	background-color: transparent;
 	border: none !important;
 	transition: box-shadow 5s ease-in-out;
-	color: rgba(0, 255, 0, 0.55);
+	color: #0be0ed;
 }
 
 .navbar-toggler:focus {
@@ -33,6 +57,8 @@ body {
 
 .navbar ul li {
 	color: #0be0ed;
+	font-size: 1.2rem;
+	font-weight: 800;
 	padding: 0 1.5vw;
 	transition: 0.58s ease-in;
 }
@@ -43,13 +69,6 @@ body {
 
 .navbar ul li:active {
 	border-bottom: 0.2rem solid #0be0ed;
-}
-
-.navbar {
-	font-size: 1.1rem;
-	color: #0be0ed;
-	padding: 0 20px;
-	font-family: Raleway, Roboto, sans-serif;
 }
 
 /* end of navbar and header */
@@ -72,6 +91,7 @@ section {
 	background-size: cover;
 	margin-top: 20px;
 }
+/* end of background image */
 
 #landing {
 	background-color: #0a0375;
@@ -189,11 +209,10 @@ em {
 	padding-top: 25px;
 	background-color: #ffffff;
 }
-#contact .row{
+#contact .row {
 	display: flex;
 	flex-direction: column;
 }
-
 
 .contact {
 	max-width: 1440px;
@@ -220,7 +239,7 @@ input {
 	color: #0be0ed !important;
 }
 
-input[type="email"]{
+input[type="email"] {
 	margin-bottom: 0;
 }
 
@@ -285,7 +304,7 @@ textarea:active {
 	transform: scale(0.9);
 }
 
-.input{
+.input {
 	max-width: 1440px;
 }
 /* end of contact */
@@ -306,6 +325,7 @@ textarea:active {
 #skills span {
 	text-align: center;
 	font-size: 0.98rem;
+	font-weight: 800;
 	font-family: Raleway, Roboto, sans-serif;
 	color: #030033;
 }
@@ -390,7 +410,7 @@ textarea:active {
 	color: #030033;
 }
 
-.service{
+.service {
 	max-width: 1440px;
 	display: flex;
 	flex-direction: row;
@@ -399,7 +419,7 @@ textarea:active {
 	align-content: space-between;
 }
 
-.equal{
+.equal {
 	width: 50%;
 	padding: 10px;
 }
@@ -408,13 +428,19 @@ textarea:active {
 
 /* begining of mentors */
 
-#mentors {
+#mentors,
+#workflow {
 	background-color: #e3e3ec;
 	padding: 25px 0;
 	margin-top: 50px;
 }
 
-.influencors {
+#workflow{
+	margin-bottom: 50px;
+}
+
+.influencors,
+.work {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -427,13 +453,28 @@ textarea:active {
 	max-width: 1440px;
 }
 
-.mentor {
+.mentor,
+.flow {
 	text-align: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	padding: 1.5rem 0;
+}
+
+.flow {
+	width: 300px;
+	height: 300px;
+	border: 0.06rem solid #030033;
+	color: #030303;
+	margin: 10px 10px;
+	transition: 0.5s ease-in;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 5;
 }
 
 .mentor img {
@@ -443,11 +484,30 @@ textarea:active {
 	border-radius: 50%;
 }
 
-.mentor h4 {
+.mentor h4,
+.flow h4 {
 	margin-top: 0.5rem;
-	/* margin-bottom: 1.5rem; */
 }
-/* end of mentors */
+
+.flow h4 {
+	font-weight: 800;
+}
+
+.flow p {
+	font-size: 0.98rem;
+	font-weight: 700;
+}
+
+.flow i {
+	font-size: 3rem;
+	color: #030303;
+}
+
+.flow:hover {
+	transform: scale(0.6);
+	cursor: pointer;
+}
+/* end of mentors  and work flow*/
 
 /* begininng of about */
 
@@ -603,24 +663,24 @@ footer p {
 
 /* start of responsive design */
 @media only screen and (max-width: 768px) {
-	.service,.contact {
+	.service,
+	.contact {
 		flex-direction: column;
 		width: 100%;
 	}
 
-	.equal{
+	.flow,
+	.equal {
 		width: 100%;
 	}
 
-	.input{
+	.input {
 		padding: 0 20px;
 	}
 
-	#contact button{
+	#contact button {
 		width: 100%;
 		margin: 5px 0;
 	}
-
-
 }
 /* end of responsive design */
