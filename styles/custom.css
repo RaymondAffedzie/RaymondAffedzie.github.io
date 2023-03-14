@@ -325,6 +325,7 @@ textarea:active {
 	flex-wrap: wrap;
 	color: #ffffff;
 	padding: 15px;
+	width: 1440px;
 }
 
 .brands i {
@@ -370,7 +371,8 @@ textarea:active {
 }
 
 .services {
-	height: 140px;
+	width: 100%;
+	height: auto;
 	padding: 15px;
 	font-family: Raleway, Roboto, sans-serif;
 }
@@ -386,6 +388,29 @@ textarea:active {
 	color: #030033;
 }
 
+.service{
+	max-width: 1440px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	align-content: space-between;
+}
+
+.equal{
+	width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+	.service{
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.equal{
+		width: 100%;
+	}
+}
 /* end of services */
 
 /* begining of mentors */
@@ -441,7 +466,7 @@ textarea:active {
 }
 
 .wrapper {
-	width: 95%;
+	max-width: 1440px;
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
