@@ -301,25 +301,21 @@ em {
 .project1 .complete:first-child:hover{
 	background-color: #e8ae05;
 	background-image: none;
-	/* opacity: 0.9; */
 }
 
 .project1 .complete:nth-child(2):hover{
 	background-color: #9c000a;
 	background-image: none;
-	/* opacity: 0.9; */
 }
 
 .project2 .complete:first-child:hover{
 	background-color: #52009c;
 	background-image: none;
-	/* opacity: 0.9; */
 }
 
 .project2 .complete:nth-child(2):hover{
 	background-color: #009c42;
 	background-image: none;
-	/* opacity: 0.9; */
 }
 
 /* end of project */
