@@ -116,6 +116,7 @@ em {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	max-width: 1200px !important;
 }
 
 .comment {
@@ -192,7 +193,8 @@ em {
 }
 
 .contact {
-	max-width: 360px;
+	width: 1440px;
+	margin-bottom: 25px;
 } 
 
 .col-md-6:first-child{
@@ -215,16 +217,10 @@ input {
 	font-size: 1.2rem !important;
 	color: #0be0ed !important;
 }
-/*
-input:last-child {
-	margin-bottom: 0;
-}
-*/
 
 textarea {
 	width: 100%;
-	height: 210px !important;
-	/* min-height: 130px; */
+	height: 190px !important;
 	padding-left: 10px;
 	padding-top: 15px;
 	resize: none;
@@ -242,13 +238,15 @@ textarea {
 #contact button {
 	display: block;
 	border: 0;
-	width: 40%;
+	width: 100%;
 	color: #ffffff;
-	padding: 5px 0;
+	padding: 15px 0;
+	margin-top: 0.6rem;
 	border-radius: 0;
 	text-decoration: none;
-	font-size: 1.2rem;
-	font-family: Sacramento, Phantomsans, sans-serif;
+	font-size: 2rem !important;
+	font-weight: 800 !important;
+	font-family: Sacramento, Phantomsans, sans-serif !important;
 	background: linear-gradient(
 		240deg,
 		rgba(0, 212, 225, 1) 4%,
@@ -271,16 +269,23 @@ textarea:active {
 	box-shadow: none !important;
 }
 
-button:hover {
+#contact button:hover {
 	cursor: pointer;
 	transition: all 0.3s;
 	outline: 0;
 }
 
-button:active {
+#contact button:active {
 	transform: scale(0.9);
 }
 
+
+@media only screen and (max-width: 768px){
+	#contact button{
+		width: 100%;
+		margin: 20px 20px;
+	}
+}
 /* end of contact */
 
 /* beginning of skills */
@@ -555,7 +560,7 @@ footer p {
 }
 
 .from-bottom {
-	transform: translateY(5%);
+	transform: translateY(10%);
 }
 
 .from-left,
