@@ -189,6 +189,11 @@ em {
 	padding-top: 25px;
 	background-color: #ffffff;
 }
+#contact .row{
+	display: flex;
+	flex-direction: column;
+}
+
 
 .contact {
 	max-width: 1440px;
