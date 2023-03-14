@@ -188,18 +188,15 @@ em {
 #contact {
 	padding-top: 25px;
 	background-color: #ffffff;
-	
 }
 
 .contact {
 	max-width: 1440px;
 	margin-bottom: 25px;
-} 
+}
 
-.col-md-6:first-child{
-	display: flex;
-	flex-direction: column;
-	align-content: space-between;
+.input{
+	width: 50%;
 }
 
 input {
@@ -401,16 +398,6 @@ textarea:active {
 	width: 50%;
 }
 
-@media only screen and (max-width: 768px) {
-	.service{
-		flex-direction: column;
-		width: 100%;
-	}
-
-	.equal{
-		width: 100%;
-	}
-}
 /* end of services */
 
 /* begining of mentors */
@@ -607,3 +594,16 @@ footer p {
 	opacity: 1;
 }
 /* end of observers (slide and fade) */
+
+/* start of responsive design */
+@media only screen and (max-width: 768px) {
+	.service{
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.equal,.input{
+		width: 100%;
+	}
+}
+/* end of responsive design */
