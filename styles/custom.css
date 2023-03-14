@@ -192,7 +192,7 @@ em {
 
 .contact {
 	max-width: 1440px;
-	margin-bottom: 25px;
+	margin-bottom: 10px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -213,6 +213,10 @@ input {
 	background-color: #030033 !important;
 	font-size: 1.2rem !important;
 	color: #0be0ed !important;
+}
+
+input[type="email"]{
+	margin-bottom: 0;
 }
 
 textarea {
@@ -274,6 +278,10 @@ textarea:active {
 
 #contact button:active {
 	transform: scale(0.9);
+}
+
+.input{
+	max-width: 1440px;
 }
 /* end of contact */
 
@@ -599,9 +607,13 @@ footer p {
 		width: 100%;
 	}
 
+	.input{
+		padding: 0 20px;
+	}
+
 	#contact button{
 		width: 100%;
-		margin: 20px 20px;
+		margin: 5px 0;
 	}
 
 
