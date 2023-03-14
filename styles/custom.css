@@ -116,7 +116,6 @@ em {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	max-width: 1200px !important;
 }
 
 .comment {
@@ -193,7 +192,7 @@ em {
 }
 
 .contact {
-	width: 1440px;
+	max-width: 1440px;
 	margin-bottom: 25px;
 } 
 
@@ -407,6 +406,7 @@ textarea:active {
 	font-family: Raleway, Roboto, sans-serif;
 	color: #030033;
 	padding: 15px;
+	max-width: 1440px;
 }
 
 .mentor {
