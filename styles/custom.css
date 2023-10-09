@@ -588,15 +588,15 @@ footer p {
 
 .arrow-btn a {
 	height: 45px;
-	width: 40px;
+	width: 45px;
 	text-align: center;
 	background-color: #009da6;
 	display: block;
-	border-radius: 2px;
+	border-radius: 50%;
 	cursor: pointer;
 }
 
-.arrow-btn a span {
+.arrow-btn a i {
 	color: #0b0b0b;
 	line-height: 40px;
 	font-size: 0.98rem;
