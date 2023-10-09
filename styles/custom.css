@@ -105,24 +105,15 @@ section {
 	font-family: Raleway, Roboto, sans-serif;
 }
 
-.row span {
+.row > span {
 	text-align: center;
 	font-size: 0.98rem;
 	color: #030033;
 	font-family: Rleway, Roboto, sans-serif;
+	padding-bottom: 50px;
 }
 
-em {
-	color: #ffffff;
-}
-
-.row {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.comment {
+.row > .comment {
 	color: #030033;
 	font-family: Sacramento, Sofia, sans-serif;
 	font-weight: 500;
