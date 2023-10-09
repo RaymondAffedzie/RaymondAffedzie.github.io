@@ -20,14 +20,11 @@ a {
 /* beginning of navbar */
 .navbar {
 	background-color: #070161;
-	font-size: 1.1rem;
 	font-family: Raleway, Roboto, sans-serif;
 }
 
 .navbar-brand {
 	font-family: Sacramento;
-	font-size: 2rem;
-	font-weight: 500;
 	color: #0be0ed;
 	transition: 0.5s ease-in;
 }
@@ -38,8 +35,6 @@ a {
 }
 
 .navbar-toggler i {
-	font-size: 1.5rem !important;
-	line-height: 1;
 	background-color: transparent;
 	border: none !important;
 	transition: box-shadow 5s ease-in-out;
@@ -52,14 +47,11 @@ a {
 }
 
 .navbar ul li {
-	padding: 0 1vw;
-	transition: 0.58s ease-in;
+	transition: 0.9s ease-in-out;
 }
 
 .navbar ul li a {
 	color: #ffffff;
-	font-size: 1.4rem;
-	font-weight: 500;
 }
 
 .navbar ul li a:hover {
@@ -67,17 +59,12 @@ a {
 }
 
 .navbar ul li:hover {
-	transform: translateY(5px);
-}
-
-.navbar ul li:active {
-	border-bottom: 0.2rem solid #0be0ed;
+	transform: translateY(1px);
 }
 
 /* end of navbar and header */
 
 /* background image */
-
 
 section {
 	background-image: url("../images/background2.jpg");
