@@ -14,10 +14,8 @@
 	<link
 		href="https://fonts.googleapis.com/css?family=Sofia|Raleway|Tangerine|Acme|Alex Brush|Alike|Anaheim|Amita|Pacifico|Seaweed Script|Sacramento|Roboto|Open+Sans Swash Caps"
 		rel="stylesheet" />
-
-	<!-- font awesome -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/css/all.min.css" />
-	<script src="https://kit.fontawesome.com/c493b6cb9b.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="mdi/css/materialdesignicons.min.css" />
+	<link rel="stylesheet" href="ti-icons/css/themify-icons.css" />
 
 	<!-- css styles -->
 	<link rel="stylesheet" href="styles/bootstrap.min.css" />
@@ -37,7 +35,7 @@
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarType"
 				aria-controls="navbarType" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon">
-					<i class="fa-solid fa-bars"></i>
+					<i class="mdi mdi-menu"></i>
 				</span>
 			</button>
 			<div class="collapse navbar-collapse justify-content-md-end" id="navbarType">
@@ -55,7 +53,9 @@
 						<a class="nav-link" href="#projects">Projects</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#testimonials">Testimonials</a>
+						<a class="nav-link" href="#testimonials">
+							Testimonials
+						</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#contact">Contact</a>
@@ -66,7 +66,7 @@
 	</nav>
 
 	<!-- landing -->
-	<div class="container-fluid" id="landing">
+	<div class="container" id="landing">
 		<div class="row">
 			<div class="quote slide-in from-bottom">
 				<h1 class="display-1">
@@ -85,7 +85,7 @@
 
 	<!-- about -->
 	<div class="container rounded-3" id="about">
-		<div class="row">
+		<div class="row slide-in from-bottom">
 			<div class="px-5">
 				<div class="container-fluid py-5">
 					<h1 class="display-1">About irbba Devs</h1>
@@ -116,31 +116,31 @@
 
 	<!-- social -->
 	<div class="container" id="socials">
-		<div class="row">
+		<div class="row slide-in from-bottom">
 			<div class="cover meet">
 				<div class="socials fade-in linkedin">
 					<a href="https://www.linkedin.com/in/raymond-affedzie-5111091b1/" target="_blank">
-						<i class="fab fa-linkedin"></i>
+						<i class="mdi mdi-linkedin-box"></i>
 					</a>
 				</div>
 				<div class="socials fade-in github">
 					<a href="https://github.com/RaymondAffedzie" target="_blank">
-						<i class="fab fa-github"></i>
+						<i class="mdi mdi-github-circle"></i>
 					</a>
 				</div>
 				<div class="socials fade-in twitter">
 					<a href="https://twitter.com/berth_ray" target="_blank">
-						<i class="fab fa-twitter"></i>
+						<i class="mdi mdi-twitter"></i>
 					</a>
 				</div>
 				<div class="socials fade-in instagram">
 					<a href="https://www.instagram.com/_irbba/" target="_blank">
-						<i class="fab fa-instagram"></i>
+						<i class="mdi mdi-instagram"></i>
 					</a>
 				</div>
 				<div class="socials fade-in telegram">
 					<a href="https://www.iRBbA@t.me" target="_blank">
-						<i class="fa-brands fa-telegram"></i>
+						<i class="mdi mdi-telegram"></i>
 					</a>
 				</div>
 			</div>
@@ -149,154 +149,116 @@
 
 	<!-- services -->
 	<div class="container" id="services">
-		<div class="row">
+		<div class="row slide-in from-bottom">
 			<h2 class="comment">
 				We provide a range of services to turn your vision into
 				reality.
 			</h2>
 			<span>we assist you in bringing your ideas to life</span>
 
-			<div class="row service">
-				<div class="col-md-6">
-					<div class="services slide-in from-left">
-						<h3>Business Website</h3>
-						<p>
-							Irbba Devs specializes in crafting custom
-							business websites that enhance your online
-							presence, prioritizing user experience and
-							functionality. We excel at creating
-							professionally designed websites tailored to
-							your unique needs, ultimately driving growth and
-							engagement for your business.
-						</p>
-					</div>
-					<div class="services slide-in from-left">
-						<h3>E-Commerce Website</h3>
-						<p>
-							Irbba Webs is your go-to for custom e-commerce
-							websites that elevate your online retail
-							presence. Our focus is on optimizing user
-							experience and functionality, delivering
-							professionally designed e-commerce platforms
-							tailored to your unique needs. With our
-							expertise, we aim to boost your digital
-							footprint, driving growth and engagement for
-							your online store.
-						</p>
-					</div>
-					<div class="services slide-in from-left">
-						<h3>Personal Website</h3>
-						<p>
-							Irbba Webs is your partner in creating
-							personalized websites that showcase your
-							individual identity online. We specialize in
-							crafting custom personal websites that
-							prioritize user experience and functionality.
-							Our goal is to design a professionally tailored
-							online space that reflects your unique
-							personality and interests, helping you stand out
-							and connect with your audience effectively.
-						</p>
-					</div>
+			<div class="row">
+				<div class="col-md-6 services slide-in from-bottom">
+					<h3>Business Website</h3>
+					<p>
+						We specializes in developing custom business
+						websites that enhance your online presence,
+						prioritizing user experience and functionality.
+					</p>
+
+					<h3>E-Commerce Website</h3>
+					<p>
+						Irbba Devs is your go-to for custom e-commerce
+						websites that elevate your online retail presence.
+						Our focus is on optimizing user experience and
+						functionality, delivering professionally designed
+						e-commerce platforms tailored to your unique needs.
+					</p>
+
+					<h3>Personal Website</h3>
+					<p>
+						Choose irbba devs as your partner in creating
+						personalized websites that showcase your individual
+						identity online.
+					</p>
 				</div>
-				<div class="col-md-6">
-					<div class="services slide-in from-right">
-						<h3>Portfolio</h3>
-						<p>
-							Irbba Webs is your trusted partner for building
-							stunning portfolio websites that showcase your
-							work and talent. We specialize in crafting
-							custom portfolio websites that prioritize user
-							experience and functionality. Our mission is to
-							design a professionally tailored online showcase
-							that highlights your unique skills and
-							accomplishments, making a lasting impression on
-							potential clients and employers.
-						</p>
-					</div>
-					<div class="services slide-in from-right">
-						<h3>Blog Site</h3>
-						<p>
-							Irbba Webs is your premier choice for creating
-							engaging blog websites. We excel at crafting
-							custom blog platforms that prioritize user
-							experience and functionality. Our aim is to
-							design a professionally tailored online space
-							where your thoughts and ideas can shine,
-							effectively connecting you with your audience
-							and providing a seamless blogging experience.
-						</p>
-					</div>
-					<div class="services slide-in from-right">
-						<h3>Informational Website</h3>
-						<p>
-							Irbba Webs is your expert partner in developing
-							informative websites that deliver valuable
-							content to your audience. We specialize in
-							creating custom information websites that
-							prioritize user experience and functionality.
-							Our mission is to design a professionally
-							tailored online platform that presents
-							information effectively, making it easy for your
-							visitors to access and engage with the knowledge
-							you provide.
-						</p>
-					</div>
+
+				<div class="col-md-6 services slide-in from-bottom">
+					<h3>Portfolio</h3>
+					<p>
+						We design a professionally tailored online
+						showcase that highlights your unique skills and
+						accomplishments, making a lasting impression on
+						potential clients and employers.
+					</p>
+
+					<h3>Blog Site</h3>
+					<p>
+						Irbba Webs is your premier choice for developing
+						a professionally tailored online space where
+						your thoughts and ideas can shine, effectively
+						connecting you with your audience and providing
+						a seamless blogging experience.
+					</p>
+
+					<h3>Informational Website</h3>
+					<p>
+						Irbba Webs design a professionally tailored
+						online platform that presents information
+						effectively, making it easy for your visitors to
+						access and engage with the knowledge you
+						provide.
+					</p>
 				</div>
 			</div>
 		</div>
 	</div>
+	</div>
 
 	<!-- project -->
 	<div class="container" id="projects">
-		<div class="row">
+		<div class="row slide-in from-bottom">
 			<h2 class="comment">Works</h2>
-
 			<div class="wrapper">
-				<div class="project fade-in">
+				<div class="project">
 					<div class="info">
-						<i class="fas fa-car"></i>
+						<i class="mdi mdi-car"></i>
 						<h3>Mecab</h3>
 						<p>Dummy description for the project.</p>
-						<a href="www.mecab.com.gh" target="_top">
+						<a href="www.mecab.com.gh" target="_blank">
 							Visit project
-							<i class="fas fa-arrow-right"></i>
 						</a>
 					</div>
 				</div>
 
-				<div class="project fade-in">
+				<div class="project">
 					<div class="info">
-						<i class="fas fa-globe"></i>
+						<i class="mdi mdi-code-tags"></i>
 						<h3>Irbba Devs</h3>
 						<p>Dummy description for the project.</p>
-						<a href="localhost" target="_top">
+						<a href="localhost" target="_blank">
 							Visit project
-							<i class="fas fa-arrow-right"></i>
 						</a>
 					</div>
 				</div>
 
-				<div class="project fade-in">
+				<div class="project">
 					<div class="info">
-						<i class="fas fa-building"></i>
+						<i class="mdi mdi-office-building"></i>
 						<h3>Paul Timothy</h3>
 						<p>Dummy description for the project.</p>
-						<a href="paul-timothy-leadership.com" target="_top">
+						<a href="paul-timothy-leadership.com" target="_blank">
 							Visit project
-							<i class="fas fa-arrow-right"></i>
 						</a>
 					</div>
 				</div>
 
-				<div class="project fade-in">
+				<div class="project">
 					<div class="info">
-						<i class="fas fa-thumbs-up"></i>
+						<i class="mdi mdi-thumb-up-outline"></i>
 						<h3>E-voting system</h3>
 						<p>Dummy description for the project.</p>
-						<a href="e-voting.com" target="_top">
+						<a href="e-voting.com" target="_blank">
 							Visit project
-							<i class="fas fa-arrow-right"></i>
 						</a>
 					</div>
 				</div>
@@ -307,66 +269,62 @@
 	<!-- skills -->
 	<div class="container-fluid" id="skills">
 		<div class="row section">
-			<h2 class="commentSkill">My toolkit</h2>
+			<h2 class="comment">My toolkit</h2>
 			<span>
 				What I must use and who I must work with are determined by
 				the project. In essence, I constantly go above and beyond.
 			</span>
 			<div class="col-md-12 skills">
 				<div class="brands fade-in">
-					<i class="fa-brands fa-java"></i>
+					<i class="mdi mdi-language-java"></i>
 					<p>java</p>
 				</div>
 				<div class="brands fade-in">
-					<i class="fa-brands fa-square-js"></i>
+					<i class="mdi mdi-language-javascript"></i>
 					<p>javascript</p>
 				</div>
 				<div class="brands fade-in">
-					<i class="fa-solid fa-code"></i>
+					<i class="mdi mdi-language-csharp"></i>
 					<p>c sharp</p>
 				</div>
 				<div class="brands fade-in">
-					<i class="fa-brands fa-php"></i>
+					<i class="mdi mdi-language-php"></i>
 					<p>php</p>
 				</div>
 				<div class="brands fade-in">
-					<i class="fa-brands fa-html5"></i>
+					<i class="mdi mdi-language-html5"></i>
 					<p>html</p>
 				</div>
 				<div class="brands fade-in">
-					<i class="fa-brands fa-css3-alt"></i>
+					<i class="mdi mdi-language-css3"></i>
 					<p>css</p>
 				</div>
 				<div class="brands fade-in">
-					<i class="fa-solid fa-code"></i>
-					<p>asp.net</p>
+					<i class="mdi mdi-jquery"></i>
+					<p>jquery</p>
 				</div>
 				<div class="brands fade-in">
-					<i class="fa-solid fa-code"></i>
-					<p>visual basic</p>
-				</div>
-				<div class="brands fade-in">
-					<i class="fa-solid fa-database"></i>
+					<i class="mdi mdi-database"></i>
 					<p>sql</p>
 				</div>
 				<div class="brands fade-in">
-					<i class="fa-brands fa-github"></i>
+					<i class="mdi mdi-github-circle"></i>
 					<p>github</p>
 				</div>
 				<div class="brands fade-in">
-					<i class="fa-solid fa-server"></i>
+					<i class="mdi mdi-server"></i>
 					<p>apache server</p>
 				</div>
 				<div class="brands fade-">
-					<i class="fa-brands fa-windows"></i>
+					<i class="mdi mdi-microsoft"></i>
 					<p>windows</p>
 				</div>
 				<div class="brands fade-in">
-					<i class="fa-brands fa-linux"></i>
+					<i class="mdi mdi-linux"></i>
 					<p>linux</p>
 				</div>
 				<div class="brands fade-in">
-					<i class="fa-brands fa-ubuntu"></i>
+					<i class="mdi mdi-ubuntu"></i>
 					<p>ubuntu</p>
 				</div>
 			</div>
@@ -480,17 +438,17 @@
 	</div>
 
 	<!-- contact me -->
-	<div class="container fade-in" id="contact">
-		<div class="row">
+	<div class="container" id="contact">
+		<div class="row slide-in from-bottom">
 			<h2 class="comment">It's your turn to say hello.</h2>
 			<div class="px-5">
 				<div class="container py-5">
 					<div class="col-md-8">
 						<p>Together, we can achieve amazing things.</p>
-						<input type="text" name="name" id="name" placeholder="Fullname">
-						<input type="email" name="email" id="email" placeholder="irbbadevs@email.com">
+						<input type="text" name="name" id="name" placeholder="Fullname" />
+						<input type="email" name="email" id="email" placeholder="irbbadevs@email.com" />
 						<textarea name="message" id="message" placeholder="Message" rows="1"></textarea>
-						<button class="btn float-right" type="button">Example button</button>
+						<button class="btn" type="button">Submit</button>
 					</div>
 				</div>
 			</div>
@@ -502,10 +460,6 @@
 		<footer class="col-md-12 d-flex flex-wrap justify-content-center align-items-center">
 			<p>iRBbA © 2023 iRBbA Devs</p>
 		</footer>
-	</div>
-
-	<div class="arrow-btn">
-		<a href="#"><i class="fas fa-arrow-up"></i></a>
 	</div>
 
 	<script src="script/bootstrap.min.js"></script>
