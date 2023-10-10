@@ -25,6 +25,12 @@
 		border-radius: 0;
 	}
 
+	#card{
+		border: 1px solid #003a3d;
+		margin: 12px;
+		box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
+	}
+
 	.services h3,
 	.services p {
 		text-align: center;
