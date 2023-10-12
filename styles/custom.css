@@ -223,8 +223,7 @@ button.btn {
 	padding: 10px 20px;
 	font-size: 1rem;
 	cursor: pointer;
-	transition: background-color 0.3s, color 0.3s;
-	/* transition: 0.5s ease-in-out; */
+	transition: background-color 0.3s, color 0.3s ease-in-out;
 }
 
 button.btn i {
