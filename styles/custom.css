@@ -11,6 +11,10 @@
 }
 
 @media screen and (max-width: 768px) {
+
+	.row .comment {
+		font-weight: 700;
+	}
 	#landing {
 		height: 100vh;
 	}
@@ -29,7 +33,7 @@
 	#projects,
 	#testimonials,
 	#socials {
-		padding: 10px 0;
+		padding: 0;
 	}
 
 	#card {
@@ -101,7 +105,6 @@ a {
 
 #landing {
 	text-align: center;
-	/* background-color: #0a0375; */
 	position: relative;
 	margin-top: 55px;
 	width: 100%;
