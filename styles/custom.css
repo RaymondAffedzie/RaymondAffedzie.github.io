@@ -55,6 +55,10 @@
 	.services p {
 		line-height: 1.7 !important;
 	}
+
+	.from-bottom {
+		transform: translateY(5%);
+	}
 }
 
 body {
