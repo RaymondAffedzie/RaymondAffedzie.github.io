@@ -253,6 +253,7 @@ button.btn {
 	padding: 10px 20px;
 	font-size: 1rem;
 	cursor: pointer;
+	transition: 0.3s ease-in-out;
 }
 
 button.btn i {
@@ -262,7 +263,7 @@ button.btn i {
 button.btn:hover {
 	color: #0be0eb;
 	background-color: #002729;
-	transition: 0.3s ease-in-out;
+	transform: translatex(5px);
 }
 
 /* Optional: Style the placeholder text */
