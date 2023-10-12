@@ -45,7 +45,10 @@
 
 	.services {
 		text-align: center;
-		line-height: 1.7;
+	}
+
+	.services p {
+		line-height: 1.7 !important;
 	}
 }
 
@@ -363,7 +366,6 @@ textarea::placeholder {
 .services {
 	font-family: Raleway, Roboto, sans-serif;
 	color: #002729;
-	line-height: 1.5;
 	text-align: left;
 }
 
@@ -375,6 +377,7 @@ textarea::placeholder {
 .services p {
 	font-weight: 500;
 	font-size: 0.95rem;
+	line-height: 1.5;
 }
 
 /* end of services */
