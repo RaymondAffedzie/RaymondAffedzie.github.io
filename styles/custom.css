@@ -25,6 +25,10 @@
 		border-radius: 0;
 	}
 
+	#services {
+		padding: 10px 5px;
+	}
+
 	#card {
 		width: 90%;
 		margin: 0 auto;
