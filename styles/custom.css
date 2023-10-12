@@ -567,9 +567,9 @@ footer p {
 	bottom: 20px;
 	right: 20px;
 	background-color: #009da6;
-	color: #0b0b0b;
-	padding: 10px 20px;
-	border-radius: 50%;
+	color: #0be0ed;
+	padding: 10px;
+	border-radius: 5px;
 	border: none;
 	outline: none;
 	cursor: pointer;
@@ -579,7 +579,8 @@ footer p {
 }
 
 #backToTopBtn:hover {
-    background-color: #0056b3;
+    background-color: #0be0ed;
+	color:#009da6;
 }
 
 #backToTopBtn:focus {
