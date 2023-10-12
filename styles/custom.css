@@ -28,15 +28,11 @@
 	#services {
 		padding: 0;
 		margin: 0;
-
-		display: flex;
-		justify-content: space-around;
-		align-items:center;
 	}
 
 	#card {
 		width: 90%;
-		
+		margin: 0 auto;
 		box-shadow: 1px 7px 10px rgba(0, 0, 0, 0.1);
 	}
 
