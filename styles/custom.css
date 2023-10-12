@@ -44,7 +44,7 @@
 	}
 
 	.services {
-		text-align: center;
+		text-align: center !important;
 	}
 
 	.services p {
