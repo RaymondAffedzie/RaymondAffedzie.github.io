@@ -26,7 +26,7 @@
 	}
 
 	#card{
-		width: 95vw;
+		/* margin: 2vw; */
 		box-shadow: 1px 7px 10px rgba(0, 0, 0, 0.1);
 	}
 
@@ -356,7 +356,7 @@ textarea::placeholder {
 /* begininng of services */
 
 #services {
-	padding-top: 30px 20px 50px 20px;
+	padding: 30px 20px 50px 20px;
 }
 
 .services {
