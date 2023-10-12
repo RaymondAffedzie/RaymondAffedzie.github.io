@@ -448,7 +448,7 @@ textarea::placeholder {
 	font-size: 0.7rem;
 }
 
-.project .info i{
+.project .info a i{
 	font-size: 0.9rem;
 }
 
