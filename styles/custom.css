@@ -574,6 +574,7 @@ footer p {
 	outline: none;
 	cursor: pointer;
     font-size: 0.8rem;
+	font
 	box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
 	transition: background-color 0.5s, color 0.5s, 0.9s ease-in-out;
 }
