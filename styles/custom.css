@@ -270,7 +270,7 @@ button.btn:hover {
 input[type="text"]::placeholder,
 input[type="email"]::placeholder,
 textarea::placeholder {
-	color: #002729;
+	color: #495f60;
 }
 
 /*  End of contact */
