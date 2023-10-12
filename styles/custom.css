@@ -185,7 +185,7 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 5px 5px 5px 5px;
+	margin: 5px;
 	transition: 0.5s ease-in-out;
 }
 
@@ -194,7 +194,7 @@ a {
 }
 
 .socials i {
-	font-size: 1rem;
+	font-size: 1.5rem;
 	color: #002729;
 }
 
