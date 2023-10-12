@@ -41,3 +41,20 @@ const navLinks = document.querySelectorAll('nav ul li a').forEach(link => {
     }
 });
 // end of current page
+
+let prevScrollPos = window.scrollY;
+    
+window.onscroll = function() {
+    const currentScrollPos = window.scrollY;
+    const navbar = document.getElementById("siteNavbar");
+    
+    if (prevScrollPos > currentScrollPos) {
+        // Show the navbar when scrolling up
+        navbar.classList.remove("d-none");
+    } else {
+        // Hide the navbar when scrolling down
+        navbar.classList.add("d-none");
+    }
+    
+    prevScrollPos = currentScrollPos;
+}
