@@ -438,7 +438,6 @@ textarea::placeholder {
 
 .info a:hover {
 	transform: translateX(3px);
-	font-weight: 900;
 }
 
 .project h3 {
