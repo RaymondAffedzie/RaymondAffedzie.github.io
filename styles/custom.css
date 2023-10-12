@@ -255,6 +255,10 @@ button.btn {
 	cursor: pointer;
 }
 
+button.btn i {
+	padding: 2px;
+}
+
 button.btn:hover {
 	color: #0be0eb;
 	background-color: #002729;
