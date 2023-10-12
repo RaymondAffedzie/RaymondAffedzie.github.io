@@ -448,6 +448,10 @@ textarea::placeholder {
 	font-size: 0.7rem;
 }
 
+.project .info i{
+	font-size: 0.9rem;
+}
+
 .project i {
 	font-size: 2rem;
 	/* padding: 10px; */
