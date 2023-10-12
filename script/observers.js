@@ -42,6 +42,8 @@ const navLinks = document.querySelectorAll('nav ul li a').forEach(link => {
 });
 // end of current page
 
+
+// show and hide navbar on scroll
 let prevScrollPos = window.scrollY;
     
 window.onscroll = function() {
@@ -58,3 +60,25 @@ window.onscroll = function() {
     
     prevScrollPos = currentScrollPos;
 }
+
+// end of show and hide navbar on scroll
+
+// back to top script
+const backToTopBtn = document.getElementById("backToTopBtn");
+
+backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
+window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+};
+
+// end of back to top
