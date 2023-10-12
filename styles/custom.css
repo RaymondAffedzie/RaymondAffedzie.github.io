@@ -28,6 +28,7 @@
 	#card {
 		width: 90%;
 		margin: 0 auto;
+		padding-top: 10px;
 		box-shadow: 1px 7px 10px rgba(0, 0, 0, 0.1);
 	}
 
@@ -292,14 +293,6 @@ textarea::placeholder {
 	padding-bottom: 50px;
 }
 
-#skills span {
-	text-align: center;
-	font-size: 1rem;
-	font-weight: 500;
-	font-family: Raleway, Roboto, sans-serif;
-	color: #002729;
-}
-
 #skills .comment {
 	color: #002729;
 	font-family: Sacramento, Sofia, sans-serif;
@@ -357,6 +350,7 @@ textarea::placeholder {
 
 #services {
 	padding: 30px 20px 50px 20px;
+	color: #002729;
 }
 
 .services {
