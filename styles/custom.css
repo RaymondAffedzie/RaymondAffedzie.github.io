@@ -27,14 +27,15 @@
 
 	#services {
 		padding: 0;
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		flex-direction: row;
+		margin: 0;
+		
 	}
 
 	#card {
 		width: 95%;
+		display: flex;
+		justify-content: space-around;
+		align-items:center;
 		box-shadow: 1px 7px 10px rgba(0, 0, 0, 0.1);
 	}
 
