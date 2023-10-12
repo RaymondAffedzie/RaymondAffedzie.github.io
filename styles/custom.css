@@ -433,11 +433,11 @@ textarea::placeholder {
 .project a {
 	text-align: center;
 	padding-top: 30px;
-	transition: 0.1s ease-in-out;
+	transition: 0.9s ease-in-out;
 }
 
 .info a:hover {
-	transform: translateX(3px);
+	transform: translateX(5px);
 }
 
 .project h3 {
