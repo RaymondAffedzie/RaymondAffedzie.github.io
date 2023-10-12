@@ -575,13 +575,13 @@ footer p {
 	cursor: pointer;
     font-size: 0.8rem;
 	box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
-	transition: background-color 0.3s, color 0.3s;
+	transition: background-color 0.5s, color 0.5s, 0.9s ease-in-out;
 }
 
 #backToTopBtn:hover {
     background-color: #0be0ed;
 	color:#009da6;
-	transform: translateY(5px);
+	transform: translateY(-5px);
 }
 
 #backToTopBtn:focus {
