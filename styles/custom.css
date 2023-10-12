@@ -256,7 +256,8 @@ button.btn {
 }
 
 button.btn i {
-	padding: 10px;
+	padding-bottom: -5px;
+	font-size: 1rem;
 }
 
 button.btn:hover {
