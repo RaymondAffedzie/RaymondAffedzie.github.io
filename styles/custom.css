@@ -13,7 +13,7 @@
 @media screen and (max-width: 768px) {
 
 	.row .comment {
-		font-weight: 700;
+		font-weight: 900;
 	}
 	#landing {
 		height: 100vh;
@@ -33,7 +33,7 @@
 	#projects,
 	#testimonials,
 	#socials {
-		padding: 0;
+		padding: 0 !important;
 	}
 
 	#card {
@@ -153,8 +153,7 @@ a {
 
 /* beginning of about */
 #about {
-	/* padding-top: 20px; */
-	padding-bottom: 50px;
+	padding-bottom: 20px;
 	background-color: #009da6;
 }
 
@@ -179,7 +178,7 @@ a {
 
 /* beginning of socials */
 #socials {
-	padding: 50px 0;
+	padding: 20px 0;
 }
 
 .meet {
@@ -219,8 +218,7 @@ a {
 
 /* beginning of contact */
 #contact {
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding: 20px;
 	background-color: #009da6;
 	color: #0be0ed;
 	border-radius: 10px;
@@ -381,7 +379,7 @@ textarea::placeholder {
 /* begininng of project and	 testimonials */
 #projects,
 #testimonials {
-	padding: 70px 0;
+	padding: 20px 0;
 }
 
 #testimonials .cover {
@@ -545,8 +543,7 @@ footer {
 	justify-content: center;
 	align-items: center;
 	font-family: Raleway, Roboto, sans-serif;
-	padding-bottom: 50px;
-	padding-top: 50px;
+	padding: 20px 0;
 }
 
 footer p {
