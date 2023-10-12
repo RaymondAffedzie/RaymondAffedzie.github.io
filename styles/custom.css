@@ -350,12 +350,11 @@ textarea::placeholder {
 
 #services {
 	padding: 30px 20px 50px 20px;
-	color: #002729;
 }
 
 .services {
 	font-family: Raleway, Roboto, sans-serif;
-	color: #030033;
+	color: #002729;
 }
 
 .services h3 {
