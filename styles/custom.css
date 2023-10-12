@@ -25,11 +25,15 @@
 		border-radius: 0;
 	}
 
-	#services{
+	#services {
 		padding: 0;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-direction: row;
 	}
 
-	#card{
+	#card {
 		width: 95%;
 		box-shadow: 1px 7px 10px rgba(0, 0, 0, 0.1);
 	}
@@ -451,7 +455,7 @@ textarea::placeholder {
 	font-size: 0.7rem;
 }
 
-.project .info a i{
+.project .info a i {
 	font-size: 0.9rem;
 }
 
