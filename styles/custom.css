@@ -251,13 +251,12 @@ button.btn {
 	outline: none;
 	border-radius: 5px;
 	padding: 10px 20px;
-	font-size: 16px;
+	font-size: 1rem;
 	cursor: pointer;
 }
 
 button.btn i {
-	padding-bottom: -5px;
-	font-size: 1rem;
+	padding: 0 0 10px;
 }
 
 button.btn:hover {
