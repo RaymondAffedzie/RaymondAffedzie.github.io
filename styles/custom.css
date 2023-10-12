@@ -436,10 +436,6 @@ textarea::placeholder {
 	transition: 0.9s ease-in-out;
 }
 
-.info a:hover {
-	transform: translateX(5px);
-}
-
 .project h3 {
 	font-size: 1rem;
 }
@@ -454,7 +450,10 @@ textarea::placeholder {
 
 .project i {
 	font-size: 2rem;
-	/* padding: 10px; */
+}
+
+.info a:hover {
+	transform: translateX(10px);
 }
 
 .project:hover {
