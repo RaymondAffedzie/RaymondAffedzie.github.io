@@ -253,7 +253,7 @@ button.btn {
 	padding: 10px 20px;
 	font-size: 1rem;
 	cursor: pointer;
-	transition: 0.9s ease-in-out;
+	transition: 0.5s ease-in-out;
 }
 
 button.btn i {
@@ -270,7 +270,7 @@ button.btn:hover {
 input[type="text"]::placeholder,
 input[type="email"]::placeholder,
 textarea::placeholder {
-	color: #8ea1a2;
+	color: #002729;
 }
 
 /*  End of contact */
