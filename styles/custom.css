@@ -233,7 +233,7 @@ button.btn i {
 button.btn:hover {
 	color: #0be0eb;
 	background-color: #002729;
-	transform: translatex(5px);
+	transform: translateX(5px);
 }
 
 /* Optional: Style the placeholder text */
@@ -581,6 +581,7 @@ footer p {
 #backToTopBtn:hover {
     background-color: #0be0ed;
 	color:#009da6;
+	transform: translateY(5px);
 }
 
 #backToTopBtn:focus {
