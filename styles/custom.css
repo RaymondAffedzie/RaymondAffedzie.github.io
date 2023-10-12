@@ -412,6 +412,7 @@ textarea::placeholder {
 	color: #00888f;
 	text-decoration: none;
 }
+
 .project {
 	width: 240px;
 	height: 290px;
@@ -436,7 +437,7 @@ textarea::placeholder {
 }
 
 .info a:hover {
-	transform: translateY(3px);
+	transform: translateX(3px);
 	font-weight: 900;
 }
 
