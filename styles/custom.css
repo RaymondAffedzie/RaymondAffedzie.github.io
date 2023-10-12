@@ -14,6 +14,11 @@
 	.row .comment {
 		font-weight: 900;
 	}
+
+	.row span {
+		font-size: 0.8rem !important;
+	}
+
 	#landing {
 		height: 100vh;
 	}
