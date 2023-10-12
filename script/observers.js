@@ -50,10 +50,8 @@ window.addEventListener("scroll", function() {
     const navbar = document.getElementById("siteNavbar");
 
     if (prevScrollPos > currentScrollPos) {
-        // Show the navbar when scrolling up
         navbar.classList.remove("d-none");
     } else {
-        // Hide the navbar when scrolling down
         navbar.classList.add("d-none");
     }
 
