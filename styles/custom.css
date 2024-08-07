@@ -396,10 +396,12 @@ textarea::placeholder {
 
 .box-content {
 	height: 320px;
+	text-align: center;
 }
 
 .box-preview {
 	height: auto;
+	text-align: center;
 }
 
 .box-content i {
