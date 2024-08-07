@@ -399,13 +399,11 @@ textarea::placeholder {
 
 .box-content {
 	background-color: #eeeddd;
-	margin-top: 15px;
-	height: 350px;
+	height: 300px;
 }
 
 .box-preview {
 	background-color: #eeeddd;
-	margin-top: 15px;
 	height: auto;
 }
 
