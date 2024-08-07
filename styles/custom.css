@@ -399,6 +399,7 @@ textarea::placeholder {
 
 .box {
 	background-color: #eeeddd;
+	margin-top: 15px;
 }
 
 .project h3 {
