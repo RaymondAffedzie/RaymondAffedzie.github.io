@@ -418,7 +418,7 @@ textarea::placeholder {
 	text-align: center;
 }
 
-.box-preview a {
+.project a {
 	text-align: center;
 	transition: 0.9s ease-in-out;
 }
