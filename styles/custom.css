@@ -393,8 +393,8 @@ textarea::placeholder {
 
 .project .info {
 	display: flex;
-	flex-direction: column;
 	justify-content: space-between;
+	flex-direction: column;
 }
 
 .project h3 {
