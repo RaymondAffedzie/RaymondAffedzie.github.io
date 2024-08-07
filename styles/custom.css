@@ -182,73 +182,6 @@ a {
 
 /* end of socials */
 
-/* beginning of contact */
-#contact {
-	padding: 20px;
-	background-color: #009da6;
-	color: #0be0ed;
-	border-radius: 10px;
-}
-
-#contact .comment {
-	color: #0be0ed;
-	font-family: Sacramento, Raleway, Roboto, sans-serif;
-	font-weight: 500;
-	text-align: center;
-	text-transform: capitalize;
-}
-
-/* Style the input fields */
-input[type="text"],
-input[type="email"],
-textarea {
-	width: 100%;
-	padding: 10px;
-	margin-bottom: 20px;
-	font-size: 16px;
-	border: none;
-	border-top: none;
-	border-left: none;
-	border-right: none;
-	background: transparent;
-	outline: none;
-	border-bottom: 2px solid #0be0ed;
-	color: #002729;
-	font-size: 1rem;
-}
-
-/* Style the button */
-button.btn {
-	background-color: #0be0ed;
-	color: #002729;
-	border: none;
-	outline: none;
-	border-radius: 5px;
-	padding: 10px 20px;
-	font-size: 1rem;
-	cursor: pointer;
-	transition: background-color 0.5s, color 0.5s, 0.5s ease-in-out;
-}
-
-button.btn i {
-	padding: 10px;
-}
-
-button.btn:hover {
-	color: #0be0eb;
-	background-color: #002729;
-	transform: translateX(5px);
-}
-
-/* Optional: Style the placeholder text */
-input[type="text"]::placeholder,
-input[type="email"]::placeholder,
-textarea::placeholder {
-	color: #002729;
-}
-
-/*  End of contact */
-
 /* beginning of skills */
 #skills {
 	background-image: url("../images/background2.jpg");
@@ -435,7 +368,7 @@ textarea::placeholder {
 	transform: translateY(20px);
 }
 
-.box-preview a:hover {
+.project a:hover {
 	transform: translateX(10px);
 }
 
@@ -512,6 +445,73 @@ textarea::placeholder {
 }
 
 /* End of testimonial */
+
+/* beginning of contact */
+#contact {
+	padding: 20px;
+	background-color: #009da6;
+	color: #0be0ed;
+	border-radius: 10px;
+}
+
+#contact .comment {
+	color: #0be0ed;
+	font-family: Sacramento, Raleway, Roboto, sans-serif;
+	font-weight: 500;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+/* Style the input fields */
+input[type="text"],
+input[type="email"],
+textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	font-size: 16px;
+	border: none;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	background: transparent;
+	outline: none;
+	border-bottom: 2px solid #0be0ed;
+	color: #002729;
+	font-size: 1rem;
+}
+
+/* Style the button */
+button.btn {
+	background-color: #0be0ed;
+	color: #002729;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: background-color 0.5s, color 0.5s, 0.5s ease-in-out;
+}
+
+button.btn i {
+	padding: 10px;
+}
+
+button.btn:hover {
+	color: #0be0eb;
+	background-color: #002729;
+	transform: translateX(5px);
+}
+
+/* Optional: Style the placeholder text */
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+	color: #002729;
+}
+
+/*  End of contact */
 
 /* begining of footer */
 
