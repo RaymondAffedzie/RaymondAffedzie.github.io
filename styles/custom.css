@@ -382,8 +382,8 @@ textarea::placeholder {
 }
 
 .project {
-	width: 240px;
-	height: 290px;
+	width: 260px;
+	height: 350px;
 	padding: 2rem 1rem;
 	margin: 2rem 0;
 	cursor: pointer;
