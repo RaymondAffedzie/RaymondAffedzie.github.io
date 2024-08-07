@@ -579,8 +579,8 @@ footer p {
 	right: 20px;
 	background-color: #009da6;
 	color: #0be0ed;
-	padding: 5px;
-	border-radius: 5px;
+	padding: 8px;
+	border-radius: 1px;
 	border: none;
 	outline: none;
 	cursor: pointer;
