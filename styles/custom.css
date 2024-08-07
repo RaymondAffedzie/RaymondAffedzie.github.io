@@ -394,8 +394,8 @@ textarea::placeholder {
 .project .info {
 	display: flex;
 	flex-direction: column;
-	align-items: stretch;
-	justify-content: center;
+	/* align-items: stretch; */
+	justify-content: space-between;
 }
 
 .project a {
