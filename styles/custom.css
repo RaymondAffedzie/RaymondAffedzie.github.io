@@ -127,14 +127,14 @@ a {
 }
 
 #about p {
-	color: #33f5ff;
+	color: #8eecf1;
 	font-size: 1.3rem;
 	font-weight: 700;
 }
 
 #about small {
 	font-size: 1.2rem !important;
-	color: #002729;
+	color: #143638;
 	font-weight: 600;
 }
 
@@ -336,7 +336,7 @@ textarea::placeholder {
 
 .services p {
 	font-weight: 500;
-	font-size: 0.95rem;
+	font-size: 1.1rem;
 	line-height: 1.5;
 }
 
