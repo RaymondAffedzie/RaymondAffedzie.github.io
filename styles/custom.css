@@ -389,11 +389,8 @@ textarea::placeholder {
 	cursor: pointer;
 	box-shadow: 1px 7px 10px rgba(0, 0, 0, 0.1);
 	transition: 0.5s all;
-}
-
-.project .info {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	flex-direction: column;
 }
 
