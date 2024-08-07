@@ -129,11 +129,13 @@ a {
 #about p {
 	color: #33f5ff;
 	font-size: 1.3rem;
+	font-weight: 700;
 }
 
 #about small {
-	font-size: 1rem !important;
+	font-size: 1.2rem !important;
 	color: #002729;
+	font-weight: 600;
 }
 
 /* end of about */
