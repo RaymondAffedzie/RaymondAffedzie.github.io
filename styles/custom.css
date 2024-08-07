@@ -400,8 +400,7 @@ textarea::placeholder {
 .box-content {
 	background-color: #eeeddd;
 	margin-top: 15px;
-	max-height: 350px;
-	min-height: fit-content;
+	height: 350px;
 }
 
 .box-preview {
