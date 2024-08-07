@@ -591,8 +591,6 @@ footer p {
 }
 
 #backToTopBtn:hover {
-    background-color: #0be0ed;
-	color:#009da6;
 	transform: translateY(-5px);
 }
 
