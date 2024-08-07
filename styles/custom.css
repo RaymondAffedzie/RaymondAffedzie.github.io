@@ -402,6 +402,11 @@ textarea::placeholder {
 	height: auto;
 }
 
+.box-content i {
+	font-size: 2rem;
+	text-align: center;
+}
+
 .box-content h3 {
 	font-size: 1.3rem;
 	font-weight: 700;
@@ -420,20 +425,14 @@ textarea::placeholder {
 
 .box-preview a i {
 	font-size: 0.9rem;
-	text-align: center;
-}
-
-.box-content i {
-	font-size: 2rem;
-	text-align: center;
-}
-
-.box-preview a:hover {
-	transform: translateX(10px);
 }
 
 .project:hover {
 	transform: translateY(20px);
+}
+
+.box-preview a:hover {
+	transform: translateX(10px);
 }
 
 .gallery {
