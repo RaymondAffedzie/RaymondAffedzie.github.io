@@ -383,8 +383,8 @@ textarea::placeholder {
 
 .project {
 	width: 260px;
-	height: 380px;
-	padding: 2rem 1rem;
+	height: 400px;
+	padding: 12px;
 	margin: 18px 0;
 	cursor: pointer;
 	box-shadow: 1px 7px 10px rgba(0, 0, 0, 0.1);
