@@ -383,7 +383,7 @@ textarea::placeholder {
 
 .project {
 	width: 260px;
-	height: 350px;
+	height: 380px;
 	padding: 2rem 1rem;
 	margin: 18px 0;
 	cursor: pointer;
@@ -405,7 +405,8 @@ textarea::placeholder {
 }
 
 .project h3 {
-	font-size: 1rem;
+	font-size: 1.3rem;
+	font-weight: 700;
 	text-align: center;
 }
 
