@@ -395,42 +395,40 @@ textarea::placeholder {
 }
 
 .box-content {
-	background-color: #eeeddd;
 	height: 320px;
 }
 
 .box-preview {
-	background-color: #eeeddd;
 	height: auto;
 }
 
-.project h3 {
+.box-content h3 {
 	font-size: 1.3rem;
 	font-weight: 700;
 	text-align: center;
 }
 
-.project p {
+.box-content p {
 	font-size: 1rem;
 	text-align: center;
 }
 
-.project a {
+.box-preview a {
 	text-align: center;
 	transition: 0.9s ease-in-out;
 }
 
-.project .info a i {
+.box-preview a i {
 	font-size: 0.9rem;
 	text-align: center;
 }
 
-.project i {
+.box-content i {
 	font-size: 2rem;
 	text-align: center;
 }
 
-.info a:hover {
+.box-preview a:hover {
 	transform: translateX(10px);
 }
 
