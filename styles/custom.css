@@ -394,14 +394,8 @@ textarea::placeholder {
 .project .info {
 	display: flex;
 	flex-direction: column;
-	align-items: stretch;
+	align-items:center;
 	justify-content: space-evenly;
-}
-
-.project a {
-	text-align: center;
-	padding-top: 30px;
-	transition: 0.9s ease-in-out;
 }
 
 .project h3 {
@@ -413,6 +407,11 @@ textarea::placeholder {
 .project p {
 	font-size: 1rem;
 	text-align: center;
+}
+
+.project a {
+	text-align: center;
+	transition: 0.9s ease-in-out;
 }
 
 .project .info a i {
