@@ -348,11 +348,11 @@ textarea::placeholder {
 	padding: 20px 0;
 }
 
-#testimonials .cover {
+/* #testimonials .cover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
+} */
 
 #projects .wrapper,
 #testimonials .wrapper {
