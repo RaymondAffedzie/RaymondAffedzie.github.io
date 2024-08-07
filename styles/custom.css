@@ -397,6 +397,10 @@ textarea::placeholder {
 	flex-direction: column;
 }
 
+.box {
+	background-color: #eeeddd;
+}
+
 .project h3 {
 	font-size: 1.3rem;
 	font-weight: 700;
