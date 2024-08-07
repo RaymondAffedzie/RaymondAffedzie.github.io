@@ -394,7 +394,7 @@ textarea::placeholder {
 .project .info {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: stretch;
 	justify-content: center;
 }
 
@@ -406,18 +406,22 @@ textarea::placeholder {
 
 .project h3 {
 	font-size: 1rem;
+	text-align: center;
 }
 
 .project p {
-	font-size: 0.7rem;
+	font-size: 1rem;
+	text-align: center;
 }
 
 .project .info a i {
 	font-size: 0.9rem;
+	text-align: center;
 }
 
 .project i {
 	font-size: 2rem;
+	text-align: center;
 }
 
 .info a:hover {
