@@ -357,7 +357,7 @@ textarea::placeholder {
 #projects .wrapper,
 #testimonials .wrapper {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	flex-wrap: wrap;
 }
 
@@ -644,6 +644,9 @@ footer p {
 
 	.services p {
 		line-height: 1.7 !important;
+	}
+	.box-content {
+		height: fit-content;
 	}
 
 	.from-bottom {
