@@ -393,13 +393,13 @@ textarea::placeholder {
 
 .project .info {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	flex-direction: column;
 }
 
 .box-content {
 	background-color: #eeeddd;
-	height: 300px;
+	height: 320px;
 }
 
 .box-preview {
