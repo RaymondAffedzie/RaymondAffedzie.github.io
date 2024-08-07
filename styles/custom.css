@@ -397,9 +397,17 @@ textarea::placeholder {
 	flex-direction: column;
 }
 
-.box {
+.box-content {
 	background-color: #eeeddd;
 	margin-top: 15px;
+	max-height: 350px;
+	min-height: fit-content;
+}
+
+.box-preview {
+	background-color: #eeeddd;
+	margin-top: 15px;
+	height: auto;
 }
 
 .project h3 {
