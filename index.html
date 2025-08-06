@@ -29,13 +29,15 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg fixed-top" id="siteNavbar">
+	<a href="#main-content" class="skip-link">Skip to main content</a>
+	
+	<nav class="navbar navbar-expand-lg fixed-top" id="siteNavbar" role="navigation" aria-label="Main navigation">
 		<div class="container">
 			<a class="navbar-brand" href="index.html">irbba devs</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarType"
-				aria-controls="navbarType" aria-expanded="false" aria-label="Toggle navigation">
+				aria-controls="navbarType" aria-expanded="false" aria-label="Toggle navigation menu">
 				<span class="navbar-toggler-icon">
-					<i class="mdi mdi-menu"></i>
+					<i class="mdi mdi-menu" aria-hidden="true"></i>
 				</span>
 			</button>
 			<div class="collapse navbar-collapse justify-content-md-end" id="navbarType">
@@ -64,6 +66,8 @@
 			</div>
 		</div>
 	</nav>
+
+	<main id="main-content">
 
 	<!-- landing -->
 	<!-- Enhanced Landing Section -->
@@ -94,18 +98,18 @@
 			<div class="px-2">
 				<div class="container-fluid py-5">
 					<h1 class="display-1">About irbba Devs</h1>
-					<div class="col-md-12">
+					<div class="about-content">
 						<p>
-							We take pride in delivering top-notch services
-							and constantly strive to offer innovative and
+							We take pride in delivering <span class="about-highlight">top-notch services</span>
+							and constantly strive to offer <span class="about-highlight">innovative</span> and
 							exceptional ideas to meet your needs.
 						</p>
 						<small>
 							We are dedicated to providing exceptional
-							service, fueled by our commitment to creativity
-							and innovation. Our team tirelessly strives to
+							service, fueled by our commitment to <span class="about-highlight">creativity</span>
+							and <span class="about-highlight">innovation</span>. Our team tirelessly strives to
 							exceed client expectations by generating and
-							implementing remarkable ideas. <br> Your satisfaction
+							implementing remarkable ideas. <br><br> Your satisfaction
 							is our top priority, and we aim to turn your
 							visions into reality through our outstanding
 							services and innovative thinking.
@@ -119,35 +123,35 @@
 	<!-- social -->
 	<div class="container" id="socials">
 		<div class="row slide-in from-bottom">
-			<div class="cover meet">
+			<div class="cover meet" role="list" aria-label="Social media links">
 				<div class="socials fade-in linkedin">
-					<a href="https://www.linkedin.com/in/raymond-affedzie-5111091b1/" target="_blank">
-						<i class="mdi mdi-linkedin-box"></i>
+					<a href="https://www.linkedin.com/in/raymond-affedzie-5111091b1/" target="_blank" aria-label="LinkedIn profile">
+						<i class="mdi mdi-linkedin-box" aria-hidden="true"></i>
 					</a>
 				</div>
 				<div class="socials fade-in github">
-					<a href="https://github.com/RaymondAffedzie" target="_blank">
-						<i class="mdi mdi-github-circle"></i>
+					<a href="https://github.com/RaymondAffedzie" target="_blank" aria-label="GitHub profile">
+						<i class="mdi mdi-github-circle" aria-hidden="true"></i>
 					</a>
 				</div>
 				<div class="socials fade-in twitter">
-					<a href="https://x.com/berth_ray" target="_blank">
-						<i class="mdi mdi-twitter"></i>
+					<a href="https://x.com/berth_ray" target="_blank" aria-label="Twitter profile">
+						<i class="mdi mdi-twitter" aria-hidden="true"></i>
 					</a>
 				</div>
 				<div class="socials fade-in whatsapp">
-					<a href="#" target="_blank">
-						<i class="mdi mdi-whatsapp"></i>
+					<a href="#" target="_blank" aria-label="WhatsApp contact">
+						<i class="mdi mdi-whatsapp" aria-hidden="true"></i>
 					</a>
 				</div>
 				<div class="socials fade-in instagram">
-					<a href="https://www.instagram.com/_irbba/" target="_blank">
-						<i class="mdi mdi-instagram"></i>
+					<a href="https://www.instagram.com/_irbba/" target="_blank" aria-label="Instagram profile">
+						<i class="mdi mdi-instagram" aria-hidden="true"></i>
 					</a>
 				</div>
 				<div class="socials fade-in telegram">
-					<a href="https://www.iRBbA@t.me" target="_blank">
-						<i class="mdi mdi-telegram"></i>
+					<a href="https://www.iRBbA@t.me" target="_blank" aria-label="Telegram contact">
+						<i class="mdi mdi-telegram" aria-hidden="true"></i>
 					</a>
 				</div>
 			</div>
@@ -167,62 +171,87 @@
 			<!--- #card is for mobile devices style-->
 			<div class="row" id="card">
 				<div class="col-md-6 services slide-in from-bottom">
+					<div class="service-icon">
+						<i class="mdi mdi-palette"></i>
+					</div>
 					<h3>Creative Design</h3>
 					<p>
 						Our talented team of designers crafts unique and
 						visually captivating websites tailored to your
-						brand.
+						brand, ensuring every element reflects your vision.
 					</p>
 
+					<div class="service-icon">
+						<i class="mdi mdi-responsive"></i>
+					</div>
 					<h3>Responsive Design</h3>
 					<p>
 						Your website will look and perform flawlessly on all
 						devices, ensuring your audience can access your
-						content anytime, anywhere.
+						content anytime, anywhere with optimal user experience.
 					</p>
 
+					<div class="service-icon">
+						<i class="mdi mdi-shopping"></i>
+					</div>
 					<h3>E-Commerce Website</h3>
 					<p>
 						Count on us for e-commerce excellence - boosting
-						sales and creating lasting impressions.
+						sales and creating lasting impressions with secure,
+						scalable online shopping experiences.
 					</p>
 
+					<div class="service-icon">
+						<i class="mdi mdi-chart-line"></i>
+					</div>
 					<h3>SEO and Digital Marketing</h3>
 					<p>
 						Boost your online visibility and connect you with
 						your target audience. We employ strategic
 						optimization techniques to enhance your website's
-						search engine rankings.
+						search engine rankings and drive organic traffic.
 					</p>
 				</div>
 
 				<div class="col-md-6 services slide-in from-bottom">
+					<div class="service-icon">
+						<i class="mdi mdi-cloud-upload"></i>
+					</div>
 					<h3>Hosting and Deployment</h3>
 					<p>
 						From configuring servers to domain setup, we take
 						care of the technical aspects, so you can focus on
-						what matters most—your online presence.
+						what matters most—your online presence and business growth.
 					</p>
 
+					<div class="service-icon">
+						<i class="mdi mdi-code-tags"></i>
+					</div>
 					<h3>Custom Development</h3>
 					<p>
 						We build powerful, custom web solutions that meet
 						your specific needs and provide a seamless user
-						experience.
+						experience with cutting-edge technologies and frameworks.
 					</p>
 
+					<div class="service-icon">
+						<i class="mdi mdi-account-heart"></i>
+					</div>
 					<h3>Personalized Service</h3>
 					<p>
 						We work closely with you to understand your goals
 						and deliver web solutions that exceed your
-						expectations.
+						expectations, providing ongoing support and maintenance.
 					</p>
 
+					<div class="service-icon">
+						<i class="mdi mdi-lightbulb-on"></i>
+					</div>
 					<h3>Consultation and Advice</h3>
 					<p>
 						Whether you need technology recommendations,
 						strategic insights, or assistance with project
-						planning, our team is here to offer valuable advice.
+						planning, our experienced team is here to offer valuable advice and guidance.
 					</p>
 				</div>
 			</div>
@@ -317,50 +346,61 @@
 				set covers a wide range of disciplines, ensuring that we're
 				well-equipped to meet your unique project needs
 			</span>
-			<div class="col-md-12 skills">
-				<div class="brands fade-in">
-					<i class="mdi mdi-language-java"></i>
+			<div class="col-md-12 skills" role="list" aria-label="Technical skills">
+				<div class="brands fade-in" role="listitem" tabindex="0" aria-label="Java programming">
+					<i class="mdi mdi-language-java" aria-hidden="true"></i>
 					<p>java</p>
+					<div class="skill-progress" aria-hidden="true"></div>
 				</div>
-				<div class="brands fade-in">
-					<i class="mdi mdi-language-javascript"></i>
+				<div class="brands fade-in" role="listitem" tabindex="0" aria-label="JavaScript programming">
+					<i class="mdi mdi-language-javascript" aria-hidden="true"></i>
 					<p>javascript</p>
+					<div class="skill-progress" aria-hidden="true"></div>
 				</div>
-				<div class="brands fade-in">
-					<i class="mdi mdi-language-csharp"></i>
+				<div class="brands fade-in" role="listitem" tabindex="0" aria-label="C Sharp programming">
+					<i class="mdi mdi-language-csharp" aria-hidden="true"></i>
 					<p>c sharp</p>
+					<div class="skill-progress" aria-hidden="true"></div>
 				</div>
-				<div class="brands fade-in">
-					<i class="mdi mdi-language-php"></i>
+				<div class="brands fade-in" role="listitem" tabindex="0" aria-label="PHP programming">
+					<i class="mdi mdi-language-php" aria-hidden="true"></i>
 					<p>php</p>
+					<div class="skill-progress" aria-hidden="true"></div>
 				</div>
-				<div class="brands fade-in">
-					<i class="mdi mdi-language-html5"></i>
+				<div class="brands fade-in" role="listitem" tabindex="0" aria-label="HTML markup">
+					<i class="mdi mdi-language-html5" aria-hidden="true"></i>
 					<p>html</p>
+					<div class="skill-progress" aria-hidden="true"></div>
 				</div>
-				<div class="brands fade-in">
-					<i class="mdi mdi-language-css3"></i>
+				<div class="brands fade-in" role="listitem" tabindex="0" aria-label="CSS styling">
+					<i class="mdi mdi-language-css3" aria-hidden="true"></i>
 					<p>css</p>
+					<div class="skill-progress" aria-hidden="true"></div>
 				</div>
-				<div class="brands fade-in">
-					<i class="mdi mdi-jquery"></i>
+				<div class="brands fade-in" role="listitem" tabindex="0" aria-label="jQuery library">
+					<i class="mdi mdi-jquery" aria-hidden="true"></i>
 					<p>jquery</p>
+					<div class="skill-progress" aria-hidden="true"></div>
 				</div>
-				<div class="brands fade-in">
-					<i class="mdi mdi-database"></i>
+				<div class="brands fade-in" role="listitem" tabindex="0" aria-label="SQL database">
+					<i class="mdi mdi-database" aria-hidden="true"></i>
 					<p>sql</p>
+					<div class="skill-progress" aria-hidden="true"></div>
 				</div>
-				<div class="brands fade-in">
-					<i class="mdi mdi-github-circle"></i>
+				<div class="brands fade-in" role="listitem" tabindex="0" aria-label="GitHub version control">
+					<i class="mdi mdi-github-circle" aria-hidden="true"></i>
 					<p>github</p>
+					<div class="skill-progress" aria-hidden="true"></div>
 				</div>
-				<div class="brands fade-in">
-					<i class="mdi mdi-server"></i>
+				<div class="brands fade-in" role="listitem" tabindex="0" aria-label="Apache server">
+					<i class="mdi mdi-server" aria-hidden="true"></i>
 					<p>apache server</p>
+					<div class="skill-progress" aria-hidden="true"></div>
 				</div>
-				<div class="brands fade-in">
-					<i class="mdi mdi-linux"></i>
+				<div class="brands fade-in" role="listitem" tabindex="0" aria-label="Linux operating system">
+					<i class="mdi mdi-linux" aria-hidden="true"></i>
 					<p>linux</p>
+					<div class="skill-progress" aria-hidden="true"></div>
 				</div>
 			</div>
 		</div>
@@ -425,16 +465,31 @@
 				Contact us today to discuss your vision, and let's turn it
 				into reality.
 			</span>
-			<div class="container py-2">
-				<div class="col-md-8">
-					<input type="text" name="name" id="name" placeholder="Fullname - Irbba Devs" />
-					<input type="email" name="email" id="email" placeholder="Email - admin@irbbadevs.com" />
-					<textarea name="message" id="message" placeholder="Enter your message here..." rows="1"></textarea>
-					<button class="btn" type="button">
-						Submit
+			<div class="contact-form">
+				<form id="contactForm">
+					<div class="form-group">
+						<input type="text" name="name" id="name" placeholder=" " required />
+						<label for="name">Full Name</label>
+						<span class="error-message">Please enter your full name</span>
+					</div>
+					
+					<div class="form-group">
+						<input type="email" name="email" id="email" placeholder=" " required />
+						<label for="email">Email Address</label>
+						<span class="error-message">Please enter a valid email address</span>
+					</div>
+					
+					<div class="form-group">
+						<textarea name="message" id="message" placeholder=" " rows="4" required></textarea>
+						<label for="message">Your Message</label>
+						<span class="error-message">Please enter your message</span>
+					</div>
+					
+					<button class="submit-btn" type="submit">
+						Send Message
 						<i class="mdi mdi-send"></i>
 					</button>
-				</div>
+				</form>
 			</div>
 		</div>
 	</div>
@@ -446,7 +501,9 @@
 		</footer>
 	</div>
 
-	<button id="backToTopBtn"><i class="ti-arrow-up"></i></button>
+	<button id="backToTopBtn" aria-label="Back to top"><i class="ti-arrow-up" aria-hidden="true"></i></button>
+
+	</main>
 
 	<script src="script/bootstrap.min.js"></script>
 	<script src="script/observers.js"></script>
