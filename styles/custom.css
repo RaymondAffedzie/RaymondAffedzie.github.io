@@ -25,32 +25,44 @@ a {
 } */
 
 .navbar {
-    background: rgba(255, 255, 255, 0.15);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: linear-gradient(135deg, rgba(11, 224, 237, 0.15) 0%, rgba(0, 157, 166, 0.25) 100%);
+    box-shadow: 0 8px 32px 0 rgba(11, 224, 237, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid rgba(11, 224, 237, 0.2);
     font-family: Raleway, Roboto, sans-serif;
-    transition: background 0.5s;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Navbar when scrolled - more opaque for better readability */
+.navbar.scrolled {
+    background: linear-gradient(135deg, rgba(11, 224, 237, 0.85) 0%, rgba(0, 157, 166, 0.9) 100%);
+    box-shadow: 0 4px 20px rgba(11, 224, 237, 0.3);
+    border-bottom: 1px solid rgba(11, 224, 237, 0.4);
 }
 
 .navbar-brand {
 	font-family: Sacramento;
-	color: #009da6;
-	transition: 0.5s ease-in;
+	color: #ffffff;
+	font-weight: 600;
+	text-shadow: 0 1px 3px rgba(0, 157, 166, 0.5);
+	transition: all 0.3s ease-in;
 }
 
 .navbar-brand:hover {
 	color: #0be0ed;
-	transform: scale(0.9);
+	transform: scale(1.05);
+	text-shadow: 0 2px 8px rgba(11, 224, 237, 0.6);
 }
 
 .navbar-toggler i {
 	background-color: transparent;
 	border: none !important;
-	transition: box-shadow 5s ease-in-out;
-	color: #009da6;
+	transition: all 0.3s ease-in-out;
+	color: #ffffff;
+	font-size: 1.5rem;
 }
 
 .navbar-toggler:focus {
@@ -64,13 +76,21 @@ a {
 
 .navbar ul li a {
     position: relative;
-    color: #009da6;
+    color: #ffffff;
+    font-weight: 500;
+    text-shadow: 0 1px 2px rgba(0, 157, 166, 0.3);
     overflow: visible;
     z-index: 1;
-    transition: color 0.3s;
+    transition: all 0.3s ease-in-out;
 }
 
-/* Water bubble effect */
+.navbar ul li a:hover {
+    color: #0be0ed;
+    text-shadow: 0 2px 6px rgba(11, 224, 237, 0.4);
+    transform: translateY(-1px);
+}
+
+/* Enhanced water bubble effect with gradient */
 .navbar ul li a::after {
     content: "";
     position: absolute;
@@ -79,7 +99,7 @@ a {
     transform: translate(-50%, -50%) scale(0);
     width: 120%;
     height: 120%;
-    background: radial-gradient(circle at 50% 50%, #0be0ed55 60%, transparent 100%);
+    background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.2) 60%, transparent 100%);
     border-radius: 50%;
     z-index: -1;
     transition: transform 0.4s cubic-bezier(0.5, 1.7, 0.3, 0.7);
@@ -87,7 +107,6 @@ a {
 
 .navbar ul li a:hover::after {
     transform: translate(-50%, -50%) scale(1);
-    /* Add a slight "pop" effect */
 }
 
 /* end of navbar and header */
