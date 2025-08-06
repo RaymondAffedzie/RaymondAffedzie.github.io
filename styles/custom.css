@@ -19,10 +19,22 @@ a {
 }
 
 /* beginning of navbar */
-.navbar {
+/* .navbar {
 	background-color: #ffffff;
 	font-family: Raleway, Roboto, sans-serif;
+} */
+
+.navbar {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    font-family: Raleway, Roboto, sans-serif;
+    transition: background 0.5s;
 }
+
 
 .navbar-brand {
 	font-family: Sacramento;
@@ -51,17 +63,49 @@ a {
 	transition: 0.9s ease-in-out;
 }
 
-.navbar ul li a {
+/* .navbar ul li a {
 	color: #009da6;
+} */
+
+.navbar ul li a {
+    position: relative;
+    color: #009da6;
+    overflow: visible;
+    z-index: 1;
+    transition: color 0.3s;
+}
+
+/* Water bubble effect */
+.navbar ul li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle at 50% 50%, #0be0ed55 60%, transparent 100%);
+    border-radius: 50%;
+    z-index: -1;
+    transition: transform 0.4s cubic-bezier(0.5, 1.7, 0.3, 0.7);
+}
+
+.navbar ul li a:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+    /* Add a slight "pop" effect */
+}
+
+.navbar ul li a:hover {
+    /* color: #0be0ed; */
 }
 
 .navbar ul li a:hover {
 	color: #0be0ed;
 }
 
-.navbar ul li:hover {
+/* .navbar ul li:hover {
 	transform: translateY(1px);
-}
+} */
 
 /* end of navbar and header */
 
@@ -657,3 +701,4 @@ footer p {
 		transform: translateY(5%);
 	}
 }
+
