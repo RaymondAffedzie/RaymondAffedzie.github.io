@@ -49,12 +49,14 @@ window.addEventListener("scroll", function() {
     const currentScrollPos = window.scrollY;
     const navbar = document.getElementById("siteNavbar");
 
-    if (prevScrollPos > currentScrollPos) {
-        navbar.classList.remove("d-none");
+    // Add scrolled class when user scrolls down more than 50px for better navbar visibility
+    if (currentScrollPos > 50) {
+        navbar.classList.add("scrolled");
     } else {
-        navbar.classList.add("d-none");
+        navbar.classList.remove("scrolled");
     }
 
+    // Keep navbar visible at all times for better UX - removed hiding behavior
     prevScrollPos = currentScrollPos;
 });
 
