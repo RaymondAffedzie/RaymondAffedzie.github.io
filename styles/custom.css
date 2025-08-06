@@ -35,7 +35,6 @@ a {
     transition: background 0.5s;
 }
 
-
 .navbar-brand {
 	font-family: Sacramento;
 	color: #009da6;
@@ -62,10 +61,6 @@ a {
 .navbar ul li {
 	transition: 0.9s ease-in-out;
 }
-
-/* .navbar ul li a {
-	color: #009da6;
-} */
 
 .navbar ul li a {
     position: relative;
@@ -95,19 +90,143 @@ a {
     /* Add a slight "pop" effect */
 }
 
-.navbar ul li a:hover {
-    /* color: #0be0ed; */
-}
-
-.navbar ul li a:hover {
-	color: #0be0ed;
-}
-
-/* .navbar ul li:hover {
-	transform: translateY(1px);
-} */
-
 /* end of navbar and header */
+
+
+/* --- Landing Section --- */
+.landing-hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  z-index: 1;
+  background: linear-gradient(120deg, #0be0ed 20%, #009da6 80%);
+  opacity: 0.7;
+  animation: bgMove 16s linear infinite alternate;
+}
+@keyframes bgMove {
+  0% { background-position: 0 0; }
+  100% { background-position: 100vw 100vh; }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  color: #fff;
+  animation: fadeInUp 1.2s cubic-bezier(0.77,0,0.175,1) both;
+}
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(40px);}
+  100% { opacity: 1; transform: translateY(0);}
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-family: 'Sacramento', 'Raleway', cursive;
+  margin-bottom: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.gradient-text {
+  background: linear-gradient(90deg, #0be0ed, #009da6, #33f5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-family: 'Raleway', 'Roboto', sans-serif;
+  font-weight: 400;
+  margin-bottom: 2.2rem;
+  color: #f5f5f5;
+  line-height: 1.5;
+}
+.hero-subtitle .highlight {
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(90deg, #ffd700, #0be0ed);
+  padding: 0 6px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(11,224,237,0.13);
+}
+
+.hero-btns {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.btn {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  padding: 0.8rem 2.2rem;
+  border-radius: 8px;
+  font-size: 1.15rem;
+  transition: all 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(0,157,166,0.07);
+}
+.btn-primary {
+  background: linear-gradient(90deg, #0be0ed, #009da6);
+  color: #fff;
+  border: none;
+}
+.btn-secondary {
+  background: #fff;
+  color: #009da6;
+  border: 2px solid #0be0ed;
+}
+.btn:hover, .btn:focus {
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 6px 22px rgba(11,224,237,0.14);
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 32px; left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-size: 1rem;
+  opacity: 0.85;
+  animation: bounceScroll 2.3s infinite;
+}
+.scroll-indicator i {
+  font-size: 2.5rem;
+  margin-top: 6px;
+  color: #fff;
+}
+@keyframes bounceScroll {
+  0%, 100% { transform: translateX(-50%) translateY(0);}
+  50% { transform: translateX(-50%) translateY(14px);}
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .landing-hero { min-height: 450px; }
+  .hero-title { font-size: 2.45rem; }
+  .hero-subtitle { font-size: 1.1rem; }
+  .hero-btns { flex-direction: column; gap: 0.8rem; }
+}
 
 #landing {
 	text-align: center;
@@ -138,6 +257,7 @@ a {
 	color: #002729;
 	padding: 15px;
 }
+
 
 .row span {
 	width: 100%;
@@ -701,4 +821,5 @@ footer p {
 		transform: translateY(5%);
 	}
 }
+
 
