@@ -9,17 +9,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>iRBbA Devs</title>
 
-	<!-- googel font -->
-	<link rel="preconnect" href="https://fonts.gstatic.com" />
-	<link
-		href="https://fonts.googleapis.com/css?family=Sofia|Raleway|Tangerine|Acme|Alex Brush|Alike|Anaheim|Amita|Pacifico|Seaweed Script|Sacramento|Roboto|Open+Sans Swash Caps"
-		rel="stylesheet" />
+	<!-- Modern Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+	
 	<link rel="stylesheet" href="mdi/css/materialdesignicons.min.css" />
 	<link rel="stylesheet" href="ti-icons/css/themify-icons.css" />
 
 	<!-- css styles -->
 	<link rel="stylesheet" href="styles/bootstrap.min.css" />
-	<link rel="stylesheet" href="styles/custom.css" />
+	<link rel="stylesheet" href="styles/modern.css" />
 
 	<!-- favicon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
@@ -33,34 +33,55 @@
 	
 	<nav class="navbar navbar-expand-lg fixed-top" id="siteNavbar" role="navigation" aria-label="Main navigation">
 		<div class="container">
-			<a class="navbar-brand" href="index.html">irbba devs</a>
+			<a class="navbar-brand" href="index.html">
+				<span class="brand-logo">iRBbA</span>
+				<span class="brand-text">devs</span>
+			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarType"
 				aria-controls="navbarType" aria-expanded="false" aria-label="Toggle navigation menu">
 				<span class="navbar-toggler-icon">
-					<i class="mdi mdi-menu" aria-hidden="true"></i>
+					<span class="hamburger-line"></span>
+					<span class="hamburger-line"></span>
+					<span class="hamburger-line"></span>
 				</span>
 			</button>
 			<div class="collapse navbar-collapse justify-content-md-end" id="navbarType">
 				<ul class="navbar-nav">
 					<li class="nav-item">
-						<a class="nav-link" href="index.html">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#about">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#services">Services</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#projects">Projects</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#testimonials">
-							Testimonials
+						<a class="nav-link" href="index.html" data-section="home">
+							<span class="nav-text">Home</span>
+							<span class="nav-indicator"></span>
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#contact">Contact</a>
+						<a class="nav-link" href="#about" data-section="about">
+							<span class="nav-text">About</span>
+							<span class="nav-indicator"></span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#services" data-section="services">
+							<span class="nav-text">Services</span>
+							<span class="nav-indicator"></span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#projects" data-section="projects">
+							<span class="nav-text">Projects</span>
+							<span class="nav-indicator"></span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#testimonials" data-section="testimonials">
+							<span class="nav-text">Testimonials</span>
+							<span class="nav-indicator"></span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact" data-section="contact">
+							<span class="nav-text">Contact</span>
+							<span class="nav-indicator"></span>
+						</a>
 					</li>
 				</ul>
 			</div>
@@ -72,442 +93,1043 @@
 	<!-- landing -->
 	<!-- Enhanced Landing Section -->
 <section id="landing" class="landing-hero">
-  <div class="hero-bg"></div>
+  <div class="hero-bg">
+    <div class="particle" style="--delay: 0s; --x: 10%; --y: 20%;"></div>
+    <div class="particle" style="--delay: 1s; --x: 80%; --y: 30%;"></div>
+    <div class="particle" style="--delay: 2s; --x: 60%; --y: 70%;"></div>
+    <div class="particle" style="--delay: 3s; --x: 30%; --y: 80%;"></div>
+    <div class="particle" style="--delay: 4s; --x: 90%; --y: 10%;"></div>
+  </div>
   <div class="hero-content">
+    <div class="hero-badge">
+      <span class="badge-text">Welcome to</span>
+    </div>
     <h1 class="hero-title">
-      <span class="gradient-text">IRBBA DEVS</span>
+      <span class="hero-greeting">Hi, I'm</span>
+      <span class="gradient-text typing-text">IRBBA DEVS</span>
     </h1>
     <p class="hero-subtitle">
-      Crafting Unique Digital Experiences Through <span class="highlight">Design</span> & <span class="highlight">Development</span>.<br>
-      We turn your concepts into captivating digital realities.
+      <span class="role-text">Full-Stack Developer & UI/UX Designer</span><br>
+      Crafting exceptional digital experiences through innovative 
+      <span class="highlight">design</span> & <span class="highlight">development</span>.<br>
+      Turning ideas into powerful digital solutions.
     </p>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-number" data-target="50">0</span>
+        <span class="stat-label">Projects</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="3">0</span>
+        <span class="stat-label">Years</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="100">0</span>
+        <span class="stat-label">Happy Clients</span>
+      </div>
+    </div>
     <div class="hero-btns">
-      <a href="#projects" class="btn btn-primary">View Projects</a>
-      <a href="#contact" class="btn btn-secondary">Get Started</a>
+      <a href="#projects" class="btn btn-primary">
+        <span>View My Work</span>
+        <i class="mdi mdi-arrow-right"></i>
+      </a>
+      <a href="#contact" class="btn btn-secondary">
+        <span>Let's Talk</span>
+        <i class="mdi mdi-message"></i>
+      </a>
     </div>
   </div>
   <div class="scroll-indicator">
-    <span>Scroll Down</span>
-    <i class="mdi mdi-chevron-down"></i>
+    <div class="mouse">
+      <div class="wheel"></div>
+    </div>
+    <span>Scroll to explore</span>
   </div>
 </section>
 
-	<!-- about -->
-	<div class="container rounded-3" id="about">
-		<div class="row slide-in from-bottom">
-			<div class="px-2">
-				<div class="container-fluid py-5">
-					<h1 class="display-1">About irbba Devs</h1>
+	<!-- Enhanced About Section -->
+	<section class="about-section" id="about">
+		<div class="container">
+			<div class="row slide-in from-bottom">
+				<div class="col-lg-6 about-content-wrapper">
+					<div class="section-label">About Me</div>
+					<h2 class="section-title">Passionate Developer & Designer</h2>
 					<div class="about-content">
-						<p>
-							We take pride in delivering <span class="about-highlight">top-notch services</span>
-							and constantly strive to offer <span class="about-highlight">innovative</span> and
-							exceptional ideas to meet your needs.
+						<p class="lead">
+							I'm Raymond Affedzie, a <span class="text-highlight">full-stack developer</span> 
+							with a passion for creating digital solutions that make a difference.
 						</p>
-						<small>
-							We are dedicated to providing exceptional
-							service, fueled by our commitment to <span class="about-highlight">creativity</span>
-							and <span class="about-highlight">innovation</span>. Our team tirelessly strives to
-							exceed client expectations by generating and
-							implementing remarkable ideas. <br><br> Your satisfaction
-							is our top priority, and we aim to turn your
-							visions into reality through our outstanding
-							services and innovative thinking.
-						</small>
+						<p>
+							With <span class="text-highlight">3+ years</span> of experience in web development, 
+							I specialize in turning complex problems into simple, beautiful, and intuitive designs. 
+							I work with modern technologies to deliver <span class="text-highlight">exceptional user experiences</span>.
+						</p>
+						<div class="expertise-grid">
+							<div class="expertise-item">
+								<i class="mdi mdi-code-tags"></i>
+								<span>Frontend Development</span>
+							</div>
+							<div class="expertise-item">
+								<i class="mdi mdi-server"></i>
+								<span>Backend Systems</span>
+							</div>
+							<div class="expertise-item">
+								<i class="mdi mdi-palette"></i>
+								<span>UI/UX Design</span>
+							</div>
+							<div class="expertise-item">
+								<i class="mdi mdi-responsive"></i>
+								<span>Mobile First</span>
+							</div>
+						</div>
+						<div class="about-actions">
+							<a href="#contact" class="btn btn-primary">
+								<span>Hire Me</span>
+								<i class="mdi mdi-arrow-right"></i>
+							</a>
+							<a href="/resume.pdf" class="btn btn-outline" target="_blank">
+								<span>Download CV</span>
+								<i class="mdi mdi-download"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 about-visual">
+					<div class="developer-illustration">
+						<div class="code-editor">
+							<div class="editor-header">
+								<div class="editor-dots">
+									<span class="dot red"></span>
+									<span class="dot yellow"></span>
+									<span class="dot green"></span>
+								</div>
+								<span class="file-name">portfolio.js</span>
+							</div>
+							<div class="editor-content">
+								<div class="code-line">
+									<span class="line-number">1</span>
+									<span class="code"><span class="keyword">const</span> <span class="variable">developer</span> = {</span>
+								</div>
+								<div class="code-line">
+									<span class="line-number">2</span>
+									<span class="code">  <span class="property">name</span>: <span class="string">'Raymond Affedzie'</span>,</span>
+								</div>
+								<div class="code-line">
+									<span class="line-number">3</span>
+									<span class="code">  <span class="property">skills</span>: [<span class="string">'JavaScript'</span>, <span class="string">'PHP'</span>, <span class="string">'React'</span>],</span>
+								</div>
+								<div class="code-line">
+									<span class="line-number">4</span>
+									<span class="code">  <span class="property">passion</span>: <span class="string">'Creating Amazing UIs'</span></span>
+								</div>
+								<div class="code-line">
+									<span class="line-number">5</span>
+									<span class="code">};</span>
+								</div>
+							</div>
+						</div>
+						<div class="floating-elements">
+							<div class="floating-element" style="--delay: 0s;">
+								<i class="mdi mdi-language-javascript"></i>
+							</div>
+							<div class="floating-element" style="--delay: 1s;">
+								<i class="mdi mdi-language-php"></i>
+							</div>
+							<div class="floating-element" style="--delay: 2s;">
+								<i class="mdi mdi-react"></i>
+							</div>
+							<div class="floating-element" style="--delay: 3s;">
+								<i class="mdi mdi-nodejs"></i>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
-	<!-- social -->
-	<div class="container" id="socials">
-		<div class="row slide-in from-bottom">
-			<div class="cover meet" role="list" aria-label="Social media links">
-				<div class="socials fade-in linkedin">
-					<a href="https://www.linkedin.com/in/raymond-affedzie-5111091b1/" target="_blank" aria-label="LinkedIn profile">
-						<i class="mdi mdi-linkedin-box" aria-hidden="true"></i>
-					</a>
-				</div>
-				<div class="socials fade-in github">
-					<a href="https://github.com/RaymondAffedzie" target="_blank" aria-label="GitHub profile">
-						<i class="mdi mdi-github-circle" aria-hidden="true"></i>
-					</a>
-				</div>
-				<div class="socials fade-in twitter">
-					<a href="https://x.com/berth_ray" target="_blank" aria-label="Twitter profile">
-						<i class="mdi mdi-twitter" aria-hidden="true"></i>
-					</a>
-				</div>
-				<div class="socials fade-in whatsapp">
-					<a href="#" target="_blank" aria-label="WhatsApp contact">
-						<i class="mdi mdi-whatsapp" aria-hidden="true"></i>
-					</a>
-				</div>
-				<div class="socials fade-in instagram">
-					<a href="https://www.instagram.com/_irbba/" target="_blank" aria-label="Instagram profile">
-						<i class="mdi mdi-instagram" aria-hidden="true"></i>
-					</a>
-				</div>
-				<div class="socials fade-in telegram">
-					<a href="https://www.iRBbA@t.me" target="_blank" aria-label="Telegram contact">
-						<i class="mdi mdi-telegram" aria-hidden="true"></i>
-					</a>
+	<!-- Enhanced Social Section -->
+	<section class="social-section" id="socials">
+		<div class="container">
+			<div class="row slide-in from-bottom">
+				<div class="col-12 text-center">
+					<div class="section-label">Connect With Me</div>
+					<h3 class="social-title">Let's Build Something Amazing Together</h3>
+					<div class="social-grid">
+						<a href="https://www.linkedin.com/in/raymond-affedzie-5111091b1/" target="_blank" 
+						   class="social-card linkedin" aria-label="LinkedIn profile">
+							<div class="social-icon">
+								<i class="mdi mdi-linkedin"></i>
+							</div>
+							<div class="social-content">
+								<h4>LinkedIn</h4>
+								<p>Professional Network</p>
+							</div>
+							<div class="social-hover">
+								<span>Connect</span>
+								<i class="mdi mdi-arrow-right"></i>
+							</div>
+						</a>
+						
+						<a href="https://github.com/RaymondAffedzie" target="_blank" 
+						   class="social-card github" aria-label="GitHub profile">
+							<div class="social-icon">
+								<i class="mdi mdi-github"></i>
+							</div>
+							<div class="social-content">
+								<h4>GitHub</h4>
+								<p>Code Repository</p>
+							</div>
+							<div class="social-hover">
+								<span>Follow</span>
+								<i class="mdi mdi-arrow-right"></i>
+							</div>
+						</a>
+						
+						<a href="https://x.com/berth_ray" target="_blank" 
+						   class="social-card twitter" aria-label="Twitter profile">
+							<div class="social-icon">
+								<i class="mdi mdi-twitter"></i>
+							</div>
+							<div class="social-content">
+								<h4>Twitter</h4>
+								<p>Latest Updates</p>
+							</div>
+							<div class="social-hover">
+								<span>Follow</span>
+								<i class="mdi mdi-arrow-right"></i>
+							</div>
+						</a>
+						
+						<a href="https://www.instagram.com/_irbba/" target="_blank" 
+						   class="social-card instagram" aria-label="Instagram profile">
+							<div class="social-icon">
+								<i class="mdi mdi-instagram"></i>
+							</div>
+							<div class="social-content">
+								<h4>Instagram</h4>
+								<p>Behind the Scenes</p>
+							</div>
+							<div class="social-hover">
+								<span>Follow</span>
+								<i class="mdi mdi-arrow-right"></i>
+							</div>
+						</a>
+						
+						<a href="https://www.iRBbA@t.me" target="_blank" 
+						   class="social-card telegram" aria-label="Telegram contact">
+							<div class="social-icon">
+								<i class="mdi mdi-telegram"></i>
+							</div>
+							<div class="social-content">
+								<h4>Telegram</h4>
+								<p>Quick Chat</p>
+							</div>
+							<div class="social-hover">
+								<span>Message</span>
+								<i class="mdi mdi-arrow-right"></i>
+							</div>
+						</a>
+						
+						<a href="mailto:raymond@irbbadevs.com" 
+						   class="social-card email" aria-label="Email contact">
+							<div class="social-icon">
+								<i class="mdi mdi-email"></i>
+							</div>
+							<div class="social-content">
+								<h4>Email</h4>
+								<p>Business Inquiries</p>
+							</div>
+							<div class="social-hover">
+								<span>Contact</span>
+								<i class="mdi mdi-arrow-right"></i>
+							</div>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
-	<!-- services -->
-	<div class="container" id="services">
-		<div class="row slide-in from-bottom">
-			<h2 class="comment">Services</h2>
-			<span>
-				We specialize in web design and development to transform
-				your vision into reality, delivering impactful results. Our
-				unique approach ensures that your ideas come to life
-			</span>
-
-			<!--- #card is for mobile devices style-->
-			<div class="row" id="card">
-				<div class="col-md-6 services slide-in from-bottom">
+	<!-- Enhanced Services Section -->
+	<section class="services-section" id="services">
+		<div class="container">
+			<div class="row slide-in from-bottom">
+				<div class="col-12 text-center mb-5">
+					<div class="section-label">What I Do</div>
+					<h2 class="section-title">Services & Expertise</h2>
+					<p class="section-description">
+						I specialize in creating digital solutions that combine beautiful design 
+						with powerful functionality to deliver exceptional user experiences.
+					</p>
+				</div>
+			</div>
+			
+			<div class="services-grid">
+				<div class="service-card fade-in">
 					<div class="service-icon">
 						<i class="mdi mdi-palette"></i>
 					</div>
-					<h3>Creative Design</h3>
-					<p>
-						Our talented team of designers crafts unique and
-						visually captivating websites tailored to your
-						brand, ensuring every element reflects your vision.
+					<h3 class="service-title">UI/UX Design</h3>
+					<p class="service-description">
+						Creating intuitive and visually appealing interfaces that prioritize 
+						user experience and accessibility across all devices.
 					</p>
-
-					<div class="service-icon">
-						<i class="mdi mdi-responsive"></i>
+					<div class="service-features">
+						<span class="feature-tag">Wireframing</span>
+						<span class="feature-tag">Prototyping</span>
+						<span class="feature-tag">User Research</span>
 					</div>
-					<h3>Responsive Design</h3>
-					<p>
-						Your website will look and perform flawlessly on all
-						devices, ensuring your audience can access your
-						content anytime, anywhere with optimal user experience.
-					</p>
-
-					<div class="service-icon">
-						<i class="mdi mdi-shopping"></i>
-					</div>
-					<h3>E-Commerce Website</h3>
-					<p>
-						Count on us for e-commerce excellence - boosting
-						sales and creating lasting impressions with secure,
-						scalable online shopping experiences.
-					</p>
-
-					<div class="service-icon">
-						<i class="mdi mdi-chart-line"></i>
-					</div>
-					<h3>SEO and Digital Marketing</h3>
-					<p>
-						Boost your online visibility and connect you with
-						your target audience. We employ strategic
-						optimization techniques to enhance your website's
-						search engine rankings and drive organic traffic.
-					</p>
 				</div>
-
-				<div class="col-md-6 services slide-in from-bottom">
-					<div class="service-icon">
-						<i class="mdi mdi-cloud-upload"></i>
-					</div>
-					<h3>Hosting and Deployment</h3>
-					<p>
-						From configuring servers to domain setup, we take
-						care of the technical aspects, so you can focus on
-						what matters most—your online presence and business growth.
-					</p>
-
+				
+				<div class="service-card fade-in">
 					<div class="service-icon">
 						<i class="mdi mdi-code-tags"></i>
 					</div>
-					<h3>Custom Development</h3>
-					<p>
-						We build powerful, custom web solutions that meet
-						your specific needs and provide a seamless user
-						experience with cutting-edge technologies and frameworks.
+					<h3 class="service-title">Frontend Development</h3>
+					<p class="service-description">
+						Building responsive and interactive websites using modern frameworks 
+						and best practices for optimal performance.
 					</p>
-
-					<div class="service-icon">
-						<i class="mdi mdi-account-heart"></i>
+					<div class="service-features">
+						<span class="feature-tag">React/Vue</span>
+						<span class="feature-tag">JavaScript</span>
+						<span class="feature-tag">CSS3</span>
 					</div>
-					<h3>Personalized Service</h3>
-					<p>
-						We work closely with you to understand your goals
-						and deliver web solutions that exceed your
-						expectations, providing ongoing support and maintenance.
-					</p>
-
+				</div>
+				
+				<div class="service-card fade-in">
 					<div class="service-icon">
-						<i class="mdi mdi-lightbulb-on"></i>
+						<i class="mdi mdi-server"></i>
 					</div>
-					<h3>Consultation and Advice</h3>
-					<p>
-						Whether you need technology recommendations,
-						strategic insights, or assistance with project
-						planning, our experienced team is here to offer valuable advice and guidance.
+					<h3 class="service-title">Backend Development</h3>
+					<p class="service-description">
+						Developing robust server-side applications and APIs that power 
+						your web applications with security and scalability.
 					</p>
+					<div class="service-features">
+						<span class="feature-tag">PHP</span>
+						<span class="feature-tag">Node.js</span>
+						<span class="feature-tag">MySQL</span>
+					</div>
+				</div>
+				
+				<div class="service-card fade-in">
+					<div class="service-icon">
+						<i class="mdi mdi-shopping"></i>
+					</div>
+					<h3 class="service-title">E-Commerce Solutions</h3>
+					<p class="service-description">
+						Complete e-commerce platforms with payment integration, 
+						inventory management, and user-friendly shopping experiences.
+					</p>
+					<div class="service-features">
+						<span class="feature-tag">WooCommerce</span>
+						<span class="feature-tag">Payment Gateway</span>
+						<span class="feature-tag">Analytics</span>
+					</div>
+				</div>
+				
+				<div class="service-card fade-in">
+					<div class="service-icon">
+						<i class="mdi mdi-responsive"></i>
+					</div>
+					<h3 class="service-title">Responsive Design</h3>
+					<p class="service-description">
+						Ensuring your website looks perfect and functions flawlessly 
+						across all devices and screen sizes.
+					</p>
+					<div class="service-features">
+						<span class="feature-tag">Mobile First</span>
+						<span class="feature-tag">Cross-browser</span>
+						<span class="feature-tag">Performance</span>
+					</div>
+				</div>
+				
+				<div class="service-card fade-in">
+					<div class="service-icon">
+						<i class="mdi mdi-rocket-launch"></i>
+					</div>
+					<h3 class="service-title">SEO & Optimization</h3>
+					<p class="service-description">
+						Optimizing websites for search engines and performance 
+						to increase visibility and user engagement.
+					</p>
+					<div class="service-features">
+						<span class="feature-tag">Speed Optimization</span>
+						<span class="feature-tag">SEO Audit</span>
+						<span class="feature-tag">Analytics</span>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
-	<!-- project -->
-	<div class="container" id="projects">
-		<div class="row slide-in from-bottom">
-			<h2 class="comment">Projects</h2>
-			<span>
-				Explore our portfolio of completed projects. See firsthand
-				the quality of our work, our commitment to excellence, and
-				the diverse range of solutions we've delivered for our
-				clients
-			</span>
-			<div class="wrapper">
-				<div class="project">
-					<div class="box-content">
+	<!-- Enhanced Projects Section -->
+	<section class="projects-section" id="projects">
+		<div class="container">
+			<div class="row slide-in from-bottom">
+				<div class="col-12 text-center mb-5">
+					<div class="section-label">Portfolio</div>
+					<h2 class="section-title">Featured Projects</h2>
+					<p class="section-description">
+						Explore some of my recent work showcasing innovation, 
+						creativity, and technical excellence in web development.
+					</p>
+				</div>
+			</div>
+			
+			<div class="projects-grid">
+				<div class="project-card fade-in">
+					<div class="project-icon">
 						<i class="mdi mdi-table"></i>
-						<h3>Invoice Generator</h3>
-						<p>This software will enable small or large organizations
-							to manage their sales (Invoice), staff and generate
-							reports efficiently
-						</p>
 					</div>
-					<div class="box-preview">
-						<a href="https://github.com/RaymondAffedzie/invoice-app" target="_blank">
-							Preview
-							<i class="mdi mdi-arrow-right-bold-outline"></i>
-						</a>
+					<div class="project-content">
+						<div class="project-category">Business Application</div>
+						<h3 class="project-title">Invoice Generator</h3>
+						<p class="project-description">
+							A comprehensive software solution that enables organizations 
+							to manage sales invoices, staff, and generate detailed reports efficiently.
+						</p>
+						<div class="project-tech">
+							<span class="tech-tag">PHP</span>
+							<span class="tech-tag">MySQL</span>
+							<span class="tech-tag">JavaScript</span>
+							<span class="tech-tag">Bootstrap</span>
+						</div>
+						<div class="project-links">
+							<a href="https://github.com/RaymondAffedzie/invoice-app" target="_blank" class="project-link">
+								<i class="mdi mdi-github"></i>
+								View Code
+							</a>
+							<a href="#" class="project-link primary">
+								<i class="mdi mdi-eye"></i>
+								Live Demo
+							</a>
+						</div>
 					</div>
 				</div>
-
-				<div class="project">
-					<div class="box-content">
+				
+				<div class="project-card fade-in">
+					<div class="project-icon">
 						<i class="mdi mdi-cart"></i>
-						<h3>Ms T Ros Candles</h3>
-						<p>Ecommerce application which focus on offering clean burning
-							candles with warm luxury fragrances that blends any home,
-							embracing the spirit and warmth of every home
-						</p>
 					</div>
-					<div class="box-preview">
-						<a href="https://mstroscandles.com" target="_blank">
-							Preview
-							<i class="mdi mdi-arrow-right-bold-outline"></i>
-						</a>
+					<div class="project-content">
+						<div class="project-category">E-Commerce</div>
+						<h3 class="project-title">Ms T Ros Candles</h3>
+						<p class="project-description">
+							An elegant e-commerce platform offering luxury candles with 
+							warm fragrances, featuring secure payments and inventory management.
+						</p>
+						<div class="project-tech">
+							<span class="tech-tag">WooCommerce</span>
+							<span class="tech-tag">WordPress</span>
+							<span class="tech-tag">PHP</span>
+							<span class="tech-tag">Stripe</span>
+						</div>
+						<div class="project-links">
+							<a href="#" class="project-link">
+								<i class="mdi mdi-github"></i>
+								Private Repo
+							</a>
+							<a href="https://mstroscandles.com" target="_blank" class="project-link primary">
+								<i class="mdi mdi-eye"></i>
+								Visit Site
+							</a>
+						</div>
 					</div>
 				</div>
-
-				<div class="project">
-					<div class="box-content">
+				
+				<div class="project-card fade-in">
+					<div class="project-icon">
 						<i class="mdi mdi-book"></i>
-						<h3>Prep Quiz (I Quiz)</h3>
-						<p>An application designed to help students (WAEC) prepare for various
-							exams by taking quizzes from multiple categories (past questions or
-							personal practice quiz) and levels (BECE, WASSCE, TVET, NOVDEC)
+					</div>
+					<div class="project-content">
+						<div class="project-category">Educational</div>
+						<h3 class="project-title">Prep Quiz (I Quiz)</h3>
+						<p class="project-description">
+							An interactive learning platform helping WAEC students prepare 
+							for exams with categorized quizzes and past questions.
+						</p>
+						<div class="project-tech">
+							<span class="tech-tag">React</span>
+							<span class="tech-tag">Node.js</span>
+							<span class="tech-tag">MongoDB</span>
+							<span class="tech-tag">Express</span>
+						</div>
+						<div class="project-links">
+							<a href="https://github.com/RaymondAffedzie/prep-quiz" target="_blank" class="project-link">
+								<i class="mdi mdi-github"></i>
+								View Code
+							</a>
+							<a href="#" class="project-link primary">
+								<i class="mdi mdi-eye"></i>
+								Try Demo
+							</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="project-card fade-in">
+					<div class="project-icon">
+						<i class="mdi mdi-file"></i>
+					</div>
+					<div class="project-content">
+						<div class="project-category">Data Management</div>
+						<h3 class="project-title">SAP Axim</h3>
+						<p class="project-description">
+							A specialized data collection system for St. Anthony of Padua Catholic Church 
+							with member management and reporting capabilities.
+						</p>
+						<div class="project-tech">
+							<span class="tech-tag">PHP</span>
+							<span class="tech-tag">MySQL</span>
+							<span class="tech-tag">Chart.js</span>
+							<span class="tech-tag">PDF Export</span>
+						</div>
+						<div class="project-links">
+							<a href="https://github.com/RaymondAffedzie/sap-axim" target="_blank" class="project-link">
+								<i class="mdi mdi-github"></i>
+								View Code
+							</a>
+							<a href="#" class="project-link primary">
+								<i class="mdi mdi-eye"></i>
+								Case Study
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="text-center mt-5">
+				<a href="#contact" class="btn btn-primary">
+					Start Your Project
+					<i class="mdi mdi-arrow-right"></i>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Enhanced Skills Section -->
+	<section class="skills-section" id="skills">
+		<div class="container">
+			<div class="row slide-in from-bottom">
+				<div class="col-12 text-center mb-5">
+					<div class="section-label">Expertise</div>
+					<h2 class="section-title">Technical Skills</h2>
+					<p class="section-description">
+						A comprehensive toolkit of modern technologies and frameworks 
+						that I use to build exceptional digital experiences.
+					</p>
+				</div>
+			</div>
+			
+			<div class="skills-container">
+				<!-- Frontend Technologies -->
+				<div class="skill-category fade-in">
+					<h3 class="skill-category-title">
+						<i class="mdi mdi-monitor"></i>
+						Frontend Development
+					</h3>
+					<div class="skills-grid">
+						<div class="skill-item" data-skill="95">
+							<div class="skill-info">
+								<i class="mdi mdi-language-html5"></i>
+								<div class="skill-details">
+									<span class="skill-name">HTML5</span>
+									<span class="skill-level">Expert</span>
+								</div>
+							</div>
+							<div class="skill-progress-bar">
+								<div class="skill-progress" data-width="95"></div>
+							</div>
+						</div>
+						
+						<div class="skill-item" data-skill="90">
+							<div class="skill-info">
+								<i class="mdi mdi-language-css3"></i>
+								<div class="skill-details">
+									<span class="skill-name">CSS3</span>
+									<span class="skill-level">Expert</span>
+								</div>
+							</div>
+							<div class="skill-progress-bar">
+								<div class="skill-progress" data-width="90"></div>
+							</div>
+						</div>
+						
+						<div class="skill-item" data-skill="88">
+							<div class="skill-info">
+								<i class="mdi mdi-language-javascript"></i>
+								<div class="skill-details">
+									<span class="skill-name">JavaScript</span>
+									<span class="skill-level">Expert</span>
+								</div>
+							</div>
+							<div class="skill-progress-bar">
+								<div class="skill-progress" data-width="88"></div>
+							</div>
+						</div>
+						
+						<div class="skill-item" data-skill="85">
+							<div class="skill-info">
+								<i class="mdi mdi-react"></i>
+								<div class="skill-details">
+									<span class="skill-name">React</span>
+									<span class="skill-level">Advanced</span>
+								</div>
+							</div>
+							<div class="skill-progress-bar">
+								<div class="skill-progress" data-width="85"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Backend Technologies -->
+				<div class="skill-category fade-in">
+					<h3 class="skill-category-title">
+						<i class="mdi mdi-server"></i>
+						Backend Development
+					</h3>
+					<div class="skills-grid">
+						<div class="skill-item" data-skill="92">
+							<div class="skill-info">
+								<i class="mdi mdi-language-php"></i>
+								<div class="skill-details">
+									<span class="skill-name">PHP</span>
+									<span class="skill-level">Expert</span>
+								</div>
+							</div>
+							<div class="skill-progress-bar">
+								<div class="skill-progress" data-width="92"></div>
+							</div>
+						</div>
+						
+						<div class="skill-item" data-skill="80">
+							<div class="skill-info">
+								<i class="mdi mdi-nodejs"></i>
+								<div class="skill-details">
+									<span class="skill-name">Node.js</span>
+									<span class="skill-level">Advanced</span>
+								</div>
+							</div>
+							<div class="skill-progress-bar">
+								<div class="skill-progress" data-width="80"></div>
+							</div>
+						</div>
+						
+						<div class="skill-item" data-skill="88">
+							<div class="skill-info">
+								<i class="mdi mdi-database"></i>
+								<div class="skill-details">
+									<span class="skill-name">MySQL</span>
+									<span class="skill-level">Expert</span>
+								</div>
+							</div>
+							<div class="skill-progress-bar">
+								<div class="skill-progress" data-width="88"></div>
+							</div>
+						</div>
+						
+						<div class="skill-item" data-skill="75">
+							<div class="skill-info">
+								<i class="mdi mdi-language-java"></i>
+								<div class="skill-details">
+									<span class="skill-name">Java</span>
+									<span class="skill-level">Intermediate</span>
+								</div>
+							</div>
+							<div class="skill-progress-bar">
+								<div class="skill-progress" data-width="75"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Tools & DevOps -->
+				<div class="skill-category fade-in">
+					<h3 class="skill-category-title">
+						<i class="mdi mdi-tools"></i>
+						Tools & DevOps
+					</h3>
+					<div class="skills-grid">
+						<div class="skill-item" data-skill="85">
+							<div class="skill-info">
+								<i class="mdi mdi-git"></i>
+								<div class="skill-details">
+									<span class="skill-name">Git/GitHub</span>
+									<span class="skill-level">Advanced</span>
+								</div>
+							</div>
+							<div class="skill-progress-bar">
+								<div class="skill-progress" data-width="85"></div>
+							</div>
+						</div>
+						
+						<div class="skill-item" data-skill="80">
+							<div class="skill-info">
+								<i class="mdi mdi-linux"></i>
+								<div class="skill-details">
+									<span class="skill-name">Linux</span>
+									<span class="skill-level">Advanced</span>
+								</div>
+							</div>
+							<div class="skill-progress-bar">
+								<div class="skill-progress" data-width="80"></div>
+							</div>
+						</div>
+						
+						<div class="skill-item" data-skill="78">
+							<div class="skill-info">
+								<i class="mdi mdi-apache"></i>
+								<div class="skill-details">
+									<span class="skill-name">Apache</span>
+									<span class="skill-level">Advanced</span>
+								</div>
+							</div>
+							<div class="skill-progress-bar">
+								<div class="skill-progress" data-width="78"></div>
+							</div>
+						</div>
+						
+						<div class="skill-item" data-skill="82">
+							<div class="skill-info">
+								<i class="mdi mdi-docker"></i>
+								<div class="skill-details">
+									<span class="skill-name">Docker</span>
+									<span class="skill-level">Advanced</span>
+								</div>
+							</div>
+							<div class="skill-progress-bar">
+								<div class="skill-progress" data-width="82"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Enhanced Testimonials Section -->
+	<section class="testimonials-section" id="testimonials">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center mb-5">
+					<div class="section-label">Testimonials</div>
+					<h2 class="section-title">What Clients Say</h2>
+					<p class="section-description">
+						Real experiences and success stories from clients who trust 
+						me to bring their digital visions to life.
+					</p>
+				</div>
+			</div>
+			
+			<div class="testimonials-container">
+				<div class="testimonial-card fade-in">
+					<div class="testimonial-content">
+						<div class="quote-icon">
+							<i class="mdi mdi-format-quote-open"></i>
+						</div>
+						<p class="testimonial-text">
+							"Raymond's desire to know more about IT at a very young age was interesting. 
+							His work, even then, was far beyond what I had come to expect from a young 
+							teenager. His knowledge of coding and programming seems truly limitless, and 
+							he's likely the last person you'll ever need for anything on the web. 
+							Congratulations on your success, Raymond. Long may it continue!"
+						</p>
+						<div class="testimonial-rating">
+							<i class="mdi mdi-star"></i>
+							<i class="mdi mdi-star"></i>
+							<i class="mdi mdi-star"></i>
+							<i class="mdi mdi-star"></i>
+							<i class="mdi mdi-star"></i>
+						</div>
+					</div>
+					<div class="testimonial-author">
+						<div class="author-image">
+							<img src="images/george3.jpg" alt="George Ntsiful" loading="lazy">
+						</div>
+						<div class="author-info">
+							<h4 class="author-name">George Ntsiful</h4>
+							<p class="author-role">Senior Developer & Mentor</p>
+							<div class="author-company">Tech Solutions Inc.</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="testimonial-card fade-in">
+					<div class="testimonial-content">
+						<div class="quote-icon">
+							<i class="mdi mdi-format-quote-open"></i>
+						</div>
+						<p class="testimonial-text">
+							"Raymond is very passionate about everything he does. He is free and loves 
+							to learn and teach what he learns with everyone who needs help. Raymond is 
+							my mentor and my motivator. Working with him has been an incredible 
+							experience that has elevated both my skills and my career."
+						</p>
+						<div class="testimonial-rating">
+							<i class="mdi mdi-star"></i>
+							<i class="mdi mdi-star"></i>
+							<i class="mdi mdi-star"></i>
+							<i class="mdi mdi-star"></i>
+							<i class="mdi mdi-star"></i>
+						</div>
+					</div>
+					<div class="testimonial-author">
+						<div class="author-image">
+							<img src="images/stephen.jpeg" alt="Stephen Mensah" loading="lazy">
+						</div>
+						<div class="author-info">
+							<h4 class="author-name">Stephen Mensah</h4>
+							<p class="author-role">Full Stack Developer</p>
+							<div class="author-company">Digital Innovations Ltd.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="testimonials-navigation">
+				<button class="nav-btn prev-btn" aria-label="Previous testimonial">
+					<i class="mdi mdi-chevron-left"></i>
+				</button>
+				<div class="testimonials-dots">
+					<button class="dot active" data-slide="0" aria-label="View testimonial 1"></button>
+					<button class="dot" data-slide="1" aria-label="View testimonial 2"></button>
+				</div>
+				<button class="nav-btn next-btn" aria-label="Next testimonial">
+					<i class="mdi mdi-chevron-right"></i>
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<!-- Enhanced Contact Section -->
+	<section class="contact-section" id="contact">
+		<div class="container">
+			<div class="row slide-in from-bottom">
+				<div class="col-12 text-center mb-5">
+					<div class="section-label">Get In Touch</div>
+					<h2 class="section-title">Let's Work Together</h2>
+					<p class="section-description">
+						Ready to bring your vision to life? Let's discuss your project 
+						and create something amazing together.
+					</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-8 mx-auto">
+					<div class="contact-wrapper">
+						<div class="contact-info">
+							<div class="contact-item fade-in">
+								<div class="contact-icon">
+									<i class="mdi mdi-email"></i>
+								</div>
+								<div class="contact-details">
+									<h4>Email Me</h4>
+									<p>rayaffedzie@gmail.com</p>
+									<a href="mailto:rayaffedzie@gmail.com" class="contact-link">Send Email</a>
+								</div>
+							</div>
+							
+							<div class="contact-item fade-in">
+								<div class="contact-icon">
+									<i class="mdi mdi-phone"></i>
+								</div>
+								<div class="contact-details">
+									<h4>Call Me</h4>
+									<p>+233 24 123 4567</p>
+									<a href="tel:+2332412345676" class="contact-link">Call Now</a>
+								</div>
+							</div>
+							
+							<div class="contact-item fade-in">
+								<div class="contact-icon">
+									<i class="mdi mdi-map-marker"></i>
+								</div>
+								<div class="contact-details">
+									<h4>Location</h4>
+									<p>Accra, Ghana</p>
+									<span class="contact-link">Available Remote</span>
+								</div>
+							</div>
+						</div>
+						
+						<div class="contact-form-wrapper">
+							<form class="modern-contact-form" id="contactForm">
+								<div class="form-grid">
+									<div class="form-group">
+										<input type="text" name="name" id="name" placeholder=" " required />
+										<label for="name">Full Name</label>
+										<span class="error-message">Please enter your full name</span>
+									</div>
+									
+									<div class="form-group">
+										<input type="email" name="email" id="email" placeholder=" " required />
+										<label for="email">Email Address</label>
+										<span class="error-message">Please enter a valid email address</span>
+									</div>
+								</div>
+								
+								<div class="form-group">
+									<input type="text" name="subject" id="subject" placeholder=" " required />
+									<label for="subject">Project Subject</label>
+									<span class="error-message">Please enter a subject</span>
+								</div>
+								
+								<div class="form-group">
+									<textarea name="message" id="message" placeholder=" " rows="5" required></textarea>
+									<label for="message">Tell me about your project</label>
+									<span class="error-message">Please enter your message</span>
+								</div>
+								
+								<button class="submit-btn" type="submit">
+									<span class="btn-text">Send Message</span>
+									<span class="btn-icon">
+										<i class="mdi mdi-send"></i>
+									</span>
+									<span class="btn-loading">
+										<i class="mdi mdi-loading mdi-spin"></i>
+									</span>
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row mt-5">
+				<div class="col-12 text-center">
+					<div class="contact-social">
+						<h4 class="social-title">Follow Me</h4>
+						<div class="social-links">
+							<a href="#" class="social-link github" aria-label="GitHub">
+								<i class="mdi mdi-github"></i>
+							</a>
+							<a href="#" class="social-link linkedin" aria-label="LinkedIn">
+								<i class="mdi mdi-linkedin"></i>
+							</a>
+							<a href="#" class="social-link twitter" aria-label="Twitter">
+								<i class="mdi mdi-twitter"></i>
+							</a>
+							<a href="#" class="social-link telegram" aria-label="Telegram">
+								<i class="mdi mdi-telegram"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Enhanced Footer -->
+	<footer class="modern-footer">
+		<div class="container">
+			<div class="footer-content">
+				<div class="row">
+					<div class="col-lg-4 col-md-6 mb-4">
+						<div class="footer-section">
+							<div class="footer-logo">
+								<h3>Raymond Affedzie</h3>
+								<p class="footer-tagline">Full Stack Developer</p>
+							</div>
+							<p class="footer-description">
+								Crafting digital experiences with modern technologies and creative solutions. 
+								Let's build something amazing together.
+							</p>
+							<div class="footer-social">
+								<a href="#" class="footer-social-link" aria-label="GitHub">
+									<i class="mdi mdi-github"></i>
+								</a>
+								<a href="#" class="footer-social-link" aria-label="LinkedIn">
+									<i class="mdi mdi-linkedin"></i>
+								</a>
+								<a href="#" class="footer-social-link" aria-label="Twitter">
+									<i class="mdi mdi-twitter"></i>
+								</a>
+								<a href="#" class="footer-social-link" aria-label="Telegram">
+									<i class="mdi mdi-telegram"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-2 col-md-6 mb-4">
+						<div class="footer-section">
+							<h4 class="footer-title">Quick Links</h4>
+							<ul class="footer-links">
+								<li><a href="#home">Home</a></li>
+								<li><a href="#about">About</a></li>
+								<li><a href="#services">Services</a></li>
+								<li><a href="#projects">Projects</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="col-lg-3 col-md-6 mb-4">
+						<div class="footer-section">
+							<h4 class="footer-title">Services</h4>
+							<ul class="footer-links">
+								<li><a href="#services">Web Development</a></li>
+								<li><a href="#services">UI/UX Design</a></li>
+								<li><a href="#services">E-Commerce Solutions</a></li>
+								<li><a href="#services">API Development</a></li>
+								<li><a href="#services">Consulting</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="col-lg-3 col-md-6 mb-4">
+						<div class="footer-section">
+							<h4 class="footer-title">Get In Touch</h4>
+							<div class="footer-contact">
+								<div class="contact-info-item">
+									<i class="mdi mdi-email"></i>
+									<span>rayaffedzie@gmail.com</span>
+								</div>
+								<div class="contact-info-item">
+									<i class="mdi mdi-phone"></i>
+									<span>+233 24 123 4567</span>
+								</div>
+								<div class="contact-info-item">
+									<i class="mdi mdi-map-marker"></i>
+									<span>Accra, Ghana</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="footer-bottom">
+				<div class="row align-items-center">
+					<div class="col-md-6">
+						<p class="copyright">
+							© 2025 Raymond Affedzie. All rights reserved.
 						</p>
 					</div>
-					<div class="box-preview">
-						<a href="https://github.com/RaymondAffedzie/prep-quiz" target="_blank">
-							Preview
-							<i class="mdi mdi-arrow-right-bold-outline"></i>
-						</a>
-					</div>
-				</div>
-
-				<div class="project">
-					<div class="box-content">
-						<i class="mdi mdi-file"></i>
-						<h3>SAP Axim</h3>
-						<p>A data collection application system for St. Anthony of Padua Catholic Church in Axim.</p>
-					</div>
-					<div class="box-preview">
-						<a href="https://github.com/RaymondAffedzie/sap-axim" target="_blank">
-							Preview
-							<i class="mdi mdi-arrow-right-bold-outline"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- skills -->
-	<div class="container-fluid" id="skills">
-		<div class="row section">
-			<h2 class="comment">Skills</h2>
-			<span>
-				Uncover our expertise and capabilities. Our diverse skill
-				set covers a wide range of disciplines, ensuring that we're
-				well-equipped to meet your unique project needs
-			</span>
-			<div class="col-md-12 skills" role="list" aria-label="Technical skills">
-				<div class="brands fade-in" role="listitem" tabindex="0" aria-label="Java programming">
-					<i class="mdi mdi-language-java" aria-hidden="true"></i>
-					<p>java</p>
-					<div class="skill-progress" aria-hidden="true"></div>
-				</div>
-				<div class="brands fade-in" role="listitem" tabindex="0" aria-label="JavaScript programming">
-					<i class="mdi mdi-language-javascript" aria-hidden="true"></i>
-					<p>javascript</p>
-					<div class="skill-progress" aria-hidden="true"></div>
-				</div>
-				<div class="brands fade-in" role="listitem" tabindex="0" aria-label="C Sharp programming">
-					<i class="mdi mdi-language-csharp" aria-hidden="true"></i>
-					<p>c sharp</p>
-					<div class="skill-progress" aria-hidden="true"></div>
-				</div>
-				<div class="brands fade-in" role="listitem" tabindex="0" aria-label="PHP programming">
-					<i class="mdi mdi-language-php" aria-hidden="true"></i>
-					<p>php</p>
-					<div class="skill-progress" aria-hidden="true"></div>
-				</div>
-				<div class="brands fade-in" role="listitem" tabindex="0" aria-label="HTML markup">
-					<i class="mdi mdi-language-html5" aria-hidden="true"></i>
-					<p>html</p>
-					<div class="skill-progress" aria-hidden="true"></div>
-				</div>
-				<div class="brands fade-in" role="listitem" tabindex="0" aria-label="CSS styling">
-					<i class="mdi mdi-language-css3" aria-hidden="true"></i>
-					<p>css</p>
-					<div class="skill-progress" aria-hidden="true"></div>
-				</div>
-				<div class="brands fade-in" role="listitem" tabindex="0" aria-label="jQuery library">
-					<i class="mdi mdi-jquery" aria-hidden="true"></i>
-					<p>jquery</p>
-					<div class="skill-progress" aria-hidden="true"></div>
-				</div>
-				<div class="brands fade-in" role="listitem" tabindex="0" aria-label="SQL database">
-					<i class="mdi mdi-database" aria-hidden="true"></i>
-					<p>sql</p>
-					<div class="skill-progress" aria-hidden="true"></div>
-				</div>
-				<div class="brands fade-in" role="listitem" tabindex="0" aria-label="GitHub version control">
-					<i class="mdi mdi-github-circle" aria-hidden="true"></i>
-					<p>github</p>
-					<div class="skill-progress" aria-hidden="true"></div>
-				</div>
-				<div class="brands fade-in" role="listitem" tabindex="0" aria-label="Apache server">
-					<i class="mdi mdi-server" aria-hidden="true"></i>
-					<p>apache server</p>
-					<div class="skill-progress" aria-hidden="true"></div>
-				</div>
-				<div class="brands fade-in" role="listitem" tabindex="0" aria-label="Linux operating system">
-					<i class="mdi mdi-linux" aria-hidden="true"></i>
-					<p>linux</p>
-					<div class="skill-progress" aria-hidden="true"></div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- testimonials -->
-	<div class="container" id="testimonials">
-		<div class="row">
-			<h2 class="comment">Testimonials</h2>
-			<span>
-				Discover what our clients have to say about their
-				experiences with us. Hear their success stories and the
-				impact we've had on their projects and businesses
-			</span>
-			<div class="cover">
-				<div class="wrapper">
-
-					<div class="gallery fade-in">
-						<img src="images/george3.jpg" alt="George's picture" />
-						<div class="info">
-							<h1>George Ntsiful</h1>
-							<p>
-								Raymond's desire to know more about IT at a
-								very young age was interesting. His work,
-								even then, was far beyond what I had come to
-								expect from a young teenager, his knowledge
-								of coding and programming seems truly
-								limitless, and he’s likely the last person
-								you’ll ever need for anything on the web.
-								Congratulations on your success, Raymond.
-								Long may it continue (I’m sure it will!).
-							</p>
+					<div class="col-md-6 text-md-end">
+						<div class="footer-credits">
+							<span>Built with ❤️ and modern web technologies</span>
 						</div>
 					</div>
-
-
-					<div class="gallery fade-in">
-						<img src="images/stephen.jpeg" alt="Stephen's picture" />
-						<div class="info">
-							<h1>Stephen Mensah</h1>
-							<p>
-								Raymond is very passionate about everything
-								he does. He is free and loves to learn and
-								teach what he learns with everyone who needs
-								help. Raymond is my mentor and my motivator.
-							</p>
-						</div>
-					</div>
-					
 				</div>
 			</div>
 		</div>
-	</div>
-
-	<!-- contact us -->
-	<div class="container" id="contact">
-		<div class="row slide-in from-bottom px-3">
-			<h2 class="comment">Contact Us</h2>
-			<span>
-				Whether you're starting a new project or looking to revamp
-				your existing web presence, iRBbA Devs is here to help.
-				Contact us today to discuss your vision, and let's turn it
-				into reality.
-			</span>
-			<div class="contact-form">
-				<form id="contactForm">
-					<div class="form-group">
-						<input type="text" name="name" id="name" placeholder=" " required />
-						<label for="name">Full Name</label>
-						<span class="error-message">Please enter your full name</span>
-					</div>
-					
-					<div class="form-group">
-						<input type="email" name="email" id="email" placeholder=" " required />
-						<label for="email">Email Address</label>
-						<span class="error-message">Please enter a valid email address</span>
-					</div>
-					
-					<div class="form-group">
-						<textarea name="message" id="message" placeholder=" " rows="4" required></textarea>
-						<label for="message">Your Message</label>
-						<span class="error-message">Please enter your message</span>
-					</div>
-					
-					<button class="submit-btn" type="submit">
-						Send Message
-						<i class="mdi mdi-send"></i>
-					</button>
-				</form>
-			</div>
-		</div>
-	</div>
-
-	<!-- footer -->
-	<div class="container">
-		<footer class="col-md-12 d-flex flex-wrap justify-content-center align-items-center">
-			<p>iRBbA © 2023 iRBbA Devs</p>
-		</footer>
-	</div>
-
-	<button id="backToTopBtn" aria-label="Back to top"><i class="ti-arrow-up" aria-hidden="true"></i></button>
+	</footer>
 
 	</main>
+
+	<!-- Enhanced Back to Top Button -->
+	<button id="backToTopBtn" class="back-to-top" aria-label="Back to top">
+		<i class="mdi mdi-chevron-up"></i>
+	</button>
 
 	<script src="script/bootstrap.min.js"></script>
 	<script src="script/observers.js"></script>
 </body>
-
 
 </html>
