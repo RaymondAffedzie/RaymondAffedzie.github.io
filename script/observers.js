@@ -1227,7 +1227,29 @@ function initAboutSection() {
         aboutContent.style.visibility = 'visible';
     }
     
-    // Expertise items hover effects
+    // Animated Counter Function
+    function animateCounter(element, target, duration = 2000) {
+        let current = 0;
+        const increment = target / (duration / 16); // 60fps
+        const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+                element.textContent = target;
+                clearInterval(timer);
+            } else {
+                element.textContent = Math.floor(current);
+            }
+        }, 16);
+    }
+    
+    // Skill Bar Animation
+    function animateSkillBar(skillBar, targetWidth) {
+        setTimeout(() => {
+            skillBar.style.width = targetWidth;
+        }, 500);
+    }
+    
+    // Expertise items hover effects and skill bars
     const expertiseItems = document.querySelectorAll('.expertise-item');
     expertiseItems.forEach(item => {
         // Ensure items are visible
@@ -1235,7 +1257,7 @@ function initAboutSection() {
         item.style.visibility = 'visible';
         
         item.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-5px)';
+            this.style.transform = 'translateY(-8px)';
             this.style.transition = 'transform 0.3s ease';
         });
         
@@ -1244,6 +1266,39 @@ function initAboutSection() {
         });
     });
     
+    // About statistics animation
+    const aboutObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Animate stat counters
+                const statItems = entry.target.querySelectorAll('.stat-item');
+                statItems.forEach(item => {
+                    const target = parseInt(item.getAttribute('data-target'));
+                    const numberElement = item.querySelector('.stat-number');
+                    if (numberElement && target) {
+                        animateCounter(numberElement, target);
+                    }
+                });
+                
+                // Animate skill bars
+                const skillBars = entry.target.querySelectorAll('.skill-progress');
+                skillBars.forEach(bar => {
+                    const targetWidth = bar.getAttribute('data-width');
+                    if (targetWidth) {
+                        animateSkillBar(bar, targetWidth);
+                    }
+                });
+                
+                aboutObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.3 });
+    
+    const aboutSectionEl = document.querySelector('.about-section');
+    if (aboutSectionEl) {
+        aboutObserver.observe(aboutSectionEl);
+    }
+
     // Code editor typing effect
     const codeLines = [
         'const developer = {',
@@ -1277,18 +1332,17 @@ function initAboutSection() {
         }
         
         // Start typing animation when about section is visible
-        const aboutObserver = new IntersectionObserver((entries) => {
+        const typingObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     setTimeout(typeCode, 1000);
-                    aboutObserver.unobserve(entry.target);
+                    typingObserver.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.1 }); // Lowered threshold for better triggering
+        }, { threshold: 0.1 });
         
-        const aboutSection = document.querySelector('.about-section');
-        if (aboutSection) {
-            aboutObserver.observe(aboutSection);
+        if (aboutSectionEl) {
+            typingObserver.observe(aboutSectionEl);
         } else {
             // Fallback: start typing immediately if section not found
             setTimeout(typeCode, 2000);
@@ -1307,6 +1361,21 @@ function initSocialSection() {
         socialSection.style.visibility = 'visible';
     }
     
+    // Animated Counter Function for Social Stats
+    function animateCounter(element, target, duration = 2000) {
+        let current = 0;
+        const increment = target / (duration / 16); // 60fps
+        const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+                element.textContent = target;
+                clearInterval(timer);
+            } else {
+                element.textContent = Math.floor(current);
+            }
+        }, 16);
+    }
+    
     const socialCards = document.querySelectorAll('.social-card');
     
     // Ensure all cards are visible by default
@@ -1317,80 +1386,92 @@ function initSocialSection() {
     });
     
     socialCards.forEach(card => {
-        // Add hover animations
+        // Enhanced hover animations
         card.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-10px) scale(1.05)';
-            this.style.transition = 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
+            this.style.transform = 'translateY(-8px) rotateX(5deg) scale(1.02)';
+            this.style.transition = 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)';
             
-            // Add glow effect
-            const platform = this.classList[1]; // linkedin, github, twitter, instagram
+            // Add enhanced glow effect
+            const platform = this.classList[1]; // linkedin, github, twitter, instagram, etc.
             switch(platform) {
                 case 'linkedin':
-                    this.style.boxShadow = '0 20px 40px rgba(0, 119, 181, 0.3)';
+                    this.style.boxShadow = '0 25px 50px rgba(0, 119, 181, 0.4), 0 0 30px rgba(0, 119, 181, 0.2)';
                     break;
                 case 'github':
-                    this.style.boxShadow = '0 20px 40px rgba(33, 31, 31, 0.3)';
+                    this.style.boxShadow = '0 25px 50px rgba(51, 51, 51, 0.4), 0 0 30px rgba(51, 51, 51, 0.2)';
                     break;
                 case 'twitter':
-                    this.style.boxShadow = '0 20px 40px rgba(29, 161, 242, 0.3)';
+                    this.style.boxShadow = '0 25px 50px rgba(29, 161, 242, 0.4), 0 0 30px rgba(29, 161, 242, 0.2)';
                     break;
                 case 'instagram':
-                    this.style.boxShadow = '0 20px 40px rgba(225, 48, 108, 0.3)';
+                    this.style.boxShadow = '0 25px 50px rgba(225, 48, 108, 0.4), 0 0 30px rgba(225, 48, 108, 0.2)';
                     break;
+                case 'telegram':
+                    this.style.boxShadow = '0 25px 50px rgba(0, 136, 204, 0.4), 0 0 30px rgba(0, 136, 204, 0.2)';
+                    break;
+                case 'email':
+                    this.style.boxShadow = '0 25px 50px rgba(234, 67, 53, 0.4), 0 0 30px rgba(234, 67, 53, 0.2)';
+                    break;
+                default:
+                    this.style.boxShadow = '0 25px 50px rgba(0,0,0,0.3)';
             }
         });
         
         card.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0) scale(1)';
+            this.style.transform = 'translateY(0) rotateX(0deg) scale(1)';
             this.style.boxShadow = 'none';
         });
         
-        // Add click tracking (optional analytics)
+        // Add click tracking with subtle animation
         card.addEventListener('click', function() {
             const platform = this.classList[1];
             console.log(`Social link clicked: ${platform}`);
+            
+            // Add click animation
+            this.style.transform = 'translateY(-4px) scale(0.98)';
+            setTimeout(() => {
+                this.style.transform = 'translateY(-8px) rotateX(5deg) scale(1.02)';
+            }, 150);
         });
     });
     
-    // Social cards entrance animation
+    // Social cards and statistics entrance animation
     const socialObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
+                // Animate social stat counters
+                const statItems = entry.target.querySelectorAll('.social-stat-item');
+                statItems.forEach((item, index) => {
+                    setTimeout(() => {
+                        const target = parseInt(item.getAttribute('data-target'));
+                        const numberElement = item.querySelector('.social-stat-number');
+                        if (numberElement && target) {
+                            animateCounter(numberElement, target);
+                        }
+                    }, index * 200);
+                });
+                
+                // Animate social cards with stagger
                 const cards = entry.target.querySelectorAll('.social-card');
                 cards.forEach((card, index) => {
                     setTimeout(() => {
                         card.style.opacity = '1';
-                        card.style.transform = 'translateY(0)';
-                        card.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
-                    }, index * 150);
+                        card.style.transform = 'translateY(0) scale(1)';
+                        card.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
+                        
+                        // Add entrance animation
+                        card.style.animation = `socialCardEntrance 0.8s cubic-bezier(0.4, 0, 0.2, 1) ${index * 0.1}s both`;
+                    }, 500 + (index * 150));
                 });
+                
                 socialObserver.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.1 }); // Lowered threshold for better triggering
+    }, { threshold: 0.2 });
     
-    const socialGrid = document.querySelector('.social-grid');
+    const socialGrid = document.querySelector('.social-section');
     if (socialGrid) {
-        // Only hide cards if observer is supported, otherwise keep them visible
-        if ('IntersectionObserver' in window) {
-            socialCards.forEach(card => {
-                card.style.opacity = '0';
-                card.style.transform = 'translateY(30px)';
-            });
-            socialObserver.observe(socialGrid);
-        } else {
-            // Fallback: ensure cards are visible
-            socialCards.forEach(card => {
-                card.style.opacity = '1';
-                card.style.transform = 'translateY(0)';
-            });
-        }
-    } else {
-        // Fallback: ensure cards are visible if grid not found
-        socialCards.forEach(card => {
-            card.style.opacity = '1';
-            card.style.transform = 'translateY(0)';
-        });
+        socialObserver.observe(socialGrid);
     }
 }
 
@@ -1946,3 +2027,33 @@ if ('serviceWorker' in navigator) {
             });
     });
 }
+
+// ================================
+// DYNAMIC CSS ANIMATIONS
+// ================================
+// Add CSS animation keyframes dynamically
+const socialAnimationStyles = document.createElement('style');
+socialAnimationStyles.textContent = `
+    @keyframes socialCardEntrance {
+        0% {
+            opacity: 0;
+            transform: translateY(30px) rotateX(-15deg) scale(0.9);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0) rotateX(0deg) scale(1);
+        }
+    }
+    
+    @keyframes aboutStatEntrance {
+        0% {
+            opacity: 0;
+            transform: translateX(-20px) scale(0.8);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0) scale(1);
+        }
+    }
+`;
+document.head.appendChild(socialAnimationStyles);
