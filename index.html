@@ -28,6 +28,88 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
 	<link rel="manifest" href="favicon_io/site.webmanifest" />
+
+	<!-- Responsive tweaks for profile & skills (keeps desktop layout but stacks on small screens) -->
+	<style>
+		/* Preserve desktop layout: 3-column unified layout */
+		.unified-layout {
+			display: grid;
+			grid-template-columns: 320px 1fr 320px;
+			gap: 1.25rem;
+			align-items: start;
+		}
+
+		/* Skills grid: two columns by default for good density */
+		.skills-grid {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 1rem;
+		}
+
+		/* Make tech tags wrap and remain tappable on small screens */
+		.tech-stack {
+			display: flex;
+			flex-wrap: wrap;
+			gap: .5rem;
+		}
+		.tech-tag {
+			white-space: nowrap;
+			padding: .25rem .5rem;
+			border-radius: 6px;
+			font-size: .85rem;
+		}
+
+		/* Proficiency bar baseline */
+		.proficiency-bar {
+			height: 8px;
+			background: rgba(0,0,0,0.06);
+			border-radius: 6px;
+			overflow: hidden;
+		}
+		.proficiency-fill {
+			height: 100%;
+			width: 0; /* will be set from data-width on load */
+			background: linear-gradient(90deg,#4f46e5,#06b6d4);
+			transition: width .8s ease;
+		}
+
+		/* Small spacing improvements for profile card */
+		.profile-card { width: 100%; }
+		.profile-header { display: flex; gap: 1rem; align-items: center; }
+		.avatar-image { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; }
+
+		/* --- Responsive breakpoints --- */
+		@media (max-width: 991px) {
+			/* stack everything on smaller tablets & phones */
+			.unified-layout {
+				grid-template-columns: 1fr;
+			}
+			/* keep skills grid two columns on larger phones */
+			.skills-grid {
+				grid-template-columns: repeat(2, 1fr);
+			}
+		}
+
+		@media (max-width: 575px) {
+			/* single column skills on small phones */
+			.skills-grid {
+				grid-template-columns: 1fr;
+			}
+
+			/* scale avatar + tighten profile text */
+			.avatar-image { width: 72px; height: 72px; }
+			.profile-info h3 { font-size: 1.05rem; margin: 0; }
+			.profile-role { font-size: .9rem; }
+
+			/* make stat items wrap and be readable */
+			.profile-stats { display: flex; gap: .5rem; flex-wrap: wrap; }
+			.stat-item { flex: 1 1 40%; min-width: 100px; text-align: center; }
+
+			/* social platform layout tweaks for touch */
+			.social-platform { display: flex; align-items: center; gap: .75rem; padding: .6rem; }
+			.connect-btn { margin-left: auto; display: inline-flex; align-items: center; gap: .4rem; }
+		}
+	</style>
 </head>
 
 <body>
@@ -808,6 +890,16 @@
 
 	<script src="script/bootstrap.min.js"></script>
 	<script src="script/observers.js"></script>
+
+	<!-- place a tiny initializer so .proficiency-fill uses data-width on load -->
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			document.querySelectorAll('.proficiency-fill').forEach(function (el) {
+				var w = el.getAttribute('data-width') || '0%';
+				el.style.width = w;
+			});
+		});
+	</script>
 </body>
 
 </html>
