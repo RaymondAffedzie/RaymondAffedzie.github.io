@@ -607,12 +607,24 @@ a {
 
 /* Unified Layout */
 .unified-layout {
-	display: grid;
-	grid-template-columns: 350px 1fr 350px;
+	display: flex;
+	flex-wrap: wrap;
 	gap: var(--space-8);
-	align-items: start;
+	align-items: flex-start;
 	position: relative;
 	z-index: 2;
+}
+
+/* Flex sizing for main columns */
+.unified-layout > .profile-card,
+.unified-layout > .social-connect-panel {
+	flex: 1 1 320px;
+	max-width: 400px;
+}
+
+.unified-layout > .skills-grid {
+	flex: 2 1 600px;
+	min-width: 300px;
 }
 
 /* Glass Card Effect */
@@ -769,12 +781,16 @@ a {
 	gap: var(--space-3);
 }
 
-/* Skills Grid */
+/* Skills Grid (Flexbox) */
 .skills-grid {
-	display: grid;
-	/* Auto-fit lets items wrap naturally while keeping a sensible min width */
-	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	display: flex;
+	flex-wrap: wrap;
 	gap: var(--space-6);
+}
+
+.skills-grid .skill-category {
+	flex: 1 1 calc(50% - var(--space-6));
+	min-width: 240px;
 }
 
 .skill-category {
@@ -1070,37 +1086,20 @@ a {
 /* Responsive Design */
 @media (max-width: 1200px) {
 	.unified-layout {
-		/* Collapse from 3 columns to 2 while keeping middle content wider */
-		grid-template-columns: 320px 1fr;
 		gap: var(--space-6);
 	}
-	
-	.social-connect-panel {
-		grid-column: 1 / -1;
-		position: relative;
-		top: 0;
-	}
-	
-	.skills-grid {
-		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-		gap: var(--space-5);
-	}
+	/* Let panels wrap naturally below skills when space tight */
+	.unified-layout > .skills-grid { flex: 2 1 100%; }
 }
 
 @media (max-width: 768px) {
 	.unified-layout {
-		grid-template-columns: 1fr;
 		gap: var(--space-6);
-		/* Ensure child cards stretch full width and stack */
 		align-items: stretch;
 	}
-	
-	.profile-card,
-	.social-connect-panel {
-		position: relative;
-		top: 0;
-		width: 100%;
-	}
+	.unified-layout > .profile-card,
+	.unified-layout > .social-connect-panel,
+	.unified-layout > .skills-grid { flex: 1 1 100%; max-width: 100%; }
 	
 	.section-title {
 		font-size: var(--text-3xl);
@@ -1111,10 +1110,7 @@ a {
 		gap: var(--space-3);
 	}
 	
-	.skills-grid {
-		grid-template-columns: 1fr;
-		gap: var(--space-5);
-	}
+	.skills-grid .skill-category { flex: 1 1 100%; }
 	
 	.container-fluid {
 		padding: 0 var(--space-4);
@@ -1142,14 +1138,8 @@ a {
 		padding: var(--space-6) var(--space-5);
 	}
 
-	.skills-grid {
-		grid-template-columns: 1fr;
-		gap: var(--space-4);
-	}
-
-	.skill-category {
-		padding: var(--space-5) var(--space-4);
-	}
+	.skills-grid { gap: var(--space-4); }
+	.skills-grid .skill-category { flex: 1 1 100%; padding: var(--space-5) var(--space-4); }
 
 	.category-icon {
 		width: 40px;
@@ -2234,9 +2224,6 @@ a {
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
-	.skills-grid {
-		grid-template-columns: 1fr; /* already overridden earlier for consistency */
-	}
     
     .testimonials-container {
         grid-template-columns: 1fr;
