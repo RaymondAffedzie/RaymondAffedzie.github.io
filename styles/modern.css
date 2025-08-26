@@ -605,8 +605,15 @@ a {
 	line-height: 1.6;
 }
 
-/* Unified Layout now leverages Bootstrap row/cols - keep only spacing context */
-.unified-layout { position: relative; z-index: 2; }
+/* Unified Layout */
+.unified-layout {
+	display: grid;
+	grid-template-columns: 350px 1fr 350px;
+	gap: var(--space-8);
+	align-items: start;
+	position: relative;
+	z-index: 2;
+}
 
 /* Glass Card Effect */
 .glass-card {
@@ -762,8 +769,16 @@ a {
 	gap: var(--space-3);
 }
 
-/* Legacy skills-grid removed; using .skills-section with Bootstrap columns */
-.skill-category { padding: var(--space-6); }
+/* Skills Grid */
+.skills-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: var(--space-6);
+}
+
+.skill-category {
+	padding: var(--space-6);
+}
 
 .category-header {
 	display: flex;
@@ -1052,14 +1067,52 @@ a {
 }
 
 /* Responsive Design */
-@media (max-width: 1200px) { .unified-layout { gap: var(--space-6); } }
+@media (max-width: 1200px) {
+	.unified-layout {
+		grid-template-columns: 1fr 1fr;
+		gap: var(--space-6);
+	}
+	
+	.social-connect-panel {
+		grid-column: span 2;
+		position: relative;
+		top: 0;
+	}
+	
+	.skills-grid {
+		grid-template-columns: 1fr;
+		gap: var(--space-4);
+	}
+}
 
 @media (max-width: 768px) {
-	.unified-layout { gap: var(--space-6); }
-	.profile-card, .social-connect-panel { position: relative; top: 0; }
-	.section-title { font-size: var(--text-3xl); }
-	.profile-stats { grid-template-columns: 1fr; gap: var(--space-3); }
-	.container-fluid { padding: 0 var(--space-4); }
+	.unified-layout {
+		grid-template-columns: 1fr;
+		gap: var(--space-6);
+	}
+	
+	.profile-card,
+	.social-connect-panel {
+		position: relative;
+		top: 0;
+	}
+	
+	.section-title {
+		font-size: var(--text-3xl);
+	}
+	
+	.profile-stats {
+		grid-template-columns: 1fr;
+		gap: var(--space-3);
+	}
+	
+	.skills-grid {
+		grid-template-columns: 1fr;
+	}
+	
+	.container-fluid {
+		padding: 0 var(--space-4);
+	}
 }
 
 /* Enhanced Back to Top Button */
