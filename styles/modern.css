@@ -605,14 +605,9 @@ a {
 	line-height: 1.6;
 }
 
-/* Unified Layout */
-.unified-layout {
-	display: grid;
-	grid-template-columns: 350px 1fr 350px;
-	gap: var(--space-8);
-	align-items: start;
-	position: relative;
-	z-index: 2;
+/* About Layout now relies on Bootstrap row/col; utility tweaks */
+.about-layout {
+	align-items: flex-start;
 }
 
 /* Glass Card Effect */
@@ -769,12 +764,12 @@ a {
 	gap: var(--space-3);
 }
 
-/* Skills Grid */
+/* Skills Grid (Bootstrap row wrapping) */
 .skills-grid {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: var(--space-6);
+	display: flex;
+	flex-wrap: wrap;
 }
+.skills-grid .skill-category { height: 100%; }
 
 .skill-category {
 	padding: var(--space-6);
@@ -1066,54 +1061,28 @@ a {
 	gap: var(--space-3);
 }
 
-/* Responsive Design */
-@media (max-width: 1200px) {
-	.unified-layout {
-		grid-template-columns: 1fr 1fr;
-		gap: var(--space-6);
-	}
-	
-	.social-connect-panel {
-		grid-column: span 2;
-		position: relative;
-		top: 0;
-	}
-	
-	.skills-grid {
-		grid-template-columns: 1fr;
-		gap: var(--space-4);
-	}
+/* Tablet adjustments: two-column (profile + skills); social full-width below */
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.about-layout > .col-lg-3 { order: 3; }
+	.about-layout > .col-md-7 { order: 2; }
+	.about-layout > .col-md-5 { order: 1; }
 }
 
-@media (max-width: 768px) {
-	.unified-layout {
-		grid-template-columns: 1fr;
-		gap: var(--space-6);
-	}
-	
-	.profile-card,
-	.social-connect-panel {
-		position: relative;
-		top: 0;
-	}
-	
-	.section-title {
-		font-size: var(--text-3xl);
-	}
-	
-	.profile-stats {
-		grid-template-columns: 1fr;
-		gap: var(--space-3);
-	}
-	
-	.skills-grid {
-		grid-template-columns: 1fr;
-	}
-	
-	.container-fluid {
-		padding: 0 var(--space-4);
-	}
+/* Large desktops keep natural order */
+@media (min-width: 992px) {
+	.about-layout > .col-lg-3 { order: 3; }
 }
+
+/* Mobile phones: single column */
+@media (max-width: 767.98px) {
+	.about-layout > div { width: 100%; }
+	.section-title { font-size: var(--text-3xl); }
+}
+
+/* Social platforms responsive arrangement (2 per row on tablets, 1 per row on mobile) */
+.social-platforms { display: flex; flex-wrap: wrap; }
+.social-platforms .social-platform { flex: 1 1 100%; }
+@media (min-width: 576px) { .social-platforms .social-platform { flex: 1 1 calc(50% - var(--space-3)); } }
 
 /* Enhanced Back to Top Button */
 .back-to-top {
