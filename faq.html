@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - iRBbA Devs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
+
+    <script>(function(){var t=localStorage.getItem('irb-theme');document.documentElement.setAttribute('data-theme',t||'dark');})()</script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <div class="navbar-island">
+                <!-- Mobile-only brand -->
+                <a class="navbar-brand d-lg-none" href="index.html">
+                    <span class="brand-text">iRBbA</span> <span class="brand-light">Devs</span>
+                </a>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Left links -->
+                    <ul class="navbar-nav navbar-nav-left me-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                    </ul>
+                    <!-- Desktop-only brand (centered) -->
+                    <a class="navbar-brand d-none d-lg-block mx-3" href="index.html">
+                        <span class="brand-text">iRBbA</span> <span class="brand-light">Devs</span>
+                    </a>
+                    <!-- Right links -->
+                    <ul class="navbar-nav navbar-nav-right ms-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="bi bi-sun" id="themeIcon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="page-header" style="padding: 150px 0 80px;">
+        <div class="container text-center">
+            <h1 class="page-title">Frequently Asked Questions</h1>
+            <p class="page-subtitle">Quick answers about our products, pricing, implementation, and support.</p>
+        </div>
+    </section>
+
+    <!-- FAQ Categories -->
+    <section class="py-5" style="background: var(--dark-bg); border-top: 1px solid rgba(255,255,255,0.07);">
+        <div class="container">
+            <div class="row g-3 justify-content-center mb-5">
+                <div class="col-md-3 col-6">
+                    <a href="#general" class="btn btn-outline-light w-100">General</a>
+                </div>
+                <div class="col-md-3 col-6">
+                    <a href="#products" class="btn btn-outline-light w-100">Products</a>
+                </div>
+                <div class="col-md-3 col-6">
+                    <a href="#pricing" class="btn btn-outline-light w-100">Pricing</a>
+                </div>
+                <div class="col-md-3 col-6">
+                    <a href="#support" class="btn btn-outline-light w-100">Support</a>
+                </div>
+            </div>
+
+            <!-- General -->
+            <div id="general" class="mb-5">
+                <p class="about-eyebrow">General</p>
+                <h2 class="idx-section-title mb-4">About iRBbA Devs</h2>
+                <div class="accordion" id="faqGeneral">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="g1-heading">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#g1" aria-expanded="true" aria-controls="g1">
+                                What does iRBbA Devs specialize in?
+                            </button>
+                        </h2>
+                        <div id="g1" class="accordion-collapse collapse show" aria-labelledby="g1-heading" data-bs-parent="#faqGeneral">
+                            <div class="accordion-body">
+                                We build smart software systems for hospitality, education, finance, and institutional operations. Our solutions focus on automation, reporting, and operational efficiency.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="g2-heading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#g2" aria-expanded="false" aria-controls="g2">
+                                Do you offer both cloud and on-premise deployment?
+                            </button>
+                        </h2>
+                        <div id="g2" class="accordion-collapse collapse" aria-labelledby="g2-heading" data-bs-parent="#faqGeneral">
+                            <div class="accordion-body">
+                                Yes. Most clients choose cloud deployment for faster rollout and easier updates, but on-premise deployment is available for organizations with specific compliance or infrastructure needs.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products -->
+            <div id="products" class="mb-5">
+                <p class="about-eyebrow">Products</p>
+                <h2 class="idx-section-title mb-4">Platform Questions</h2>
+                <div class="accordion" id="faqProducts">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="p1-heading">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#p1" aria-expanded="true" aria-controls="p1">
+                                What is included in HosCare?
+                            </button>
+                        </h2>
+                        <div id="p1" class="accordion-collapse collapse show" aria-labelledby="p1-heading" data-bs-parent="#faqProducts">
+                            <div class="accordion-body">
+                                HosCare includes front desk management, POS, housekeeping, reservation management, analytics, payment processing, guest profiles, and inventory tools.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="p2-heading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#p2" aria-expanded="false" aria-controls="p2">
+                                Can your systems integrate with existing tools?
+                            </button>
+                        </h2>
+                        <div id="p2" class="accordion-collapse collapse" aria-labelledby="p2-heading" data-bs-parent="#faqProducts">
+                            <div class="accordion-body">
+                                Yes. We support integrations with payment gateways, accounting software, CRM tools, and selected third-party APIs depending on your plan.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="p3-heading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#p3" aria-expanded="false" aria-controls="p3">
+                                Are upcoming products available for early access?
+                            </button>
+                        </h2>
+                        <div id="p3" class="accordion-collapse collapse" aria-labelledby="p3-heading" data-bs-parent="#faqProducts">
+                            <div class="accordion-body">
+                                Yes. You can join the waitlist for EduManage Pro, FinanceCore, and InstitutionERP through our contact page or product waitlist links.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pricing -->
+            <div id="pricing" class="mb-5">
+                <p class="about-eyebrow">Pricing</p>
+                <h2 class="idx-section-title mb-4">Plans and Billing</h2>
+                <div class="accordion" id="faqPricing">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="pr1-heading">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#pr1" aria-expanded="true" aria-controls="pr1">
+                                Which plan is right for my organization?
+                            </button>
+                        </h2>
+                        <div id="pr1" class="accordion-collapse collapse show" aria-labelledby="pr1-heading" data-bs-parent="#faqPricing">
+                            <div class="accordion-body">
+                                Starter works best for small teams, Professional for growing operations, and Enterprise for organizations requiring custom workflows, SLAs, and advanced integrations.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="pr2-heading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pr2" aria-expanded="false" aria-controls="pr2">
+                                Do you offer yearly billing discounts?
+                            </button>
+                        </h2>
+                        <div id="pr2" class="accordion-collapse collapse" aria-labelledby="pr2-heading" data-bs-parent="#faqPricing">
+                            <div class="accordion-body">
+                                Yes. Annual subscriptions include a discount compared to monthly billing. Contact sales for current rates and multi-site pricing.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="pr3-heading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pr3" aria-expanded="false" aria-controls="pr3">
+                                Can I upgrade or downgrade my plan?
+                            </button>
+                        </h2>
+                        <div id="pr3" class="accordion-collapse collapse" aria-labelledby="pr3-heading" data-bs-parent="#faqPricing">
+                            <div class="accordion-body">
+                                Yes, you can change plans as your needs evolve. Plan changes are applied at the next billing cycle unless otherwise agreed.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Support -->
+            <div id="support" class="mb-4">
+                <p class="about-eyebrow">Support</p>
+                <h2 class="idx-section-title mb-4">Implementation and Help</h2>
+                <div class="accordion" id="faqSupport">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="s1-heading">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#s1" aria-expanded="true" aria-controls="s1">
+                                How long does implementation take?
+                            </button>
+                        </h2>
+                        <div id="s1" class="accordion-collapse collapse show" aria-labelledby="s1-heading" data-bs-parent="#faqSupport">
+                            <div class="accordion-body">
+                                Typical setup ranges from 1-4 weeks depending on product complexity, data migration needs, and team readiness.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="s2-heading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#s2" aria-expanded="false" aria-controls="s2">
+                                Do you provide training for staff?
+                            </button>
+                        </h2>
+                        <div id="s2" class="accordion-collapse collapse" aria-labelledby="s2-heading" data-bs-parent="#faqSupport">
+                            <div class="accordion-body">
+                                Yes. We provide onboarding sessions, role-based training, and documentation so teams can use the system confidently from day one.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="s3-heading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#s3" aria-expanded="false" aria-controls="s3">
+                                How can I reach support?
+                            </button>
+                        </h2>
+                        <div id="s3" class="accordion-collapse collapse" aria-labelledby="s3-heading" data-bs-parent="#faqSupport">
+                            <div class="accordion-body">
+                                You can contact support via email at support@irbbadevs.com or through our contact page. Priority response times depend on your subscription tier.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="final-cta py-5">
+        <div class="container">
+            <div class="cta-box">
+                <h2 class="cta-title">Still Have Questions?</h2>
+                <p class="cta-text">Our team can help you choose the right solution for your organization.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-light btn-lg">Contact Support</a>
+                    <a href="demo.html" class="btn btn-outline-light btn-lg">Request a Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="footer-brand">iRBbA Devs</h4>
+                    <p class="footer-about">Building intelligent software solutions for hospitality, education, banking, and institutional excellence.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="demo.html">Demo</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Products</h5>
+                    <ul class="footer-links">
+                        <li><a href="products.html#hoscare">HosCare</a></li>
+                        <li><a href="products.html#education">Education System</a></li>
+                        <li><a href="products.html#banking">Banking System</a></li>
+                        <li><a href="products.html#erp">Institutional ERP</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Resources</h5>
+                    <ul class="footer-links">
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="subscription.html">Subscription</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Legal</h5>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 iRBbA Devs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Bottom Mobile Navigation -->
+    <nav class="bottom-nav" aria-label="Mobile navigation">
+        <a href="index.html" class="bottom-nav-item">
+            <span class="material-icons">home</span>
+            <span class="bottom-nav-label">Home</span>
+        </a>
+        <a href="about.html" class="bottom-nav-item">
+            <span class="material-icons">info</span>
+            <span class="bottom-nav-label">About</span>
+        </a>
+        <a href="products.html" class="bottom-nav-item">
+            <span class="material-icons">apps</span>
+            <span class="bottom-nav-label">Products</span>
+        </a>
+        <a href="blog.html" class="bottom-nav-item">
+            <span class="material-icons">article</span>
+            <span class="bottom-nav-label">Blog</span>
+        </a>
+        <a href="contact.html" class="bottom-nav-item">
+            <span class="material-icons">mail</span>
+            <span class="bottom-nav-label">Contact</span>
+        </a>
+    </nav>
+</body>
+</html>

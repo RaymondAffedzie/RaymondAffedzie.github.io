@@ -1,54 +1,76 @@
-# RaymondAffedzie.github.io
+# iRBbA Devs — Company Website
 
-Welcome to my personal portfolio website! This site is built to showcase my work, projects, experience, and skills as a developer.
+Official website for **iRBbA Devs**, a software company building intelligent enterprise solutions for hospitality, education, banking, and institutional operations.
 
-## 🌐 Overview
+## Live Site
 
-This repository contains the source code for [Raymond Affedzie's](https://github.com/RaymondAffedzie) personal website. It’s designed as a responsive, visually appealing portfolio to highlight my:
-- Projects
-- Resume
-- Contact information
-- Technical skills
+Hosted via GitHub Pages: [RaymondAffedzie.github.io](https://RaymondAffedzie.github.io)
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-- **CSS** (70.4%) – Styling and layout
-- **HTML** (25.9%) – Structure and content
-- **JavaScript** (3.7%) – Interactivity and dynamic features
+- **HTML5** — Page structure and content
+- **CSS3** — Custom design system with CSS custom properties and dark/light theming
+- **JavaScript (Vanilla)** — Theme toggle, scroll effects, animations
+- **Bootstrap 5.3.2** — Responsive grid and UI components
+- **Bootstrap Icons 1.11.1** — Icon set
+- **Material Icons (Google)** — Mobile navigation icons
+- **Google Fonts** — Syne (display), Inter (body)
 
-## 🚀 Features
+## Pages
 
-- Responsive design for desktop and mobile
-- Project showcase section
-- Resume/CV downloadable or viewable
-- Contact form or contact information
-- Links to social profiles (GitHub, LinkedIn, etc.)
+| Page | File |
+|---|---|
+| Home | index.html |
+| About | about.html |
+| Products | products.html |
+| HosCare Product | product-hoscare.html |
+| Blog | blog.html |
+| Blog Post | blog-digital-transformation.html |
+| Demo | demo.html |
+| Contact | contact.html |
+| Pricing | pricing.html |
+| Subscription | subscription.html |
+| FAQ | faq.html |
+| Privacy Policy | privacy-policy.html |
+| Terms of Service | terms-of-service.html |
+| Cookie Policy | cookie-policy.html |
 
-## 📦 Getting Started
+## Features
 
-1. **Clone the repo**
-   ```bash
+- Dark / light theme toggle with localStorage persistence — zero flash on load
+- Floating glass navbar island (desktop) and floating bottom nav dock (mobile)
+- Responsive across all screen sizes; bottom nav replaces top nav on mobile
+- CSS-only theming via [data-theme="light"] scoped overrides
+- Water drop canvas animation on the hero section
+- Bootstrap accordions for FAQ
+- Pricing plan cards with comparison table
+
+## Project Structure
+
+    /
+    css/style.css        Master stylesheet
+    js/main.js           Theme toggle, scroll effects, animations
+    favicon_io/          Favicon assets
+    *.html               All pages listed above
+
+## Getting Started
+
+1. Clone the repo:
    git clone https://github.com/RaymondAffedzie/RaymondAffedzie.github.io.git
-   ```
-2. **Open `index.html` in your browser**  
-   No build steps required – it’s a static site!
+2. Open index.html in your browser.
+   No build steps required — it is a static site.
 
-## ⚙️ Customization
+## Customization
 
-- To update content, edit the HTML files.
-- To change styles, modify the CSS files.
-- For new projects, add them to the projects section in HTML.
+- Edit HTML files to update page content.
+- Modify css/style.css to change styles. CSS custom properties are defined at the top of the file.
+- Add [data-theme="light"] scoped overrides alongside any new component styles to support light mode.
 
-## 📝 Contributing
+## License
 
-This is a personal website, but suggestions and improvements are welcome!  
-Feel free to open issues or submit pull requests.
+This repository is open source under the MIT License.
 
-## 📄 License
+## Contact
 
-This repository is open source under the [MIT License](LICENSE).
-
-## 📬 Contact
-
-You can reach me via:
-- [GitHub Issues](https://github.com/RaymondAffedzie/RaymondAffedzie.github.io/issues)
+- Website: https://RaymondAffedzie.github.io/contact.html
+- GitHub Issues: https://github.com/RaymondAffedzie/RaymondAffedzie.github.io/issues

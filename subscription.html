@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription - iRBbA Devs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
+
+    <script>(function(){var t=localStorage.getItem('irb-theme');document.documentElement.setAttribute('data-theme',t||'dark');})()</script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <div class="navbar-island">
+                <!-- Mobile-only brand -->
+                <a class="navbar-brand d-lg-none" href="index.html">
+                    <span class="brand-text">iRBbA</span> <span class="brand-light">Devs</span>
+                </a>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Left links -->
+                    <ul class="navbar-nav navbar-nav-left me-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                    </ul>
+                    <!-- Desktop-only brand (centered) -->
+                    <a class="navbar-brand d-none d-lg-block mx-3" href="index.html">
+                        <span class="brand-text">iRBbA</span> <span class="brand-light">Devs</span>
+                    </a>
+                    <!-- Right links -->
+                    <ul class="navbar-nav navbar-nav-right ms-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="bi bi-sun" id="themeIcon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header" style="padding: 150px 0 80px;">
+        <div class="container text-center">
+            <h1 class="page-title">Subscription</h1>
+            <p class="page-subtitle">Complete your subscription in a few quick steps.</p>
+        </div>
+    </section>
+
+    <section class="contact-section py-5">
+        <div class="container position-relative" style="z-index:1;">
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <div class="contact-form-container">
+                        <h2 class="mb-4">Subscription Details</h2>
+                        <form class="contact-form" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="fullName" class="form-label">Full Name *</label>
+                                    <input type="text" class="form-control" id="fullName" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="workEmail" class="form-label">Work Email *</label>
+                                    <input type="email" class="form-control" id="workEmail" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="organization" class="form-label">Organization *</label>
+                                    <input type="text" class="form-control" id="organization" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="plan" class="form-label">Plan *</label>
+                                    <select class="form-select" id="plan" required>
+                                        <option value="">Select a plan...</option>
+                                        <option>Starter - $99/month</option>
+                                        <option>Professional - $249/month</option>
+                                        <option>Enterprise - Custom</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="billingCycle" class="form-label">Billing Cycle *</label>
+                                    <select class="form-select" id="billingCycle" required>
+                                        <option value="">Choose billing cycle...</option>
+                                        <option>Monthly</option>
+                                        <option>Yearly (save 15%)</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="notes" class="form-label">Implementation Notes</label>
+                                    <textarea class="form-control" id="notes" rows="5" placeholder="Tell us about your team size, preferred go-live date, and any custom requirements."></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="agreement" required>
+                                        <label class="form-check-label" for="agreement">
+                                            I agree to the <a href="terms-of-service.html">Terms of Service</a> and <a href="privacy-policy.html">Privacy Policy</a>.
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg">Submit Subscription Request</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="contact-info">
+                        <h2 class="mb-4">What Happens Next?</h2>
+                        <div class="info-tile mb-3">
+                            <div class="info-tile-icon"><i class="bi bi-check2-circle"></i></div>
+                            <div class="info-tile-body">
+                                <h6>Step 1: Review</h6>
+                                <p>Our team reviews your request and confirms the best-fit plan.</p>
+                            </div>
+                        </div>
+                        <div class="info-tile mb-3">
+                            <div class="info-tile-icon"><i class="bi bi-calendar-event"></i></div>
+                            <div class="info-tile-body">
+                                <h6>Step 2: Onboarding Call</h6>
+                                <p>We schedule a kickoff session to align on setup and migration.</p>
+                            </div>
+                        </div>
+                        <div class="info-tile mb-3">
+                            <div class="info-tile-icon"><i class="bi bi-gear"></i></div>
+                            <div class="info-tile-body">
+                                <h6>Step 3: Configuration</h6>
+                                <p>Your workspace is configured for your institution and users.</p>
+                            </div>
+                        </div>
+                        <div class="info-tile mb-0">
+                            <div class="info-tile-icon"><i class="bi bi-rocket-takeoff"></i></div>
+                            <div class="info-tile-body">
+                                <h6>Step 4: Go Live</h6>
+                                <p>Launch with guided support and continuous optimization.</p>
+                            </div>
+                        </div>
+
+                        <hr style="border-color: rgba(255,255,255,0.1); margin: 2rem 0;">
+                        <p class="mb-2" style="color: rgba(255,255,255,0.65);">Need immediate help?</p>
+                        <p style="margin:0;">
+                            <a href="mailto:sales@irbbadevs.com" style="color: var(--neon-blue);">sales@irbbadevs.com</a><br>
+                            <a href="tel:+233123456789" style="color: var(--neon-blue);">+233 123 456 789</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="final-cta py-5">
+        <div class="container">
+            <div class="cta-box">
+                <h2 class="cta-title">Want to Compare Plans First?</h2>
+                <p class="cta-text">Explore all plan options and feature differences before subscribing.</p>
+                <div class="cta-buttons">
+                    <a href="pricing.html" class="btn btn-light btn-lg">View Pricing</a>
+                    <a href="contact.html" class="btn btn-outline-light btn-lg">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="footer-brand">iRBbA Devs</h4>
+                    <p class="footer-about">Building intelligent software solutions for hospitality, education, banking, and institutional excellence.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="demo.html">Demo</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Products</h5>
+                    <ul class="footer-links">
+                        <li><a href="products.html#hoscare">HosCare</a></li>
+                        <li><a href="products.html#education">Education System</a></li>
+                        <li><a href="products.html#banking">Banking System</a></li>
+                        <li><a href="products.html#erp">Institutional ERP</a></li>
+                    </ul>
+                </div>
+                 <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Resources</h5>
+                    <ul class="footer-links">
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="subscription.html">Subscription</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Legal</h5>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 iRBbA Devs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Bottom Mobile Navigation -->
+    <nav class="bottom-nav" aria-label="Mobile navigation">
+        <a href="index.html" class="bottom-nav-item">
+            <span class="material-icons">home</span>
+            <span class="bottom-nav-label">Home</span>
+        </a>
+        <a href="about.html" class="bottom-nav-item">
+            <span class="material-icons">info</span>
+            <span class="bottom-nav-label">About</span>
+        </a>
+        <a href="products.html" class="bottom-nav-item">
+            <span class="material-icons">apps</span>
+            <span class="bottom-nav-label">Products</span>
+        </a>
+        <a href="blog.html" class="bottom-nav-item">
+            <span class="material-icons">article</span>
+            <span class="bottom-nav-label">Blog</span>
+        </a>
+        <a href="contact.html" class="bottom-nav-item">
+            <span class="material-icons">mail</span>
+            <span class="bottom-nav-label">Contact</span>
+        </a>
+    </nav>
+</body>
+</html>

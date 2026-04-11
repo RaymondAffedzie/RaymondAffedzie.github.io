@@ -51,7 +51,7 @@
             "button.foreground": "#000000",
             "statusBarItem.remoteHoverForeground": "#000000"
         },
-        "activityBar.foreground": "#F5FDF6",
+        "activityBar.foreground": "#071ff0",
         "titleBar.inactiveBackground": "#0B1C38",
         "titleBar.inactiveForeground": "#0A1932",
         "statusBar.background": "#0E2549",
