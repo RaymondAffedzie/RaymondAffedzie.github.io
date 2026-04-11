@@ -39,21 +39,6 @@
 	--glow-blue: 0 0 16px rgba(255, 255, 255, 0.06);
 	--glow-cyan: 0 0 16px rgba(255, 255, 255, 0.06);
 	--glow-purple: 0 0 16px rgba(255, 255, 255, 0.06);
-	--retro-grid:
-		repeating-linear-gradient(
-			0deg,
-			transparent,
-			transparent 59px,
-			rgba(255, 255, 255, 0.025) 59px,
-			rgba(255, 255, 255, 0.025) 60px
-		),
-		repeating-linear-gradient(
-			90deg,
-			transparent,
-			transparent 59px,
-			rgba(255, 255, 255, 0.025) 59px,
-			rgba(255, 255, 255, 0.025) 60px
-		);
 	--font-display: "Syne", -apple-system, sans-serif;
 	--font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
 }
@@ -76,21 +61,6 @@
 	--shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.12);
 	--text-light: #525252;
 	--border-color: #d4d4d4;
-	--retro-grid:
-		repeating-linear-gradient(
-			0deg,
-			transparent,
-			transparent 59px,
-			rgba(0, 0, 0, 0.04) 59px,
-			rgba(0, 0, 0, 0.04) 60px
-		),
-		repeating-linear-gradient(
-			90deg,
-			transparent,
-			transparent 59px,
-			rgba(0, 0, 0, 0.04) 59px,
-			rgba(0, 0, 0, 0.04) 60px
-		);
 }
 
 /* --- Body --- */
@@ -1287,7 +1257,6 @@ img {
 	content: "";
 	position: absolute;
 	inset: 0;
-	/* background: var(--retro-grid) */
 	pointer-events: none;
 	opacity: 0.9;
 }
@@ -1376,7 +1345,6 @@ img {
 	content: "";
 	position: absolute;
 	inset: 0;
-	/* background: var(--retro-grid) */
 	opacity: 1;
 	pointer-events: none;
 }
@@ -1474,7 +1442,6 @@ img {
 	content: "";
 	position: absolute;
 	inset: 0;
-	/* background: var(--retro-grid) */
 	pointer-events: none;
 	opacity: 0.7;
 }
@@ -1592,7 +1559,6 @@ img {
 	content: "";
 	position: absolute;
 	inset: 0;
-	/* background: var(--retro-grid) */
 	opacity: 0.8;
 	pointer-events: none;
 }
@@ -1676,7 +1642,6 @@ img {
 	content: "";
 	position: absolute;
 	inset: 0;
-	/* background: var(--retro-grid) */
 	opacity: 0.6;
 	pointer-events: none;
 }
@@ -1782,7 +1747,6 @@ img {
 	content: "";
 	position: absolute;
 	inset: 0;
-	/* background: var(--retro-grid) */
 	opacity: 0.45;
 	pointer-events: none;
 }
@@ -1856,7 +1820,6 @@ img {
 	content: "";
 	position: absolute;
 	inset: 0;
-	/* background: var(--retro-grid) */
 	opacity: 0.35;
 	pointer-events: none;
 }
@@ -1925,7 +1888,6 @@ img {
 	content: "";
 	position: absolute;
 	inset: 0;
-	/* background: var(--retro-grid) */
 	opacity: 0.45;
 	pointer-events: none;
 }
@@ -1992,7 +1954,6 @@ img {
 	content: "";
 	position: absolute;
 	inset: 0;
-	/* background: var(--retro-grid) */
 	opacity: 0.35;
 	pointer-events: none;
 }
@@ -2331,7 +2292,6 @@ img {
 	content: "";
 	position: absolute;
 	inset: 0;
-	/* background: var(--retro-grid) */
 	opacity: 0.7;
 	pointer-events: none;
 }
@@ -2446,7 +2406,6 @@ img {
 	content: "";
 	position: absolute;
 	inset: 0;
-	/* background: var(--retro-grid) */
 	opacity: 0.7;
 	pointer-events: none;
 }
@@ -2754,7 +2713,6 @@ img {
 	content: "";
 	position: absolute;
 	inset: 0;
-	/* background: var(--retro-grid) */
 	opacity: 0.5;
 	pointer-events: none;
 }
@@ -2856,7 +2814,6 @@ img {
 	content: "";
 	position: absolute;
 	inset: 0;
-	/* background: var(--retro-grid) */
 	opacity: 0.5;
 	pointer-events: none;
 }
@@ -2973,7 +2930,6 @@ img {
 	content: "";
 	position: absolute;
 	inset: 0;
-	/* background: var(--retro-grid) */
 	opacity: 0.5;
 	pointer-events: none;
 }
@@ -3171,7 +3127,6 @@ img {
 	content: "";
 	position: absolute;
 	inset: 0;
-	/* background: var(--retro-grid) */
 	opacity: 0.7;
 	pointer-events: none;
 }
@@ -3273,7 +3228,6 @@ img {
 	content: "";
 	position: absolute;
 	inset: 0;
-	/* background: var(--retro-grid) */
 	opacity: 0.5;
 	pointer-events: none;
 }
@@ -3470,7 +3424,6 @@ img {
 	content: "";
 	position: absolute;
 	inset: 0;
-	/* background: var(--retro-grid) */
 	opacity: 0.7;
 	pointer-events: none;
 }
@@ -3542,7 +3495,6 @@ img {
 	content: "";
 	position: absolute;
 	inset: 0;
-	/* background: var(--retro-grid) */
 	opacity: 0.5;
 	pointer-events: none;
 }
@@ -3670,7 +3622,6 @@ img {
 	content: "";
 	position: absolute;
 	inset: 0;
-	/* background: var(--retro-grid) */
 	opacity: 0.5;
 	pointer-events: none;
 }
@@ -4233,7 +4184,6 @@ img {
 	content: "";
 	position: absolute;
 	inset: 0;
-	/* background: var(--retro-grid) */
 	opacity: 0.6;
 	pointer-events: none;
 }
@@ -4369,7 +4319,6 @@ img {
 	content: "";
 	position: absolute;
 	inset: 0;
-	/* background: var(--retro-grid) */
 	opacity: 0.5;
 	pointer-events: none;
 }
@@ -4410,7 +4359,6 @@ img {
 	content: "";
 	position: absolute;
 	inset: 0;
-	/* background: var(--retro-grid) */
 	opacity: 0.5;
 	pointer-events: none;
 }
@@ -4485,7 +4433,6 @@ img {
 	content: "";
 	position: absolute;
 	inset: 0;
-	/* background: var(--retro-grid) */
 	opacity: 0.35;
 	pointer-events: none;
 }
@@ -4651,7 +4598,6 @@ img {
 	content: "";
 	position: absolute;
 	inset: 0;
-	/* background: var(--retro-grid) */
 	opacity: 0.3;
 	pointer-events: none;
 }
@@ -4746,7 +4692,6 @@ img {
 	content: "";
 	position: absolute;
 	inset: 0;
-	/* background: var(--retro-grid) */
 	opacity: 0.6;
 	pointer-events: none;
 }
@@ -5168,7 +5113,6 @@ img {
 	content: "";
 	position: absolute;
 	inset: 0;
-	/* background: var(--retro-grid) */
 	opacity: 0.5;
 }
 
@@ -5335,7 +5279,6 @@ img {
 	content: "";
 	position: absolute;
 	inset: 0;
-	/* background: var(--retro-grid) */
 	opacity: 0.5;
 	pointer-events: none;
 }
@@ -5373,7 +5316,6 @@ img {
 	content: "";
 	position: absolute;
 	inset: 0;
-	/* background: var(--retro-grid) */
 	opacity: 0.35;
 	pointer-events: none;
 }
@@ -5497,7 +5439,6 @@ img {
 	content: "";
 	position: absolute;
 	inset: 0;
-	/* background: var(--retro-grid) */
 	opacity: 0.3;
 	pointer-events: none;
 }
@@ -5578,7 +5519,6 @@ img {
 	content: "";
 	position: absolute;
 	inset: 0;
-	/* background: var(--retro-grid) */
 	opacity: 0.3;
 	pointer-events: none;
 }
@@ -5612,7 +5552,6 @@ img {
 	content: "";
 	position: absolute;
 	inset: 0;
-	/* background: var(--retro-grid) */
 	opacity: 0.25;
 	pointer-events: none;
 }
@@ -5708,7 +5647,6 @@ img {
 	content: "";
 	position: absolute;
 	inset: 0;
-	/* background: var(--retro-grid) */
 	opacity: 0.3;
 	pointer-events: none;
 }
@@ -5787,7 +5725,6 @@ img {
 	content: "";
 	position: absolute;
 	inset: 0;
-	/* background: var(--retro-grid) */
 	opacity: 0.35;
 	pointer-events: none;
 }
