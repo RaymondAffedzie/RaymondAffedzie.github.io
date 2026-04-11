@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Demo - iRBbA Devs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>(function(){var t=localStorage.getItem('irb-theme');document.documentElement.setAttribute('data-theme',t||'dark');})()</script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <div class="navbar-island">
+                <a class="navbar-brand d-lg-none" href="index.html">
+                    <span class="brand-text">iRBbA</span> <span class="brand-light">Devs</span>
+                </a>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav navbar-nav-left me-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                    </ul>
+                    <a class="navbar-brand d-none d-lg-block mx-3" href="index.html">
+                        <span class="brand-text">iRBbA</span> <span class="brand-light">Devs</span>
+                    </a>
+                    <ul class="navbar-nav navbar-nav-right ms-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="bi bi-sun" id="themeIcon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Demo Hero -->
+    <section class="dmo-hero">
+        <div class="container">
+            <div class="dmo-hero-inner">
+                <p class="about-eyebrow">Request a Demo</p>
+                <h1 class="dmo-hero-title">See iRBbA Devs<br>Products in Action</h1>
+                <p class="dmo-hero-sub">Schedule a personalized, 30&ndash;45 min live demonstration tailored to your industry and requirements.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Form Section -->
+    <section class="dmo-form-section">
+        <div class="container">
+            <div class="dmo-form-steps">
+                <div class="dmo-step">
+                    <span class="dmo-step-num">01</span>
+                    <span class="dmo-step-label">Fill out the form</span>
+                </div>
+                <span class="dmo-step-arrow"><i class="bi bi-arrow-right"></i></span>
+                <div class="dmo-step">
+                    <span class="dmo-step-num">02</span>
+                    <span class="dmo-step-label">Schedule your demo</span>
+                </div>
+                <span class="dmo-step-arrow"><i class="bi bi-arrow-right"></i></span>
+                <div class="dmo-step">
+                    <span class="dmo-step-num">03</span>
+                    <span class="dmo-step-label">Start transforming</span>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="dmo-form-wrap">
+                        <form id="demoForm" class="demo-form">
+                            <div class="form-section">
+                                <h4 class="section-title">Personal Information</h4>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="firstName" class="form-label">First Name *</label>
+                                        <input type="text" class="form-control" id="firstName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="lastName" class="form-label">Last Name *</label>
+                                        <input type="text" class="form-control" id="lastName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email Address *</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">Phone Number *</label>
+                                        <input type="tel" class="form-control" id="phone" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="jobTitle" class="form-label">Job Title</label>
+                                        <input type="text" class="form-control" id="jobTitle" placeholder="e.g. Hotel Manager, IT Director">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-section mt-4">
+                                <h4 class="section-title">Organization Details</h4>
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <label for="companyName" class="form-label">Company/Organization Name *</label>
+                                        <input type="text" class="form-control" id="companyName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="institutionType" class="form-label">Institution Type *</label>
+                                        <select class="form-select" id="institutionType" required>
+                                            <option value="">Select type...</option>
+                                            <option value="hotel">Hotel</option>
+                                            <option value="resort">Resort</option>
+                                            <option value="guesthouse">Guest House</option>
+                                            <option value="hostel">Hostel</option>
+                                            <option value="school">School</option>
+                                            <option value="college">College/University</option>
+                                            <option value="bank">Bank/Financial Institution</option>
+                                            <option value="government">Government Agency</option>
+                                            <option value="ngo">NGO</option>
+                                            <option value="enterprise">Enterprise</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="companySize" class="form-label">Organization Size</label>
+                                        <select class="form-select" id="companySize">
+                                            <option value="">Select size...</option>
+                                            <option value="1-10">1-10 employees</option>
+                                            <option value="11-50">11-50 employees</option>
+                                            <option value="51-200">51-200 employees</option>
+                                            <option value="201-500">201-500 employees</option>
+                                            <option value="500+">500+ employees</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="country" class="form-label">Country *</label>
+                                        <select class="form-select" id="country" required>
+                                            <option value="">Select country...</option>
+                                            <option value="GH">Ghana</option>
+                                            <option value="NG">Nigeria</option>
+                                            <option value="KE">Kenya</option>
+                                            <option value="ZA">South Africa</option>
+                                            <option value="UG">Uganda</option>
+                                            <option value="TZ">Tanzania</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-section mt-4">
+                                <h4 class="section-title">Product Interest</h4>
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <label for="product" class="form-label">Which product are you interested in? *</label>
+                                        <select class="form-select" id="product" required>
+                                            <option value="">Select product...</option>
+                                            <option value="hoscare">HosCare - Hospitality Management</option>
+                                            <option value="edumanage">EduManage Pro - Education Management (Coming Soon)</option>
+                                            <option value="financecore">FinanceCore - Banking System (Coming Soon)</option>
+                                            <option value="erp">InstitutionERP - Enterprise Resource Planning (Coming Soon)</option>
+                                            <option value="custom">Custom Solution</option>
+                                            <option value="multiple">Multiple Products</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="expectedUsers" class="form-label">Expected Number of Users</label>
+                                        <select class="form-select" id="expectedUsers">
+                                            <option value="">Select range...</option>
+                                            <option value="1-5">1-5 users</option>
+                                            <option value="6-10">6-10 users</option>
+                                            <option value="11-25">11-25 users</option>
+                                            <option value="26-50">26-50 users</option>
+                                            <option value="51-100">51-100 users</option>
+                                            <option value="100+">100+ users</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="timeline" class="form-label">Implementation Timeline</label>
+                                        <select class="form-select" id="timeline">
+                                            <option value="">Select timeline...</option>
+                                            <option value="immediate">Immediate (Within 1 month)</option>
+                                            <option value="short">Short term (1-3 months)</option>
+                                            <option value="medium">Medium term (3-6 months)</option>
+                                            <option value="long">Long term (6+ months)</option>
+                                            <option value="researching">Still researching</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-section mt-4">
+                                <h4 class="section-title">Additional Information</h4>
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Tell us about your needs (Optional)</label>
+                                        <textarea class="form-control" id="message" rows="4" placeholder="What challenges are you trying to solve? What features are most important to you?"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="preferredDate" class="form-label">Preferred Demo Date</label>
+                                        <input type="date" class="form-control" id="preferredDate">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="referral" class="form-label">How did you hear about us?</label>
+                                        <select class="form-select" id="referral">
+                                            <option value="">Select option...</option>
+                                            <option value="search">Search Engine</option>
+                                            <option value="social">Social Media</option>
+                                            <option value="referral">Referral</option>
+                                            <option value="event">Event/Conference</option>
+                                            <option value="ad">Advertisement</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-section mt-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="consent" required>
+                                    <label class="form-check-label" for="consent">
+                                        I agree to receive communication from iRBbA Devs and accept the <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a>. *
+                                    </label>
+                                </div>
+                                <div class="form-check mt-2">
+                                    <input class="form-check-input" type="checkbox" id="newsletter">
+                                    <label class="form-check-label" for="newsletter">
+                                        I'd like to receive product updates and industry insights via email.
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-actions mt-4">
+                                <button type="submit" class="btn btn-primary btn-lg w-100">Request Demo</button>
+                                <p class="text-center mt-3 text-muted">
+                                    <small><i class="bi bi-shield-check"></i> Your information is secure and will never be shared with third parties.</small>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What to Expect -->
+    <section class="dmo-expect">
+        <div class="container">
+            <div class="dmo-expect-inner">
+                <div class="dmo-expect-head">
+                    <p class="about-eyebrow">What to Expect</p>
+                    <h2 class="dmo-expect-title">Tailored to<br>Your Needs</h2>
+                </div>
+                <div class="dmo-expect-grid">
+                    <div class="dmo-expect-item">
+                        <span class="dmo-expect-num">01</span>
+                        <h4 class="dmo-expect-name">Personalized Session</h4>
+                        <p class="dmo-expect-desc">30&ndash;45 minute live demo focused on your industry and requirements.</p>
+                    </div>
+                    <div class="dmo-expect-item">
+                        <span class="dmo-expect-num">02</span>
+                        <h4 class="dmo-expect-name">Product Walkthrough</h4>
+                        <p class="dmo-expect-desc">Hands-on tour of features relevant to your specific use case.</p>
+                    </div>
+                    <div class="dmo-expect-item">
+                        <span class="dmo-expect-num">03</span>
+                        <h4 class="dmo-expect-name">Q&amp;A Session</h4>
+                        <p class="dmo-expect-desc">Time for all your questions about features, pricing, and implementation.</p>
+                    </div>
+                    <div class="dmo-expect-item">
+                        <span class="dmo-expect-num">04</span>
+                        <h4 class="dmo-expect-name">Custom Proposal</h4>
+                        <p class="dmo-expect-desc">Receive a tailored quote and implementation plan for your organization.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="dmo-testimonials">
+        <div class="container">
+            <div class="dmo-testimonials-head">
+                <p class="about-eyebrow">Clients</p>
+                <h2 class="dmo-testimonials-title">What Our Clients Say</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="quote-icon">
+                            <i class="bi bi-quote"></i>
+                        </div>
+                        <p class="testimonial-text">"The demo was incredibly helpful. The team took time to understand our needs and showed exactly how HosCare would work for our property."</p>
+                        <div class="testimonial-author">
+                            <strong>Sarah Mensah</strong>
+                            <span>Coastal Resort</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="quote-icon">
+                            <i class="bi bi-quote"></i>
+                        </div>
+                        <p class="testimonial-text">"From demo to implementation, the process was smooth. The team is knowledgeable and responsive to all our questions."</p>
+                        <div class="testimonial-author">
+                            <strong>Kwame Osei</strong>
+                            <span>Metro Guest House</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="quote-icon">
+                            <i class="bi bi-quote"></i>
+                        </div>
+                        <p class="testimonial-text">"I was impressed by how the demo addressed our specific challenges. It's clear they understand the hospitality industry."</p>
+                        <div class="testimonial-author">
+                            <strong>Ama Boateng</strong>
+                            <span>Hillside Hotels</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alternative Contact -->
+    <section class="dmo-contact-strip">
+        <div class="container">
+            <div class="dmo-cs-inner">
+                <div class="dmo-cs-copy">
+                    <p class="about-eyebrow">Prefer to Talk</p>
+                    <h3 class="dmo-cs-title">Speak to Our Sales Team</h3>
+                    <p class="dmo-cs-sub">Available Monday &ndash; Friday, 8:00 AM &ndash; 6:00 PM</p>
+                    <div class="dmo-cs-links">
+                        <a href="tel:+233123456789" class="dmo-cs-link"><i class="bi bi-telephone"></i> +233 123 456 789</a>
+                        <a href="mailto:sales@irbbadevs.com" class="dmo-cs-link"><i class="bi bi-envelope"></i> sales@irbbadevs.com</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="blg-read-link dmo-cs-cta">Contact us instead <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="footer-brand">iRBbA Devs</h4>
+                    <p class="footer-about">Building intelligent software solutions for hospitality, education, banking, and institutional excellence.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="demo.html">Demo</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Products</h5>
+                    <ul class="footer-links">
+                        <li><a href="products.html#hoscare">HosCare</a></li>
+                        <li><a href="products.html#education">Education System</a></li>
+                        <li><a href="products.html#banking">Banking System</a></li>
+                        <li><a href="products.html#erp">Institutional ERP</a></li>
+                    </ul>
+                </div>
+                 <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Resources</h5>
+                    <ul class="footer-links">
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="subscription.html">Subscription</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Legal</h5>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 iRBbA Devs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Bottom Mobile Navigation -->
+    <nav class="bottom-nav" aria-label="Mobile navigation">
+        <a href="index.html" class="bottom-nav-item">
+            <span class="material-icons">home</span>
+            <span class="bottom-nav-label">Home</span>
+        </a>
+        <a href="about.html" class="bottom-nav-item">
+            <span class="material-icons">info</span>
+            <span class="bottom-nav-label">About</span>
+        </a>
+        <a href="products.html" class="bottom-nav-item">
+            <span class="material-icons">apps</span>
+            <span class="bottom-nav-label">Products</span>
+        </a>
+        <a href="blog.html" class="bottom-nav-item">
+            <span class="material-icons">article</span>
+            <span class="bottom-nav-label">Blog</span>
+        </a>
+        <a href="contact.html" class="bottom-nav-item active">
+            <span class="material-icons">mail</span>
+            <span class="bottom-nav-label">Contact</span>
+        </a>
+    </nav>
+</body>
+</html>

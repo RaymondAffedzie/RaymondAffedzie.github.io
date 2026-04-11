@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - iRBbA Devs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>(function(){var t=localStorage.getItem('irb-theme');document.documentElement.setAttribute('data-theme',t||'dark');})()</script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <div class="navbar-island">
+                <a class="navbar-brand d-lg-none" href="index.html">
+                    <span class="brand-text">iRBbA</span> <span class="brand-light">Devs</span>
+                </a>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav navbar-nav-left me-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                    </ul>
+                    <a class="navbar-brand d-none d-lg-block mx-3" href="index.html">
+                        <span class="brand-text">iRBbA</span> <span class="brand-light">Devs</span>
+                    </a>
+                    <ul class="navbar-nav navbar-nav-right ms-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="bi bi-sun" id="themeIcon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <span class="badge mb-3" style="background:rgba(0,212,255,.1);border:1px solid rgba(0,212,255,.3);color:var(--neon-blue);padding:.4rem 1rem;font-size:.8rem">CONTACT US</span>
+            <h1 class="page-title">Get in Touch</h1>
+            <p class="page-subtitle">Ready to transform your operations? We'd love to hear from you</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section py-5">
+        <div class="container position-relative" style="z-index:1">
+            <div class="row g-5">
+                <!-- Contact Form -->
+                <div class="col-lg-7">
+                    <div class="contact-form-container">
+                        <h2 class="mb-4">Send Us a Message</h2>
+                        <form id="contactForm" class="contact-form" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Full Name *</label>
+                                    <input type="text" class="form-control" id="name" name="name" autocomplete="name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email Address *</label>
+                                    <input type="email" class="form-control" id="email" name="email" autocomplete="email" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="company" class="form-label">Company/Organization</label>
+                                    <input type="text" class="form-control" id="company" name="company" autocomplete="organization">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone" autocomplete="tel">
+                                </div>
+                                <div class="col-12">
+                                    <label for="subject" class="form-label">Subject *</label>
+                                    <select class="form-select" id="subject" required>
+                                        <option value="">Choose a subject...</option>
+                                        <option value="demo">Request a Demo</option>
+                                        <option value="sales">Sales Inquiry</option>
+                                        <option value="support">Technical Support</option>
+                                        <option value="partnership">Partnership Opportunity</option>
+                                        <option value="general">General Question</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Message *</label>
+                                    <textarea class="form-control" id="message" name="message" rows="6" required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="consent" required>
+                                        <label class="form-check-label" for="consent">
+                                            I agree to the <a href="#">Privacy Policy</a> and consent to being contacted by iRBbA Devs.
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-lg-5">
+                    <div class="contact-info">
+
+                        <!-- Live status bar -->
+                        <div class="contact-status-bar mb-4">
+                            <span class="status-pulse"></span>
+                            <span>Available &mdash; we typically reply within 2 hours</span>
+                        </div>
+
+                        <h2 class="mb-4">Contact Information</h2>
+
+                        <!-- Location tile -->
+                        <div class="info-tile mb-3">
+                            <div class="info-tile-icon" style="--tc:var(--neon-blue)">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </div>
+                            <div class="info-tile-body">
+                                <h6>Headquarters</h6>
+                                <p>123 Innovation Street, Tech District<br>Accra, Ghana</p>
+                            </div>
+                        </div>
+
+                        <!-- Email tile -->
+                        <div class="info-tile mb-3">
+                            <div class="info-tile-icon" style="--tc:var(--neon-cyan)">
+                                <i class="bi bi-envelope-fill"></i>
+                            </div>
+                            <div class="info-tile-body">
+                                <h6>Email Us</h6>
+                                <p>
+                                    <a href="mailto:hello@irbbadevs.com">hello@irbbadevs.com</a>
+                                    <em>Sales &amp; General</em>
+                                </p>
+                                <p>
+                                    <a href="mailto:support@irbbadevs.com">support@irbbadevs.com</a>
+                                    <em>Technical Support</em>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Phone tiles (side by side) -->
+                        <div class="row g-3 mb-4">
+                            <div class="col-6">
+                                <div class="info-tile-sm">
+                                    <div class="info-tile-icon" style="--tc:rgba(255,255,255,0.55)">
+                                        <i class="bi bi-telephone-fill"></i>
+                                    </div>
+                                    <h6>Sales</h6>
+                                    <a href="tel:+233123456789">+233 123 456 789</a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="info-tile-sm">
+                                    <div class="info-tile-icon" style="--tc:rgba(255,255,255,0.55)">
+                                        <i class="bi bi-headset"></i>
+                                    </div>
+                                    <h6>Support</h6>
+                                    <a href="tel:+233987654321">+233 987 654 321</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Office hours visual -->
+                        <div class="office-hours mb-4">
+                            <p class="oh-title">Office Hours</p>
+                            <div class="oh-grid">
+                                <div class="oh-day open"><span class="day-abbr">Mon</span><span class="day-bar"></span></div>
+                                <div class="oh-day open"><span class="day-abbr">Tue</span><span class="day-bar"></span></div>
+                                <div class="oh-day open"><span class="day-abbr">Wed</span><span class="day-bar"></span></div>
+                                <div class="oh-day open"><span class="day-abbr">Thu</span><span class="day-bar"></span></div>
+                                <div class="oh-day open"><span class="day-abbr">Fri</span><span class="day-bar"></span></div>
+                                <div class="oh-day half"><span class="day-abbr">Sat</span><span class="day-bar"></span></div>
+                                <div class="oh-day closed"><span class="day-abbr">Sun</span><span class="day-bar"></span></div>
+                            </div>
+                            <div class="oh-legend">
+                                <span><span class="legend-dot open"></span>8am &ndash; 6pm</span>
+                                <span><span class="legend-dot half"></span>9am &ndash; 2pm</span>
+                                <span><span class="legend-dot closed"></span>Closed</span>
+                            </div>
+                        </div>
+
+                        <!-- Social links -->
+                        <div class="social-connect">
+                            <p class="oh-title mb-3">Connect With Us</p>
+                            <div class="social-links-large">
+                                <a href="#" class="social-link" style="--sb:rgba(255,255,255,0.5)" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="social-link" style="--sb:rgba(255,255,255,0.5)" aria-label="Twitter / X"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#" class="social-link" style="--sb:rgba(255,255,255,0.5)" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="social-link" style="--sb:rgba(255,255,255,0.5)" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="social-link" style="--sb:#ccc" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container-fluid p-0">
+            <div class="map-placeholder">
+                <i class="bi bi-geo-alt"></i>
+                <p>Office Location Map</p>
+                <small>123 Innovation Street, Tech District, Accra, Ghana</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Options -->
+    <section class="cnt-cta">
+        <div class="container">
+            <div class="cnt-cta-head">
+                <p class="about-eyebrow">How Can We Help</p>
+                <h2 class="cnt-cta-title">Choose the Best<br>Way to Reach Us</h2>
+            </div>
+            <div class="cnt-cta-grid">
+                <div class="cnt-cta-item">
+                    <span class="cnt-cta-num">01</span>
+                    <h4 class="cnt-cta-name">Request a Demo</h4>
+                    <p class="cnt-cta-desc">See our products in action with a personalized demonstration tailored to your industry.</p>
+                    <a href="demo.html" class="blg-read-link">Schedule Demo <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="cnt-cta-item">
+                    <span class="cnt-cta-num">02</span>
+                    <h4 class="cnt-cta-name">Partner With Us</h4>
+                    <p class="cnt-cta-desc">Explore partnership and integration opportunities with iRBbA Devs.</p>
+                    <a href="#" class="blg-read-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="cnt-cta-item">
+                    <span class="cnt-cta-num">03</span>
+                    <h4 class="cnt-cta-name">Get Support</h4>
+                    <p class="cnt-cta-desc">Existing customers can access our dedicated support portal and knowledge base.</p>
+                    <a href="#" class="blg-read-link">Support Portal <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="cnt-cta-item">
+                    <span class="cnt-cta-num">04</span>
+                    <h4 class="cnt-cta-name">Join Our Team</h4>
+                    <p class="cnt-cta-desc">Explore career opportunities and help build the future of institutional software.</p>
+                    <a href="#" class="blg-read-link">View Openings <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="cnt-faq">
+        <div class="container">
+            <div class="cnt-faq-inner">
+                <div class="cnt-faq-head">
+                    <p class="about-eyebrow">FAQ</p>
+                    <h2 class="cnt-faq-title">Frequently Asked<br>Questions</h2>
+                </div>
+                <div class="cnt-faq-list">
+                    <details class="cnt-faq-item" open>
+                        <summary class="cnt-faq-q">How quickly can I get started with HosCare?</summary>
+                        <p class="cnt-faq-a">After your demo and subscription, we typically complete setup and training within 1&ndash;2 weeks. Smaller properties can often go live within a few days.</p>
+                    </details>
+                    <details class="cnt-faq-item">
+                        <summary class="cnt-faq-q">Do you offer custom development services?</summary>
+                        <p class="cnt-faq-a">Yes! We provide custom development and integration services for clients with specific requirements beyond our standard products.</p>
+                    </details>
+                    <details class="cnt-faq-item">
+                        <summary class="cnt-faq-q">What kind of support do you provide?</summary>
+                        <p class="cnt-faq-a">All plans include email support. Professional and Enterprise plans include priority support with faster response times and phone support options.</p>
+                    </details>
+                    <details class="cnt-faq-item">
+                        <summary class="cnt-faq-q">Can I migrate my existing data to your system?</summary>
+                        <p class="cnt-faq-a">Absolutely! Our team will assist with data migration from your existing systems to ensure a smooth transition with no data loss.</p>
+                    </details>
+                    <details class="cnt-faq-item">
+                        <summary class="cnt-faq-q">Is there a free trial available?</summary>
+                        <p class="cnt-faq-a">We offer a personalized demo to show you all features. For qualified prospects, we can arrange a pilot program to test the system in your environment.</p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="footer-brand">iRBbA Devs</h4>
+                    <p class="footer-about">Building intelligent software solutions for hospitality, education, banking, and institutional excellence.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="demo.html">Demo</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Products</h5>
+                    <ul class="footer-links">
+                        <li><a href="products.html#hoscare">HosCare</a></li>
+                        <li><a href="products.html#education">Education System</a></li>
+                        <li><a href="products.html#banking">Banking System</a></li>
+                        <li><a href="products.html#erp">Institutional ERP</a></li>
+                    </ul>
+                </div>
+                 <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Resources</h5>
+                    <ul class="footer-links">
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="subscription.html">Subscription</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Legal</h5>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 iRBbA Devs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Bottom Mobile Navigation -->
+    <nav class="bottom-nav" aria-label="Mobile navigation">
+        <a href="index.html" class="bottom-nav-item">
+            <span class="material-icons">home</span>
+            <span class="bottom-nav-label">Home</span>
+        </a>
+        <a href="about.html" class="bottom-nav-item">
+            <span class="material-icons">info</span>
+            <span class="bottom-nav-label">About</span>
+        </a>
+        <a href="products.html" class="bottom-nav-item">
+            <span class="material-icons">apps</span>
+            <span class="bottom-nav-label">Products</span>
+        </a>
+        <a href="blog.html" class="bottom-nav-item">
+            <span class="material-icons">article</span>
+            <span class="bottom-nav-label">Blog</span>
+        </a>
+        <a href="contact.html" class="bottom-nav-item active">
+            <span class="material-icons">mail</span>
+            <span class="bottom-nav-label">Contact</span>
+        </a>
+    </nav>
+</body>
+</html>

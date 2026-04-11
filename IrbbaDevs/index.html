@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iRBbA Devs - Smart Software Solutions for Modern Institutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>(function(){var t=localStorage.getItem('irb-theme');document.documentElement.setAttribute('data-theme',t||'dark');})()</script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <div class="navbar-island">
+                <!-- Mobile-only brand -->
+                <a class="navbar-brand d-lg-none" href="index.html">
+                    <span class="brand-text">iRBbA</span> <span class="brand-light">Devs</span>
+                </a>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Left links -->
+                    <ul class="navbar-nav navbar-nav-left me-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                    </ul>
+                    <!-- Desktop-only brand (centered) -->
+                    <a class="navbar-brand d-none d-lg-block mx-3" href="index.html">
+                        <span class="brand-text">iRBbA</span> <span class="brand-light">Devs</span>
+                    </a>
+                    <!-- Right links -->
+                    <ul class="navbar-nav navbar-nav-right ms-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="bi bi-sun" id="themeIcon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <canvas id="waterCanvas" class="water-canvas"></canvas>
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-7">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Smart Software Solutions for Modern Institutions</h1>
+                        <p class="hero-text">Empowering hospitality, education, banking, and institutional operations with custom-built, scalable software systems designed for excellence.</p>
+                        <div class="hero-ctas">
+                            <a href="products.html" class="btn btn-primary btn-lg">View Our Systems</a>
+                            <a href="about.html" class="btn btn-outline-light btn-lg">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="hero-visual">
+                        <div class="floating-card card-1">
+                            <i class="bi bi-graph-up-arrow"></i>
+                            <span>Analytics</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="bi bi-shield-check"></i>
+                            <span>Secure</span>
+                        </div>
+                        <div class="floating-card card-3">
+                            <i class="bi bi-lightning-charge"></i>
+                            <span>Fast</span>
+                        </div>
+                        <div class="floating-card card-4">
+                            <i class="bi bi-people"></i>
+                            <span>Scalable</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who We Serve -->
+    <section class="idx-serve">
+        <div class="container">
+            <div class="idx-serve-inner">
+                <div class="idx-serve-head">
+                    <p class="about-eyebrow">Who We Serve</p>
+                    <h2 class="idx-section-title">Industries We<br>Transform</h2>
+                </div>
+                <div class="idx-serve-grid">
+                    <div class="idx-serve-item">
+                        <span class="idx-serve-num">01</span>
+                        <h3 class="idx-serve-name">Hospitality</h3>
+                        <p class="idx-serve-desc">Hotels, resorts, hostels, and guest houses need comprehensive management systems for operations excellence.</p>
+                    </div>
+                    <div class="idx-serve-item">
+                        <span class="idx-serve-num">02</span>
+                        <h3 class="idx-serve-name">Education</h3>
+                        <p class="idx-serve-desc">Schools, colleges, and universities require robust platforms for student and academic management.</p>
+                    </div>
+                    <div class="idx-serve-item">
+                        <span class="idx-serve-num">03</span>
+                        <h3 class="idx-serve-name">Banking &amp; Finance</h3>
+                        <p class="idx-serve-desc">Financial institutions demand secure, compliant, and efficient digital solutions for operations.</p>
+                    </div>
+                    <div class="idx-serve-item">
+                        <span class="idx-serve-num">04</span>
+                        <h3 class="idx-serve-name">Other Institutions</h3>
+                        <p class="idx-serve-desc">Government agencies, NGOs, and enterprises need customized ERP and management systems.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Product - HosCare -->
+    <section class="idx-fp">
+        <div class="container">
+            <div class="idx-fp-inner">
+                <div class="idx-fp-label">
+                    <p class="about-label">Featured Product</p>
+                    <span class="prod-live-badge">Live</span>
+                </div>
+                <div class="idx-fp-body">
+                    <h2 class="idx-fp-name">HosCare</h2>
+                    <p class="idx-fp-intro">Complete hospitality management solution designed to streamline your hotel, resort, or guest house operations.</p>
+                    <div class="idx-fp-features">
+                        <div class="idx-fp-feat">Advanced POS System</div>
+                        <div class="idx-fp-feat">Hotel Management Suite</div>
+                        <div class="idx-fp-feat">Workflow Automation</div>
+                        <div class="idx-fp-feat">Real-time Reporting &amp; Analytics</div>
+                    </div>
+                    <a href="products.html#hoscare" class="blg-read-link">View HosCare Details <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose iRBbA Devs -->
+    <section class="idx-why">
+        <div class="container">
+            <div class="idx-why-head">
+                <p class="about-eyebrow">Why iRBbA Devs</p>
+                <h2 class="idx-section-title">Built Different,<br>by Design</h2>
+            </div>
+            <div class="idx-why-grid">
+                <div class="idx-why-item">
+                    <span class="idx-why-num">01</span>
+                    <h3 class="idx-why-title">Custom-Built Systems</h3>
+                    <p class="idx-why-desc">Every solution is tailored to your specific business needs and workflows.</p>
+                </div>
+                <div class="idx-why-item">
+                    <span class="idx-why-num">02</span>
+                    <h3 class="idx-why-title">Scalable Architecture</h3>
+                    <p class="idx-why-desc">Grow without limits. Our systems scale seamlessly with your business expansion.</p>
+                </div>
+                <div class="idx-why-item">
+                    <span class="idx-why-num">03</span>
+                    <h3 class="idx-why-title">Local + Global Standards</h3>
+                    <p class="idx-why-desc">Built to meet both local regulatory requirements and international best practices.</p>
+                </div>
+                <div class="idx-why-item">
+                    <span class="idx-why-num">04</span>
+                    <h3 class="idx-why-title">Reliable Support</h3>
+                    <p class="idx-why-desc">Dedicated support team ensuring your operations run smoothly 24/7.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="idx-how">
+        <div class="container">
+            <div class="idx-how-inner">
+                <div class="idx-how-head">
+                    <p class="about-eyebrow">Process</p>
+                    <h2 class="idx-section-title">How It Works</h2>
+                </div>
+                <div class="idx-how-steps">
+                    <div class="idx-how-step">
+                        <span class="idx-how-num">01</span>
+                        <div class="idx-how-body">
+                            <h3 class="idx-how-title">Discover</h3>
+                            <p class="idx-how-desc">Schedule a consultation to discuss your needs and explore our solutions.</p>
+                        </div>
+                    </div>
+                    <div class="idx-how-step">
+                        <span class="idx-how-num">02</span>
+                        <div class="idx-how-body">
+                            <h3 class="idx-how-title">Subscribe</h3>
+                            <p class="idx-how-desc">Choose the right plan and subscription model for your organization.</p>
+                        </div>
+                    </div>
+                    <div class="idx-how-step">
+                        <span class="idx-how-num">03</span>
+                        <div class="idx-how-body">
+                            <h3 class="idx-how-title">Deploy</h3>
+                            <p class="idx-how-desc">Our team handles setup, customization, and training for seamless integration.</p>
+                        </div>
+                    </div>
+                    <div class="idx-how-step">
+                        <span class="idx-how-num">04</span>
+                        <div class="idx-how-body">
+                            <h3 class="idx-how-title">Support</h3>
+                            <p class="idx-how-desc">Enjoy continuous updates, maintenance, and dedicated customer support.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">What Our Partners Say</h2>
+                <p class="section-subtitle">Trusted by forward-thinking organizations</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="quote-icon">
+                            <i class="bi bi-quote"></i>
+                        </div>
+                        <p class="testimonial-text">"The HosCare system transformed our hotel operations. Check-ins are faster, reporting is clearer, and our guests are happier."</p>
+                        <div class="testimonial-author">
+                            <strong>Sarah Mensah</strong>
+                            <span>Hotel Manager, Coastal Resort</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="quote-icon">
+                            <i class="bi bi-quote"></i>
+                        </div>
+                        <p class="testimonial-text">"Working with iRBbA Devs has been exceptional. They understand the unique challenges of institutional software."</p>
+                        <div class="testimonial-author">
+                            <strong>Kwame Osei</strong>
+                            <span>IT Director, Educational Institute</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card">
+                        <div class="quote-icon">
+                            <i class="bi bi-quote"></i>
+                        </div>
+                        <p class="testimonial-text">"The scalability and customization options are exactly what we needed. A truly professional development team."</p>
+                        <div class="testimonial-author">
+                            <strong>Ama Boateng</strong>
+                            <span>Operations Manager, Guest House Chain</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta py-5">
+        <div class="container">
+            <div class="cta-box">
+                <h2 class="cta-title">Start Your Digital Transformation Today</h2>
+                <p class="cta-text">Join leading institutions in modernizing operations with smart, scalable software solutions.</p>
+                <div class="cta-buttons">
+                    <a href="demo.html" class="btn btn-light btn-lg">Request a Demo</a>
+                    <a href="contact.html" class="btn btn-outline-light btn-lg">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="footer-brand">iRBbA Devs</h4>
+                    <p class="footer-about">Building intelligent software solutions for hospitality, education, banking, and institutional excellence.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="demo.html">Demo</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Products</h5>
+                    <ul class="footer-links">
+                        <li><a href="products.html#hoscare">HosCare</a></li>
+                        <li><a href="products.html#education">Education System</a></li>
+                        <li><a href="products.html#banking">Banking System</a></li>
+                        <li><a href="products.html#erp">Institutional ERP</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Resources</h5>
+                    <ul class="footer-links">
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="subscription.html">Subscription</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Legal</h5>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 iRBbA Devs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Bottom Mobile Navigation -->
+    <nav class="bottom-nav" aria-label="Mobile navigation">
+        <a href="index.html" class="bottom-nav-item active">
+            <span class="material-icons">home</span>
+            <span class="bottom-nav-label">Home</span>
+        </a>
+        <a href="about.html" class="bottom-nav-item">
+            <span class="material-icons">info</span>
+            <span class="bottom-nav-label">About</span>
+        </a>
+        <a href="products.html" class="bottom-nav-item">
+            <span class="material-icons">apps</span>
+            <span class="bottom-nav-label">Products</span>
+        </a>
+        <a href="blog.html" class="bottom-nav-item">
+            <span class="material-icons">article</span>
+            <span class="bottom-nav-label">Blog</span>
+        </a>
+        <a href="contact.html" class="bottom-nav-item">
+            <span class="material-icons">mail</span>
+            <span class="bottom-nav-label">Contact</span>
+        </a>
+    </nav>
+</body>
+</html>

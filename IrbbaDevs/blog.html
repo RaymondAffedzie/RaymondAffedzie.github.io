@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - iRBbA Devs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>(function(){var t=localStorage.getItem('irb-theme');document.documentElement.setAttribute('data-theme',t||'dark');})()</script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <div class="navbar-island">
+                <a class="navbar-brand d-lg-none" href="index.html">
+                    <span class="brand-text">iRBbA</span> <span class="brand-light">Devs</span>
+                </a>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav navbar-nav-left me-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                    </ul>
+                    <a class="navbar-brand d-none d-lg-block mx-3" href="index.html">
+                        <span class="brand-text">iRBbA</span> <span class="brand-light">Devs</span>
+                    </a>
+                    <ul class="navbar-nav navbar-nav-right ms-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="bi bi-sun" id="themeIcon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Hero -->
+    <section class="blg-hero">
+        <div class="container">
+            <div class="blg-hero-inner">
+                <p class="about-eyebrow">Blog &amp; Insights</p>
+                <h1 class="blg-hero-title">Thoughts on Technology,<br>Industry &amp; Product</h1>
+                <p class="blg-hero-sub">Product updates, engineering deep-dives, and industry perspectives from the iRBbA Devs team.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="blg-filter">
+        <div class="container">
+            <div class="blg-filter-row">
+                <button class="blg-filter-btn active" data-filter="all">All</button>
+                <button class="blg-filter-btn" data-filter="product">Product Updates</button>
+                <button class="blg-filter-btn" data-filter="tech">Tech Insights</button>
+                <button class="blg-filter-btn" data-filter="industry">Industry Trends</button>
+                <button class="blg-filter-btn" data-filter="company">Company News</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Post -->
+    <section class="blg-featured">
+        <div class="container">
+            <div class="blg-featured-inner">
+                <div class="blg-featured-label">
+                    <p class="about-label">Featured</p>
+                    <span class="blg-cat-tag">Industry Trends</span>
+                </div>
+                <div class="blg-featured-body">
+                    <h2 class="blg-featured-title">The Future of Hospitality Management: Why Digital Transformation Matters</h2>
+                    <p class="blg-featured-excerpt">As the hospitality industry continues to evolve, hotels and resorts that embrace digital transformation are seeing remarkable results. Learn how modern management systems are revolutionizing guest experiences and operational efficiency.</p>
+                    <div class="blg-featured-foot">
+                        <span class="blg-meta">Rebecca Osei &nbsp;&middot;&nbsp; Jan 28, 2026 &nbsp;&middot;&nbsp; 8 min read</span>
+                        <a href="blog-digital-transformation.html" class="blg-read-link">Read article <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="blg-grid">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 blg-item" data-category="product">
+                    <article class="blg-post-card">
+                        <div class="blg-post-top">
+                            <span class="blg-cat-tag">Product Updates</span>
+                            <span class="blg-post-num">01</span>
+                        </div>
+                        <div class="blg-post-body">
+                            <h3 class="blg-post-title"><a href="#">HosCare 2.5: New Features and Improvements</a></h3>
+                            <p class="blg-post-meta">Jan 25, 2026 &nbsp;&middot;&nbsp; 5 min read</p>
+                            <p class="blg-post-excerpt">We're excited to announce HosCare 2.5 with enhanced mobile features, improved reporting capabilities, and better integration options.</p>
+                            <a href="#" class="blg-post-link">Read <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4 blg-item" data-category="tech">
+                    <article class="blg-post-card">
+                        <div class="blg-post-top">
+                            <span class="blg-cat-tag">Tech Insights</span>
+                            <span class="blg-post-num">02</span>
+                        </div>
+                        <div class="blg-post-body">
+                            <h3 class="blg-post-title"><a href="#">Building Scalable SaaS Applications: Lessons Learned</a></h3>
+                            <p class="blg-post-meta">Jan 20, 2026 &nbsp;&middot;&nbsp; 10 min read</p>
+                            <p class="blg-post-excerpt">Our engineering team shares insights on building multi-tenant SaaS platforms that scale from tens to thousands of users.</p>
+                            <a href="#" class="blg-post-link">Read <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4 blg-item" data-category="industry">
+                    <article class="blg-post-card">
+                        <div class="blg-post-top">
+                            <span class="blg-cat-tag">Industry Trends</span>
+                            <span class="blg-post-num">03</span>
+                        </div>
+                        <div class="blg-post-body">
+                            <h3 class="blg-post-title"><a href="#">5 Hospitality Tech Trends to Watch in 2026</a></h3>
+                            <p class="blg-post-meta">Jan 15, 2026 &nbsp;&middot;&nbsp; 7 min read</p>
+                            <p class="blg-post-excerpt">From AI-powered guest services to contactless everything, discover the technologies shaping the future of hospitality.</p>
+                            <a href="#" class="blg-post-link">Read <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4 blg-item" data-category="company">
+                    <article class="blg-post-card">
+                        <div class="blg-post-top">
+                            <span class="blg-cat-tag">Company News</span>
+                            <span class="blg-post-num">04</span>
+                        </div>
+                        <div class="blg-post-body">
+                            <h3 class="blg-post-title"><a href="#">Expanding Our Team: We're Hiring!</a></h3>
+                            <p class="blg-post-meta">Jan 10, 2026 &nbsp;&middot;&nbsp; 3 min read</p>
+                            <p class="blg-post-excerpt">iRBbA Devs is growing! We're looking for talented developers, designers, and product managers to join our team.</p>
+                            <a href="#" class="blg-post-link">Read <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4 blg-item" data-category="tech">
+                    <article class="blg-post-card">
+                        <div class="blg-post-top">
+                            <span class="blg-cat-tag">Tech Insights</span>
+                            <span class="blg-post-num">05</span>
+                        </div>
+                        <div class="blg-post-body">
+                            <h3 class="blg-post-title"><a href="#">Security Best Practices for Hospitality Software</a></h3>
+                            <p class="blg-post-meta">Jan 5, 2026 &nbsp;&middot;&nbsp; 12 min read</p>
+                            <p class="blg-post-excerpt">Protecting guest data is paramount. Learn about our approach to security, compliance, and data protection.</p>
+                            <a href="#" class="blg-post-link">Read <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4 blg-item" data-category="industry">
+                    <article class="blg-post-card">
+                        <div class="blg-post-top">
+                            <span class="blg-cat-tag">Industry Trends</span>
+                            <span class="blg-post-num">06</span>
+                        </div>
+                        <div class="blg-post-body">
+                            <h3 class="blg-post-title"><a href="#">How Data Analytics is Transforming Hotel Revenue Management</a></h3>
+                            <p class="blg-post-meta">Dec 30, 2025 &nbsp;&middot;&nbsp; 9 min read</p>
+                            <p class="blg-post-excerpt">Data-driven decision making is no longer optional. Discover how analytics can optimize pricing, occupancy, and revenue.</p>
+                            <a href="#" class="blg-post-link">Read <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4 blg-item" data-category="product">
+                    <article class="blg-post-card">
+                        <div class="blg-post-top">
+                            <span class="blg-cat-tag">Product Updates</span>
+                            <span class="blg-post-num">07</span>
+                        </div>
+                        <div class="blg-post-body">
+                            <h3 class="blg-post-title"><a href="#">Introducing HosCare Mobile: Manage On-the-Go</a></h3>
+                            <p class="blg-post-meta">Dec 20, 2025 &nbsp;&middot;&nbsp; 6 min read</p>
+                            <p class="blg-post-excerpt">Our new mobile app brings the full power of HosCare to your smartphone. Available now on iOS and Android.</p>
+                            <a href="#" class="blg-post-link">Read <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4 blg-item" data-category="company">
+                    <article class="blg-post-card">
+                        <div class="blg-post-top">
+                            <span class="blg-cat-tag">Company News</span>
+                            <span class="blg-post-num">08</span>
+                        </div>
+                        <div class="blg-post-body">
+                            <h3 class="blg-post-title"><a href="#">iRBbA Devs Wins Best Hospitality Tech Startup Award</a></h3>
+                            <p class="blg-post-meta">Dec 15, 2025 &nbsp;&middot;&nbsp; 4 min read</p>
+                            <p class="blg-post-excerpt">We're honored to be recognized at the Africa Tech Awards for our innovative hospitality management solutions.</p>
+                            <a href="#" class="blg-post-link">Read <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-lg-4 blg-item" data-category="tech">
+                    <article class="blg-post-card">
+                        <div class="blg-post-top">
+                            <span class="blg-cat-tag">Tech Insights</span>
+                            <span class="blg-post-num">09</span>
+                        </div>
+                        <div class="blg-post-body">
+                            <h3 class="blg-post-title"><a href="#">Why We Chose AWS for Our Cloud Infrastructure</a></h3>
+                            <p class="blg-post-meta">Dec 10, 2025 &nbsp;&middot;&nbsp; 8 min read</p>
+                            <p class="blg-post-excerpt">A deep dive into our cloud architecture decisions and how AWS enables us to deliver reliable, scalable services.</p>
+                            <a href="#" class="blg-post-link">Read <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="blg-newsletter">
+        <div class="container">
+            <div class="blg-nl-inner">
+                <div class="blg-nl-copy">
+                    <p class="about-eyebrow">Newsletter</p>
+                    <h3 class="blg-nl-title">Stay in the Loop</h3>
+                    <p class="blg-nl-sub">Get the latest product updates, tech insights, and industry trends delivered to your inbox.</p>
+                </div>
+                <div class="blg-nl-form">
+                    <form>
+                        <div class="blg-nl-input-row">
+                            <input type="email" name="newsletter_email" class="blg-nl-input" placeholder="Enter your email address" required>
+                            <button type="submit" class="blg-nl-btn">Subscribe</button>
+                        </div>
+                        <p class="blg-nl-note">We respect your privacy. Unsubscribe anytime.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="footer-brand">iRBbA Devs</h4>
+                    <p class="footer-about">Building intelligent software solutions for hospitality, education, banking, and institutional excellence.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="demo.html">Demo</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Products</h5>
+                    <ul class="footer-links">
+                        <li><a href="products.html#hoscare">HosCare</a></li>
+                        <li><a href="products.html#education">Education System</a></li>
+                        <li><a href="products.html#banking">Banking System</a></li>
+                        <li><a href="products.html#erp">Institutional ERP</a></li>
+                    </ul>
+                </div>
+                 <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Resources</h5>
+                    <ul class="footer-links">
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="subscription.html">Subscription</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Legal</h5>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 iRBbA Devs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Bottom Mobile Navigation -->
+    <nav class="bottom-nav" aria-label="Mobile navigation">
+        <a href="index.html" class="bottom-nav-item">
+            <span class="material-icons">home</span>
+            <span class="bottom-nav-label">Home</span>
+        </a>
+        <a href="about.html" class="bottom-nav-item">
+            <span class="material-icons">info</span>
+            <span class="bottom-nav-label">About</span>
+        </a>
+        <a href="products.html" class="bottom-nav-item">
+            <span class="material-icons">apps</span>
+            <span class="bottom-nav-label">Products</span>
+        </a>
+        <a href="blog.html" class="bottom-nav-item active">
+            <span class="material-icons">article</span>
+            <span class="bottom-nav-label">Blog</span>
+        </a>
+        <a href="contact.html" class="bottom-nav-item">
+            <span class="material-icons">mail</span>
+            <span class="bottom-nav-label">Contact</span>
+        </a>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - iRBbA Devs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>(function(){var t=localStorage.getItem('irb-theme');document.documentElement.setAttribute('data-theme',t||'dark');})()</script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <div class="navbar-island">
+                <a class="navbar-brand d-lg-none" href="index.html">
+                    <span class="brand-text">iRBbA</span> <span class="brand-light">Devs</span>
+                </a>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav navbar-nav-left me-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="products.html">Products</a>
+                        </li>
+                    </ul>
+                    <a class="navbar-brand d-none d-lg-block mx-3" href="index.html">
+                        <span class="brand-text">iRBbA</span> <span class="brand-light">Devs</span>
+                    </a>
+                    <ul class="navbar-nav navbar-nav-right ms-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="bi bi-sun" id="themeIcon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products Hero -->
+    <section class="prod-hero">
+        <div class="container">
+            <div class="prod-hero-inner">
+                <p class="prod-eyebrow">Product Suite</p>
+                <h1 class="prod-hero-title">Four Platforms.<br>One Standard.</h1>
+                <p class="prod-hero-sub">Purpose-built software for hospitality, education, finance, and enterprise — each product engineered for the institutions that run on it.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Suite Index -->
+    <section class="prod-index">
+        <div class="container">
+            <div class="prod-index-grid">
+                <a href="#hoscare" class="prod-index-card prod-index-live">
+                    <div class="prod-index-status">Live</div>
+                    <i class="bi bi-building prod-index-icon"></i>
+                    <div class="prod-index-info">
+                        <h3>HosCare</h3>
+                        <p>Hospitality Management</p>
+                    </div>
+                    <i class="bi bi-arrow-right prod-index-arrow"></i>
+                </a>
+                <a href="#education" class="prod-index-card">
+                    <div class="prod-index-status prod-index-wip">Q3 2026</div>
+                    <i class="bi bi-mortarboard prod-index-icon"></i>
+                    <div class="prod-index-info">
+                        <h3>EduManage Pro</h3>
+                        <p>Education Management</p>
+                    </div>
+                    <i class="bi bi-arrow-right prod-index-arrow"></i>
+                </a>
+                <a href="#banking" class="prod-index-card">
+                    <div class="prod-index-status prod-index-wip">Q4 2026</div>
+                    <i class="bi bi-bank prod-index-icon"></i>
+                    <div class="prod-index-info">
+                        <h3>FinanceCore</h3>
+                        <p>Core Banking Platform</p>
+                    </div>
+                    <i class="bi bi-arrow-right prod-index-arrow"></i>
+                </a>
+                <a href="#erp" class="prod-index-card">
+                    <div class="prod-index-status prod-index-wip">Q1 2027</div>
+                    <i class="bi bi-diagram-3 prod-index-icon"></i>
+                    <div class="prod-index-info">
+                        <h3>InstitutionERP</h3>
+                        <p>Enterprise Resource Planning</p>
+                    </div>
+                    <i class="bi bi-arrow-right prod-index-arrow"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- HosCare Full Section -->
+    <section class="prod-detail" id="hoscare">
+        <div class="container">
+
+            <!-- Section header -->
+            <div class="prod-detail-header">
+                <div class="prod-detail-meta">
+                    <span class="prod-live-badge">Live</span>
+                    <span class="prod-detail-cat">Hospitality Management</span>
+                </div>
+                <h2 class="prod-detail-title">HosCare</h2>
+                <p class="prod-detail-lead">An all-in-one hospitality management platform — from front desk to housekeeping, POS to financial reporting, unified in a single cloud-native system.</p>
+                <div class="d-flex flex-wrap gap-2 mt-4">
+                    <span class="about-tag"><i class="bi bi-cloud me-1"></i>Cloud-Native</span>
+                    <span class="about-tag"><i class="bi bi-phone me-1"></i>Mobile-Ready</span>
+                    <span class="about-tag"><i class="bi bi-shield-check me-1"></i>PCI Compliant</span>
+                    <span class="about-tag"><i class="bi bi-translate me-1"></i>Multi-Currency</span>
+                </div>
+            </div>
+
+            <!-- Feature modules -->
+            <div class="prod-modules-grid">
+                <div class="prod-module">
+                    <div class="prod-module-icon"><i class="bi bi-door-open"></i></div>
+                    <div class="prod-module-body">
+                        <h4>Front Desk Management</h4>
+                        <p>Streamlined check-in/check-out, reservation management, guest profiles, and real-time room assignment.</p>
+                    </div>
+                </div>
+                <div class="prod-module">
+                    <div class="prod-module-icon"><i class="bi bi-cash-coin"></i></div>
+                    <div class="prod-module-body">
+                        <h4>Integrated POS System</h4>
+                        <p>Point-of-sale for restaurant, bar, spa, and hotel services with inventory tracking and billing integration.</p>
+                    </div>
+                </div>
+                <div class="prod-module">
+                    <div class="prod-module-icon"><i class="bi bi-broom"></i></div>
+                    <div class="prod-module-body">
+                        <h4>Housekeeping Module</h4>
+                        <p>Assign tasks, track room status, manage cleaning schedules, and coordinate maintenance with mobile staff access.</p>
+                    </div>
+                </div>
+                <div class="prod-module">
+                    <div class="prod-module-icon"><i class="bi bi-calendar-check"></i></div>
+                    <div class="prod-module-body">
+                        <h4>Reservation System</h4>
+                        <p>Online booking engine, channel manager integration, rate management, and automated guest confirmations.</p>
+                    </div>
+                </div>
+                <div class="prod-module">
+                    <div class="prod-module-icon"><i class="bi bi-graph-up"></i></div>
+                    <div class="prod-module-body">
+                        <h4>Analytics &amp; Reporting</h4>
+                        <p>Real-time dashboards, occupancy reports, revenue analytics, and customizable financial statements.</p>
+                    </div>
+                </div>
+                <div class="prod-module">
+                    <div class="prod-module-icon"><i class="bi bi-people"></i></div>
+                    <div class="prod-module-body">
+                        <h4>Guest Management</h4>
+                        <p>Comprehensive guest profiles, preference tracking, loyalty programs, and automated communication tools.</p>
+                    </div>
+                </div>
+                <div class="prod-module">
+                    <div class="prod-module-icon"><i class="bi bi-credit-card"></i></div>
+                    <div class="prod-module-body">
+                        <h4>Payment Processing</h4>
+                        <p>Multiple payment methods, mobile money integration, invoice generation, and secure transaction handling.</p>
+                    </div>
+                </div>
+                <div class="prod-module">
+                    <div class="prod-module-icon"><i class="bi bi-box-seam"></i></div>
+                    <div class="prod-module-body">
+                        <h4>Inventory Management</h4>
+                        <p>Stock control for bar, kitchen, and housekeeping supplies with automated reorder alerts and supplier management.</p>
+                    </div>
+                </div>
+                <div class="prod-module">
+                    <div class="prod-module-icon"><i class="bi bi-phone"></i></div>
+                    <div class="prod-module-body">
+                        <h4>Mobile Access</h4>
+                        <p>Fully responsive design and mobile apps for staff to manage operations from anywhere on the property.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fits Who + Pricing row -->
+            <div class="row g-5 align-items-start mt-2">
+                <div class="col-lg-4">
+                    <p class="about-label">Perfect For</p>
+                    <div class="prod-fits-list">
+                        <div class="prod-fit-item">
+                            <i class="bi bi-building-fill"></i>
+                            <div><strong>Hotels</strong><span>Full-service properties of all sizes</span></div>
+                        </div>
+                        <div class="prod-fit-item">
+                            <i class="bi bi-house-door"></i>
+                            <div><strong>Guest Houses</strong><span>Boutique accommodations</span></div>
+                        </div>
+                        <div class="prod-fit-item">
+                            <i class="bi bi-sun"></i>
+                            <div><strong>Resorts</strong><span>Vacation &amp; leisure properties</span></div>
+                        </div>
+                        <div class="prod-fit-item">
+                            <i class="bi bi-backpack"></i>
+                            <div><strong>Hostels</strong><span>Budget &amp; shared accommodations</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <p class="about-label">Pricing</p>
+                    <div class="prod-pricing-table">
+                        <div class="prod-plan-row">
+                            <div class="prod-plan-name">
+                                <span>Starter</span>
+                                <small>Up to 10 rooms</small>
+                            </div>
+                            <ul class="prod-plan-features">
+                                <li>Front Desk &amp; POS</li>
+                                <li>Basic Reports</li>
+                                <li>Email support</li>
+                            </ul>
+                            <div class="prod-plan-price">
+                                <span class="prod-price-num">$99</span>
+                                <span class="prod-price-period">/ month</span>
+                            </div>
+                        </div>
+                        <div class="prod-plan-row prod-plan-featured">
+                            <div class="prod-plan-name">
+                                <span>Professional</span>
+                                <small>Up to 50 rooms</small>
+                                <em class="prod-popular-tag">Most Popular</em>
+                            </div>
+                            <ul class="prod-plan-features">
+                                <li>All 9 modules</li>
+                                <li>Advanced Analytics</li>
+                                <li>24/7 priority support</li>
+                            </ul>
+                            <div class="prod-plan-price">
+                                <span class="prod-price-num">$249</span>
+                                <span class="prod-price-period">/ month</span>
+                            </div>
+                        </div>
+                        <div class="prod-plan-row">
+                            <div class="prod-plan-name">
+                                <span>Enterprise</span>
+                                <small>Unlimited rooms</small>
+                            </div>
+                            <ul class="prod-plan-features">
+                                <li>Custom integrations</li>
+                                <li>Dedicated SLA</li>
+                                <li>On-site training</li>
+                            </ul>
+                            <div class="prod-plan-price">
+                                <span class="prod-price-num">Custom</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="demo.html" class="btn btn-primary">Request a Demo</a>
+                        <a href="contact.html" class="btn btn-outline-light">Talk to Sales</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Upcoming Products -->
+    <section class="prod-upcoming">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-6">
+                    <p class="about-label">In Development</p>
+                    <h2 class="about-section-title">Coming to the Suite</h2>
+                </div>
+                <div class="col-lg-6 d-flex align-items-end">
+                    <p class="prod-upcoming-sub">Three new platforms launching in 2026–2027. Join the waitlist to get early access and shape the product with your feedback.</p>
+                </div>
+            </div>
+
+            <!-- EduManage Pro -->
+            <div class="prod-upcoming-item" id="education">
+                <div class="prod-upcoming-header">
+                    <div class="prod-upcoming-meta">
+                        <span class="prod-wip-badge">Q3 2026</span>
+                        <!-- <i class="bi bi-mortarboard prod-upcoming-icon"></i> -->
+                        <div>
+                            <h3>EduManage Pro</h3>
+                            <p>Comprehensive education management for the digital learning era</p>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn btn-outline-light btn-sm">Join Waitlist</a>
+                </div>
+                <div class="prod-upcoming-features">
+                    <div class="prod-uf-item"><i class="bi bi-person-badge"></i> Student Information System</div>
+                    <div class="prod-uf-item"><i class="bi bi-book-half"></i> Learning Management (LMS)</div>
+                    <div class="prod-uf-item"><i class="bi bi-calendar3"></i> Attendance &amp; Timetable</div>
+                    <div class="prod-uf-item"><i class="bi bi-clipboard2-check"></i> Gradebook &amp; Reports</div>
+                    <div class="prod-uf-item"><i class="bi bi-chat-dots"></i> Parent Portal &amp; Communication</div>
+                    <div class="prod-uf-item"><i class="bi bi-cash-stack"></i> Fee Management &amp; Billing</div>
+                    <div class="prod-uf-item"><i class="bi bi-book"></i> Library Management</div>
+                    <div class="prod-uf-item"><i class="bi bi-people-fill"></i> Staff &amp; HR Management</div>
+                    <div class="prod-uf-item"><i class="bi bi-pencil-square"></i> Exam &amp; Assessment Tools</div>
+                    <div class="prod-uf-item"><i class="bi bi-graph-up"></i> Analytics &amp; Performance</div>
+                </div>
+            </div>
+
+            <!-- FinanceCore -->
+            <div class="prod-upcoming-item" id="banking">
+                <div class="prod-upcoming-header">
+                    <div class="prod-upcoming-meta">
+                        <span class="prod-wip-badge">Q4 2026</span>
+                        <!-- <i class="bi bi-bank prod-upcoming-icon"></i> -->
+                        <div>
+                            <h3>FinanceCore</h3>
+                            <p>Secure, compliant core banking for modern financial institutions</p>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn btn-outline-light btn-sm">Join Waitlist</a>
+                </div>
+                <div class="prod-upcoming-features">
+                    <div class="prod-uf-item"><i class="bi bi-currency-exchange"></i> Core Banking Operations</div>
+                    <div class="prod-uf-item"><i class="bi bi-file-earmark-text"></i> Loan &amp; Credit Management</div>
+                    <div class="prod-uf-item"><i class="bi bi-phone-vibrate"></i> Mobile &amp; Internet Banking</div>
+                    <div class="prod-uf-item"><i class="bi bi-shield-fill-check"></i> Compliance &amp; Reporting</div>
+                    <div class="prod-uf-item"><i class="bi bi-journal-check"></i> Account Management</div>
+                    <div class="prod-uf-item"><i class="bi bi-arrow-left-right"></i> Transaction Processing</div>
+                    <div class="prod-uf-item"><i class="bi bi-exclamation-triangle"></i> Risk Management</div>
+                    <div class="prod-uf-item"><i class="bi bi-person-lines-fill"></i> CRM</div>
+                    <div class="prod-uf-item"><i class="bi bi-plug"></i> Payment Gateway Integration</div>
+                    <div class="prod-uf-item"><i class="bi bi-bar-chart-line"></i> Financial Analytics &amp; BI</div>
+                </div>
+            </div>
+
+            <!-- InstitutionERP -->
+            <div class="prod-upcoming-item" id="erp">
+                <div class="prod-upcoming-header">
+                    <div class="prod-upcoming-meta">
+                        <span class="prod-wip-badge">Q1 2027</span>
+                        <!-- <i class="bi bi-diagram-3 prod-upcoming-icon"></i> -->
+                        <div>
+                            <h3>InstitutionERP</h3>
+                            <p>Modular ERP for government agencies &amp; large organizations</p>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn btn-outline-light btn-sm">Join Waitlist</a>
+                </div>
+                <div class="prod-upcoming-features">
+                    <div class="prod-uf-item"><i class="bi bi-wallet2"></i> Financial Management</div>
+                    <div class="prod-uf-item"><i class="bi bi-people-fill"></i> HR &amp; Payroll</div>
+                    <div class="prod-uf-item"><i class="bi bi-box-seam"></i> Procurement &amp; Supply Chain</div>
+                    <div class="prod-uf-item"><i class="bi bi-gear-wide-connected"></i> Workflow Automation</div>
+                    <div class="prod-uf-item"><i class="bi bi-laptop"></i> Asset Management</div>
+                    <div class="prod-uf-item"><i class="bi bi-kanban"></i> Project Management</div>
+                    <div class="prod-uf-item"><i class="bi bi-folder2-open"></i> Document Management</div>
+                    <div class="prod-uf-item"><i class="bi bi-pie-chart"></i> Budgeting &amp; Planning</div>
+                    <div class="prod-uf-item"><i class="bi bi-clipboard-check"></i> Compliance &amp; Audit</div>
+                    <div class="prod-uf-item"><i class="bi bi-speedometer2"></i> Executive Dashboards</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5">
+        <div class="container">
+            <div class="cta-box">
+                <h2 class="cta-title">Ready to Transform Your Operations?</h2>
+                <p class="cta-text">Get started with HosCare today or join the waitlist for upcoming products</p>
+                <div class="cta-buttons">
+                    <a href="demo.html" class="btn btn-light btn-lg">Request a Demo</a>
+                    <a href="contact.html" class="btn btn-outline-light btn-lg">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="footer-brand">iRBbA Devs</h4>
+                    <p class="footer-about">Building intelligent software solutions for hospitality, education, banking, and institutional excellence.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="demo.html">Demo</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Products</h5>
+                    <ul class="footer-links">
+                        <li><a href="products.html#hoscare">HosCare</a></li>
+                        <li><a href="products.html#education">Education System</a></li>
+                        <li><a href="products.html#banking">Banking System</a></li>
+                        <li><a href="products.html#erp">Institutional ERP</a></li>
+                    </ul>
+                </div>
+                 <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Resources</h5>
+                    <ul class="footer-links">
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="subscription.html">Subscription</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Legal</h5>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 iRBbA Devs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Bottom Mobile Navigation -->
+    <nav class="bottom-nav" aria-label="Mobile navigation">
+        <a href="index.html" class="bottom-nav-item">
+            <span class="material-icons">home</span>
+            <span class="bottom-nav-label">Home</span>
+        </a>
+        <a href="about.html" class="bottom-nav-item">
+            <span class="material-icons">info</span>
+            <span class="bottom-nav-label">About</span>
+        </a>
+        <a href="products.html" class="bottom-nav-item active">
+            <span class="material-icons">apps</span>
+            <span class="bottom-nav-label">Products</span>
+        </a>
+        <a href="blog.html" class="bottom-nav-item">
+            <span class="material-icons">article</span>
+            <span class="bottom-nav-label">Blog</span>
+        </a>
+        <a href="contact.html" class="bottom-nav-item">
+            <span class="material-icons">mail</span>
+            <span class="bottom-nav-label">Contact</span>
+        </a>
+    </nav>
+</body>
+</html>
