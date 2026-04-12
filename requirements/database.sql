@@ -165,18 +165,18 @@ CREATE TABLE
 -- 2. LEGAL & COMPLIANCE  
 -- =============================================
 
-CREATE TABLE legal_documents (
-    legal_id varchar(36) PRIMARY KEY,
-    document_type ENUM('policy', 'service', 'other') NOT NULL UNIQUE,
-    title VARCHAR(255) NOT NULL,
-    slug VARCHAR(100) NOT NULL UNIQUE,
-    content LONGTEXT NOT NULL,
-    last_updated DATE NOT NULL,
-    effective_date DATE NOT NULL,
-    version VARCHAR(20) NULL,
-    date_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    date_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    INDEX idx_type (document_type)
+CREATE TABLE `legal_documents` (
+    `legal_id` varchar(36) PRIMARY KEY,
+    `document_type` ENUM('policy', 'service', 'other') NOT NULL UNIQUE,
+    `title` VARCHAR(255) NOT NULL,
+    `slug` VARCHAR(100) NOT NULL UNIQUE,
+    `content` LONGTEXT NOT NULL,
+    `last_updated` DATE NOT NULL,
+    `effective_date` DATE NOT NULL,
+    `version` VARCHAR(20) NULL,
+    `date_created` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    `date_updated` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    INDEX `idx_type` (`document_type`)
 );
 
 -- =============================================
@@ -345,7 +345,7 @@ CREATE TABLE
         ) NOT NULL DEFAULT 'other',
         `date_created` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         `date_updated` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-        INDEX idx_year_order (`year`, `display_order`),
+        INDEX idx_year_order (`year`),
         INDEX idx_type (`milestone_type`)
     );
 
